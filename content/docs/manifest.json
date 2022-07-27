@@ -193,6 +193,10 @@
               "path": "/docs/configuration/selfsigned.md"
             },
             {
+              "title": "Certificate Resources",
+              "path": "/docs/configuration/certificate-resources.md"
+            },
+            {
               "title": "CA",
               "path": "/docs/configuration/ca.md"
             },
@@ -283,10 +287,6 @@
             {
               "title": "Introduction",
               "path": "/docs/usage/README.md"
-            },
-            {
-              "title": "Certificate Resources",
-              "path": "/docs/usage/certificate.md"
             },
             {
               "title": "cmctl",
