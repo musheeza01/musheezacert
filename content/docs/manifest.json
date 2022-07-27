@@ -289,10 +289,6 @@
               "path": "/docs/usage/README.md"
             },
             {
-              "title": "cmctl",
-              "path": "/docs/usage/cmctl.md"
-            },
-            {
               "title": "Securing Ingress Resources",
               "path": "/docs/usage/ingress.md"
             },
@@ -311,10 +307,6 @@
             {
               "title": "Kubernetes CertificateSigningRequests",
               "path": "/docs/usage/kube-csr.md"
-            },
-            {
-              "title": "Policy for cert-manager certificates",
-              "path": "/docs/usage/approver-policy.md"
             }
           ]
         },
@@ -328,6 +320,14 @@
             {
               "title": "Securing Pods with mTLS",
               "path": "/docs/features/securing-pods-with-mTLS.md"
+            },
+             {
+              "title": "Empheral Certifcates Using CSI",
+              "path": "/docs/features/empheral-certificates-using-csi.md"
+            },
+             {
+              "title": "Policy for cert-manager certificates",
+              "path": "/docs/features/approver-policy.md.md"
             }
           ]
         },
@@ -679,16 +679,16 @@
           "title": "Reference",
           "routes": [
             {
-              "title": "Introduction",
+              "title": "cmctl CLI",
               "path": "/docs/cli/README.md"
             },
             {
-              "title": "acmesolver",
-              "path": "/docs/cli/acmesolver.md"
+              "title": "CLI reference",
+              "path": "/docs/cli/README.md"
             },
             {
-              "title": "cainjector",
-              "path": "/docs/cli/cainjector.md"
+              "title": "API reference",
+              "path": "/docs/reference/api-docs.md"
             },
             {
               "title": "cmctl",
@@ -703,10 +703,6 @@
               "path": "/docs/cli/webhook.md"
             }
           ]
-        },
-        {
-          "title": "API reference",
-          "path": "/docs/reference/api-docs.md"
         }
       ]
     }
