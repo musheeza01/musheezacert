@@ -294,7 +294,7 @@
             },
             {
               "title": "Monitoring cert-manager",
-              "path": "/docs/usage/prometheus-metrics.md"
+              "path": "/docs/usage/monitoring-cert-manager.md"
             },
             {
               "title": "Securing Ingress Resources",
