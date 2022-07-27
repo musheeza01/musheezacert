@@ -319,7 +319,7 @@
             },
              {
               "title": "Policy for cert-manager certificates",
-              "path": "/docs/features/approver-policy.md.md"
+              "path": "/docs/features/approver-policy.md"
             }
           ]
         },
