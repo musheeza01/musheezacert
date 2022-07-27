@@ -293,10 +293,6 @@
               "path": "/docs/usage/cmctl.md"
             },
             {
-              "title": "Monitoring cert-manager",
-              "path": "/docs/usage/monitoring-cert-manager.md"
-            },
-            {
               "title": "Securing Ingress Resources",
               "path": "/docs/usage/ingress.md"
             },
@@ -361,6 +357,10 @@
             {
               "title": "Introduction",
               "path": "/docs/tutorials/README.md"
+            },
+            {
+              "title": "Monitoring cert-manager",
+              "path": "/docs/usage/monitoring-cert-manager.md"
             },
             {
               "title": "Migrating from Kube-LEGO",
