@@ -301,10 +301,6 @@
               "path": "/docs/usage/kubectl-plugin.md"
             },
             {
-              "title": "Securing Gateway Resources",
-              "path": "/docs/usage/gateway.md"
-            },
-            {
               "title": "Securing Istio Service Mesh",
               "path": "/docs/usage/istio.md"
             },
@@ -319,6 +315,19 @@
             {
               "title": "Policy for cert-manager certificates",
               "path": "/docs/usage/approver-policy.md"
+            }
+          ]
+        },
+        {
+          "title": "Features",
+          "routes": [
+            {
+              "title": "Introduction",
+              "path": "/docs/features/securing-gateway-resources.md"
+            },
+            {
+              "title": "Introduction",
+              "path": "/docs/features/securing-pods-with-mTLS.md"
             }
           ]
         },
@@ -389,10 +398,6 @@
             {
               "title": "Securing Ingresses with Venafi",
               "path": "/docs/tutorials/venafi/venafi.md"
-            },
-            {
-              "title": "Securing the istio Service Mesh using cert-manager",
-              "path": "/docs/tutorials/istio-csr/istio-csr.md"
             }
           ]
         },
