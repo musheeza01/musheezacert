@@ -297,14 +297,6 @@
               "path": "/docs/usage/kubectl-plugin.md"
             },
             {
-              "title": "Securing Istio Service Mesh",
-              "path": "/docs/usage/istio.md"
-            },
-            {
-              "title": "CSI Driver",
-              "path": "/docs/usage/csi.md"
-            },
-            {
               "title": "Kubernetes CertificateSigningRequests",
               "path": "/docs/usage/kube-csr.md"
             }
