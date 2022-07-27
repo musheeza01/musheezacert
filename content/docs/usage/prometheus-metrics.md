@@ -1,5 +1,5 @@
 ---
-title: Prometheus Metrics
+title: Monitoring cert-manager
 description: 'cert-manager usage: Prometheus metrics'
 ---
 
