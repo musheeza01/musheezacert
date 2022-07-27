@@ -4,7 +4,7 @@
       "title": "cert-manager",
       "routes": [
         {
-          "title": "wordpress",
+          "title": "Introduction",
           "path": "/docs/README.md"
         },
         {
