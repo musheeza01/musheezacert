@@ -293,7 +293,7 @@
               "path": "/docs/usage/cmctl.md"
             },
             {
-              "title": "Prometheus Metrics",
+              "title": "Monitoring cert-manager",
               "path": "/docs/usage/prometheus-metrics.md"
             },
             {
