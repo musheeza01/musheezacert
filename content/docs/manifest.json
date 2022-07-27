@@ -319,19 +319,6 @@
           ]
         },
         {
-          "title": "Features",
-          "routes": [
-            {
-              "title": "Introduction",
-              "path": "/docs/features/securing-gateway-resources.md"
-            },
-            {
-              "title": "Introduction",
-              "path": "/docs/features/securing-pods-with-mTLS.md"
-            }
-          ]
-        },
-        {
           "title": "Projects",
           "routes": [
             {
