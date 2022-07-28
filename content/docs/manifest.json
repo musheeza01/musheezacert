@@ -674,7 +674,9 @@
               "title": "cmctl CLI",
               "path": "/docs/cli/README.md"
             },
-            "title": "CLI Reference",
+            {
+              "title": "CLI Reference"
+            },
             {
               "title": "CLI reference",
               "path": "/docs/cli/README.md"
