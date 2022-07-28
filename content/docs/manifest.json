@@ -289,10 +289,6 @@
               "path": "/docs/usage/README.md"
             },
             {
-              "title": "Securing Ingress Resources",
-              "path": "/docs/usage/ingress.md"
-            },
-            {
               "title": "Kubectl plugin",
               "path": "/docs/usage/kubectl-plugin.md"
             },
@@ -390,6 +386,10 @@
             {
               "title": "Securing Ingresses with Venafi",
               "path": "/docs/tutorials/venafi/venafi.md"
+            },
+            {
+              "title": "Securing Ingresses with Venafi",
+              "path": "/docs/tutorials/securing-ingress.md"
             }
           ]
         },
@@ -674,13 +674,11 @@
               "title": "cmctl CLI",
               "path": "/docs/cli/README.md"
             },
+            "title": "CLI Reference",
+            "routes": [
             {
               "title": "CLI reference",
               "path": "/docs/cli/README.md"
-            },
-            {
-              "title": "API reference",
-              "path": "/docs/reference/api-docs.md"
             },
             {
               "title": "controller",
@@ -689,7 +687,12 @@
             {
               "title": "webhook",
               "path": "/docs/cli/webhook.md"
-            }
+            }]
+            {
+              "title": "API reference",
+              "path": "/docs/reference/api-docs.md"
+            },
+            
           ]
         }
       ]
