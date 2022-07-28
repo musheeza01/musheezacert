@@ -674,11 +674,11 @@
               "title": "cmctl CLI",
               "path": "/docs/cli/README.md"
             },
+             {
+          "title": "CLI Reference",
+          "routes": [
             {
-              "title": "CLI Reference"
-            },
-            {
-              "title": "CLI reference",
+              "title": "CLI",
               "path": "/docs/cli/README.md"
             },
             {
@@ -689,6 +689,7 @@
               "title": "webhook",
               "path": "/docs/cli/webhook.md"
             }
+            ]
             {
               "title": "API reference",
               "path": "/docs/reference/api-docs.md"
