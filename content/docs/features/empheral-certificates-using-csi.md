@@ -83,3 +83,4 @@ nodes file system.
 
 The CSI driver is able to recover its full state in the event the its Pod being
 terminated.
+To use TLS with your own certificates with Secrets Store CSI Driver, you'll need an AKS cluster with the Secrets Store CSI Driver configured. Passing a client certificate through nginx-ingress fails when the secret has been generated as a two-part secret {tls.crt and tls.key} by the Secret Store CSI driver. It succeeds when the secret has been manually created as a three-part secret {tls.crt, tls.key, and ca.crt}.
