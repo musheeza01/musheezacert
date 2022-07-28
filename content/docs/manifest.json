@@ -675,7 +675,6 @@
               "path": "/docs/cli/README.md"
             },
             "title": "CLI Reference",
-            "routes": [
             {
               "title": "CLI reference",
               "path": "/docs/cli/README.md"
@@ -687,7 +686,7 @@
             {
               "title": "webhook",
               "path": "/docs/cli/webhook.md"
-            }]
+            }
             {
               "title": "API reference",
               "path": "/docs/reference/api-docs.md"
