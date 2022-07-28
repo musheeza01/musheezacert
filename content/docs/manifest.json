@@ -683,10 +683,6 @@
               "path": "/docs/reference/api-docs.md"
             },
             {
-              "title": "cmctl",
-              "path": "/docs/cli/cmctl.md"
-            },
-            {
               "title": "controller",
               "path": "/docs/cli/controller.md"
             },
