@@ -689,7 +689,7 @@
               "title": "webhook",
               "path": "/docs/cli/webhook.md"
             }
-            ]
+      
             {
               "title": "API reference",
               "path": "/docs/reference/api-docs.md"
