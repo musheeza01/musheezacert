@@ -314,7 +314,7 @@
               "path": "/docs/features/empheral-certificates-using-csi.md"
             },
              {
-              "title": "Policy for cert-manager certificates",
+              "title": "Policy for cert-manager Certificates",
               "path": "/docs/features/approver-policy.md"
             }
           ]
@@ -672,13 +672,21 @@
           "routes": [
             {
               "title": "cmctl CLI",
-              "path": "/docs/cli/README.md"
+              "path": "/docs/reference/cmctl-cli.md"
+            },
+            {
+              "title": "acmesolver",
+              "path": "/docs/reference/acmesolver.md"
             },
              {
-                  "title": "CLI Reference",
+              "title": "cainjector",
+              "path": "/docs/reference/cainjector.md"
+            },
+             {
+                  "title": "CLI reference",
                   "routes": [
                     {
-                       "title": "CLI",
+                       "title": "Introduction",
                         "path": "/docs/cli/README.md"
                     },
                     {
