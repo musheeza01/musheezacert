@@ -357,7 +357,7 @@
             },
             {
               "title": "Monitoring cert-manager",
-              "path": "/docs/usage/monitoring-cert-manager.md"
+              "path": "/docs/tutorials/monitoring-cert-manager.md"
             },
             {
               "title": "Migrating from Kube-LEGO",
