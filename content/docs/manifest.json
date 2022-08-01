@@ -666,10 +666,7 @@
         {
           "title": "Reference",
           "routes": [
-            {
-              "title": "Introduction"
-              "path": "/docs/reference/cmctl/cmctl.md"
-            },
+           
              {
                       "title": "cmctl CLI"
               "path": "/docs/reference/cmctl/cmctl-cli.md"
