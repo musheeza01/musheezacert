@@ -287,6 +287,14 @@
             {
               "title": "Introduction",
               "path": "/docs/usage/README.md"
+            },
+            {
+              "title": "Kubectl plugin",
+              "path": "/docs/usage/kubectl-plugin.md"
+            },
+            {
+              "title": "Kubernetes CertificateSigningRequests",
+              "path": "/docs/usage/kube-csr.md"
             }
           ]
         },
@@ -308,10 +316,6 @@
              {
               "title": "Policy for cert-manager Certificates",
               "path": "/docs/features/approver-policy.md"
-            },
-            {
-              "title": "Kubernetes CertificateSigningRequests",
-              "path": "/docs/features/kube-csr.md"
             }
           ]
         },
@@ -667,22 +671,8 @@
           "title": "Reference",
           "routes": [
             {
-                  "title": "cmctl",
-                  "routes": [
-                    {
-                       "title": "Introduction",
-                        "path": "/docs/reference/cmctl-reference/cmctl.md"
-                    },
-                    {
-                      "title": "cmctl CLI",
-                      "path": "/docs/reference/cmctl-reference/cmctl-cli.md"
-                    }
-                           ]
-           
-             },    
-            {
-              "title": "Kubectl plugin",
-              "path": "/docs/reference/kubectl-plugin.md"
+              "title": "cmctl CLI",
+              "path": "/docs/reference/cmctl-cli.md"
             },
             {
               "title": "acmesolver",
@@ -697,17 +687,17 @@
                   "routes": [
                     {
                        "title": "Introduction",
-                        "path": "/docs/cli-reference/cli.md"
+                        "path": "/docs/cli/README.md"
                     },
                     {
                       "title": "controller",
-                      "path": "/docs/cli-reference/controller.md"
+                      "path": "/docs/cli/controller.md"
                     },
                       {
-                     "title": "webhook",
-                     "path": "/docs/cli-reference/webhook.md"
-                   }
-                           ]
+              "title": "webhook",
+              "path": "/docs/cli/webhook.md"
+            }
+                  ]
            
              },
             {
