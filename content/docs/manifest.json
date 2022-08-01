@@ -669,7 +669,7 @@
           "routes": [
             {
               "title": "cmctl CLI",
-              "path": "/docs/reference/cmctl-cli.md"
+              "path": "/docs/reference/cmctl-reference/cmctl-cli.md"
             },
             {
               "title": "Kubectl plugin",
