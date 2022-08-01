@@ -669,7 +669,7 @@
            
              {
                       "title": "Introduction"
-              "path": "/docs/reference/cmctl-reference/cmctl.md"
+              "path": "/docs/reference/cmctl-reference/cmctl-cli.md"
             },    
             {
               "title": "Kubectl plugin",
