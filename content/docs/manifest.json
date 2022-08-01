@@ -674,7 +674,7 @@
             {
               "title": "Kubectl plugin",
               "path": "/docs/reference/kubectl-plugin.md"
-            }
+            },
             {
               "title": "acmesolver",
               "path": "/docs/reference/acmesolver.md"
