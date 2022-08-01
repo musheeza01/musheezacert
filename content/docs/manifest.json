@@ -667,17 +667,13 @@
           "title": "Reference",
           "routes": [
             {
-              "title": "cmctl CLI",
-               "routes": [
-                    {
-                      "title": "Introduction"
+              "title": "Introduction"
               "path": "/docs/reference/cmctl/cmctl.md"
             },
              {
                       "title": "cmctl CLI"
               "path": "/docs/reference/cmctl/cmctl-cli.md"
-            }
-                 ] },    
+            },    
             {
               "title": "Kubectl plugin",
               "path": "/docs/reference/kubectl-plugin.md"
