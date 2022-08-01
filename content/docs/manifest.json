@@ -287,14 +287,6 @@
             {
               "title": "Introduction",
               "path": "/docs/usage/README.md"
-            },
-            {
-              "title": "Kubectl plugin",
-              "path": "/docs/usage/kubectl-plugin.md"
-            },
-            {
-              "title": "Kubernetes CertificateSigningRequests",
-              "path": "/docs/usage/kube-csr.md"
             }
           ]
         },
@@ -316,6 +308,11 @@
              {
               "title": "Policy for cert-manager Certificates",
               "path": "/docs/features/approver-policy.md"
+            },
+            
+            {
+              "title": "Kubernetes CertificateSigningRequests",
+              "path": "/docs/features/kube-csr.md"
             }
           ]
         },
@@ -673,6 +670,10 @@
             {
               "title": "cmctl CLI",
               "path": "/docs/reference/cmctl-cli.md"
+            },
+            {
+              "title": "Kubectl plugin",
+              "path": "/docs/reference/kubectl-plugin.md"
             },
             {
               "title": "acmesolver",
