@@ -668,8 +668,16 @@
           "routes": [
             {
               "title": "cmctl CLI",
-              "path": "/docs/reference/cmctl-cli.md"
+               "routes": [
+                    {
+                      "title": "Introduction"
+              "path": "/docs/reference/cmctl/cmctl.md"
             },
+             {
+                      "title": "cmctl CLI"
+              "path": "/docs/reference/cmctl/cmctl-cli.md"
+            }
+                 ] },    
             {
               "title": "Kubectl plugin",
               "path": "/docs/reference/kubectl-plugin.md"
@@ -694,10 +702,10 @@
                       "path": "/docs/cli-reference/controller.md"
                     },
                       {
-              "title": "webhook",
-              "path": "/docs/cli-reference/webhook.md"
-            }
-                  ]
+                     "title": "webhook",
+                     "path": "/docs/cli-reference/webhook.md"
+                   }
+                           ]
            
              },
             {
