@@ -676,14 +676,11 @@
                         "path": "/docs/reference/cmctl-reference/cmctl.md"
                     },
                     {
-                      "title": "controller",
+                      "title": "cmctl CLI",
                       "path": "/docs/reference/cmctl-reference/cmctl-cli.md"
                     }
-                      
                   ]
-           
              },
-            
             {
               "title": "Kubectl plugin",
               "path": "/docs/reference/kubectl-plugin.md"
