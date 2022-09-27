@@ -114,5 +114,6 @@ The CPX is now ready with the original bootloader.
 
 ##### Program 1
 To **create this program**, open MakeCode.adafruit.com.  Create the bootloader file by creating the block code program below:
-![bluelights](/images/bluelights.jpg)
+![bluelights](/images/bluelights.jpg) ![magentalights](/images/magentalights.jpg)
+
 Program the CPX as listed in [Source 1](#Source-1).
