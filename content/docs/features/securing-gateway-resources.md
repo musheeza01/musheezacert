@@ -4,10 +4,15 @@ Statement of Work Template intended for Datacenter Volunteer Lead Community Enga
 
 #### Materials
 1 AAA Battery housing
+
 6 AAA Batteries (3 spare)
+
 1 Circuit Playground Express
+
 2 MiniGrabber cables
+
 Data/Sync USB Cable
+
 #### Before
 Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
@@ -79,14 +84,23 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 	
 To **move the program** to the CPX:
 Plug in the CPX via the USB/Micro USB cable.
+
 Press the reset button twice on the CPX.
+
 All Pixel LED lights will turn on / solid green
+
 The on small LED will turn on / solid green
+
 D13 small LED will slowly blink red
+
 A folder will appear as CPLAYBOOT.
+
 This will be very similar to a USB thumb drive in function.
+
 Copy the saved UF2 file from the Intrusion folder and paste it on the CPLAYBOOT root drive.
+
 The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
 The program is now installed
 
 Press the reset button on the CPX.
@@ -104,18 +118,27 @@ To **troubleshoot** the CPX device and program:
 
 To **move the bootloader** to the CPX:
 Plug in the CPX via the USB/Micro USB cable.
+
 Press the reset button twice on the CPX.
+
 All Pixel LED lights will turn on / solid green
+
 The on small LED will turn on / solid green
+
 D13 small LED will slowly blink red
+
 A folder will appear as CPLAYBOOT.
+
 This will be very similar to a USB thumb drive in function.
+
 Copy the saved UF2 file (from the above procedure) and paste it on the CPLAYBOOT root drive.
+
 The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
 The CPX is now ready with the original bootloader.
 
 ##### Program 1
-To **create this program**, open MakeCode.adafruit.com.  Create the bootloader file by creating the block code program below:
+To **create this program**, open [MakeCode.adafruit.com](MakeCode.adafruit.com).  Create the bootloader file by creating the block code program below:
 
 ![blockcodeprogram](/images/blockcodeprogram.png)
 
