@@ -45,8 +45,9 @@ Once the Circuit Playground Express (CPX) has been programmed and connected to t
 A CPX not powered and not connected with MiniGrabbers.
 
 <img style={{margin: "0", clear: "left", float: "left", width: "500px"}}
-            src="/images/blockcodeprogram.png"
+            src="/images/MiniGrabbers.jpg"
             />
+	    <br>
 #### Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
