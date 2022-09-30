@@ -44,8 +44,8 @@ Once the Circuit Playground Express (CPX) has been programmed and connected to t
 
 A CPX not powered and not connected with MiniGrabbers.
 
-<img style={{margin: "0", clear: "left", float: "left", width: "500px"}}
-            src="/images/MiniGrabbers.jpg"
+<img style={{margin: "0", clear: "left", float: "left", width: "300px"}}
+            src="/images/Minigrabbers.jpg"
             />
 	    <br/>
 #### Lesson
