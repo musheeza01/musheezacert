@@ -43,6 +43,7 @@ Once the Circuit Playground Express (CPX) has been programmed and connected to t
 ![bluelights](/images/bluelights.jpg) ![magentalights](/images/magentalights.jpg)
 
 A CPX not powered and not connected with MiniGrabbers.
+
 <img style={{margin: "0", clear: "left", float: "left", width: "500px"}}
             src="/images/blockcodeprogram.png"
             />
