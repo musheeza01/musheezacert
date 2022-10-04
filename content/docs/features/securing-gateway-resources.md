@@ -40,7 +40,7 @@ Note any items that are damaged, not working, or missing (including consumables)
 #### Get Help
 For any questions contact Kristie Morris at v-kmorris@microsoft.com
 
-#### Appendix
+#### <a id="Appendix"></a>Appendix
 Once the Circuit Playground Express (CPX) has been programmed and connected to the battery pack, the lights will display blue.  Connect one MiniGrabber from GND to GND.  Use another MiniGrabber to connect 3.3V to A1.  The light will turn magenta.  Disconnect the 3.3V and the light will change to blue.  This shows a circuit that has been connected.
 ![bluelights](/images/bluelights.jpg) ![magentalights](/images/magentalights.jpg)
 
@@ -48,7 +48,7 @@ A CPX not powered and not connected with MiniGrabbers.
 
 ![MiniGrabbers](/images/MiniGrabbers.jpg)
 
-#### Lesson
+#### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
 #### What:
@@ -64,7 +64,7 @@ NOTE:
 This lab works by connecting the 3.3V output to the A1 touch capacitor which is reading the voltage in amount.
 To reset the program, press the reset button on the CPX.
 
-#### Source 1 
+#### <a id="Source-1"></a> Source 1 
 The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
 
 #### Source:
@@ -80,7 +80,7 @@ This program was created with makecode.adafruit.com.  Makecode is a Microsoft pr
 
 When the CPX is first connected to a computer with the USB cable, it will run the program that is stored on the device.  This may not be the program that you desire to run.  Follow the procedure in Source 3 to reset the CPX to the factory settings.  The CPX will hold the program and not reset to factory settings upon power off.
 
-#### Source 2
+#### <a id="Source-2"></a>Source 2
 To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required in [Program 1](#Program-1).  Save the file.
 	
 To **move the program** to the CPX:
@@ -105,7 +105,7 @@ To **troubleshoot** the CPX device and program:
 4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
 5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Intrusion program.
 
-#### Source 3
+#### <a id="Source-3"></a>Source 3
 **Download** the original CPX **bootloader**, navigate to UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
 To **move the bootloader** to the CPX:
@@ -120,7 +120,7 @@ Copy the saved UF2 file (from the above procedure) and paste it on the CPLAYBOOT
 The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
 The CPX is now ready with the original bootloader.
 
-#### Program 1
+#### <a id="Program-1"></a>Program 1
 To **create this program**, open [MakeCode.adafruit.com](MakeCode.adafruit.com).  Create the bootloader file by creating the block code program below:
 ![blockcodeprogram](/images/blockcodeprogram.png)
 
