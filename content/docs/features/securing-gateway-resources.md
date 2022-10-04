@@ -4,9 +4,13 @@ Statement of Work Template intended for Datacenter Volunteer Lead Community Enga
 
 #### Materials
 1 AAA Battery housing
+
 6 AAA Batteries (3 spare)
+
 1 Circuit Playground Express
+
 2 MiniGrabber cables
+
 Data/Sync USB Cable
 
 #### Before
@@ -41,6 +45,7 @@ Once the Circuit Playground Express (CPX) has been programmed and connected to t
 ![bluelights](/images/bluelights.jpg) ![magentalights](/images/magentalights.jpg)
 
 A CPX not powered and not connected with MiniGrabbers.
+
 ![MiniGrabbers](/images/MiniGrabbers.jpg)
 
 #### Lesson
