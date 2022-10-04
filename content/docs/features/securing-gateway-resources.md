@@ -4,11 +4,9 @@ Statement of Work Template intended for Datacenter Volunteer Lead Community Enga
 
 #### Materials
 1 AAA Battery housing
-
 6 AAA Batteries (3 spare)
-
 1 Circuit Playground Express
-
+2 MiniGrabber cables
 Data/Sync USB Cable
 
 #### Before
@@ -26,7 +24,7 @@ This program contains three elements:
 2.	Using the analog read to determine voltage transmitted
 3.	When voltage is detected, lights will change to magenta
 
-See  [Appendix](#Appendix) for Details.  Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
+See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
 #### After
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
@@ -43,11 +41,8 @@ Once the Circuit Playground Express (CPX) has been programmed and connected to t
 ![bluelights](/images/bluelights.jpg) ![magentalights](/images/magentalights.jpg)
 
 A CPX not powered and not connected with MiniGrabbers.
+![MiniGrabbers](/images/MiniGrabbers.jpg)
 
-<img style={{margin: "0", clear: "left", float: "left", width: "300px"}}
-            src="/images/Minigrabbers.jpg"
-            />
-	    <br/>
 #### Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
@@ -85,23 +80,14 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 	
 To **move the program** to the CPX:
 Plug in the CPX via the USB/Micro USB cable.
-
 Press the reset button twice on the CPX.
-
 All Pixel LED lights will turn on / solid green
-
 The on small LED will turn on / solid green
-
 D13 small LED will slowly blink red
-
 A folder will appear as CPLAYBOOT.
-
 This will be very similar to a USB thumb drive in function.
-
 Copy the saved UF2 file from the Intrusion folder and paste it on the CPLAYBOOT root drive.
-
 The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
-
 The program is now installed
 
 Press the reset button on the CPX.
@@ -115,32 +101,22 @@ To **troubleshoot** the CPX device and program:
 5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Intrusion program.
 
 #### Source 3
-**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details) (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+**Download** the original CPX **bootloader**, navigate to UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
 To **move the bootloader** to the CPX:
 Plug in the CPX via the USB/Micro USB cable.
-
 Press the reset button twice on the CPX.
-
 All Pixel LED lights will turn on / solid green
-
 The on small LED will turn on / solid green
-
 D13 small LED will slowly blink red
-
 A folder will appear as CPLAYBOOT.
-
 This will be very similar to a USB thumb drive in function.
-
 Copy the saved UF2 file (from the above procedure) and paste it on the CPLAYBOOT root drive.
-
 The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
-
 The CPX is now ready with the original bootloader.
 
-##### Program 1
+#### Program 1
 To **create this program**, open [MakeCode.adafruit.com](MakeCode.adafruit.com).  Create the bootloader file by creating the block code program below:
-
 ![blockcodeprogram](/images/blockcodeprogram.png)
 
 
