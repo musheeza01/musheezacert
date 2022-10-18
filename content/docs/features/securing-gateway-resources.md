@@ -43,20 +43,8 @@ For any questions contact Kristie Morris at v-kmorris@microsoft.com
 #### <a id="Appendix"></a>Appendix
 Once the Circuit Playground Express (CPX) has been programmed and connected to the battery pack, the lights will display blue.  Connect one MiniGrabber from GND to GND.  Use another MiniGrabber to connect 3.3V to A1.  The light will turn magenta.  Disconnect the 3.3V and the light will change to blue.  This shows a circuit that has been connected.
 
-<img style={{margin: "0", clear: "left", float: "left", width: "300px"}}
-            src="/images/bluelights.png"
-            /> 
-
-<img style={{margin: "0", clear: "right", float: "right", width: "300px"}}
-            src="/images/magentalights.png"
-            /> <br></br><br></br><br></br><br></br><br></br>
-            <br></br><br></br><br></br><br></br><br></br><br></br>
-
 A CPX not powered and not connected with MiniGrabbers.
 
-<img style={{margin: "0", clear: "left", width: "400px"}}
-            src="/images/minigrabbers.png"
-            /> 
 
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
@@ -132,9 +120,5 @@ The CPX is now ready with the original bootloader.
 
 #### <a id="Program-1"></a>Program 1
 To **create this program**, open [MakeCode.adafruit.com](MakeCode.adafruit.com).  Create the bootloader file by creating the block code program below:
-
-<img style={{margin: "0", clear: "left", width: "500px"}}
-            src="/images/blockcodeprogram.png"
-            />
 
 Program the CPX as listed in [Source 1](#Source-1).
