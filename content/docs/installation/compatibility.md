@@ -47,19 +47,21 @@ For any questions contact the Microsoft Datacenter Community Development team at
 #### <a id="Appendix"></a>Appendix
 Once the Circuit Playground Express (CPX) has been programmed and connected to the battery pack, the lights will display blue.  Connect one MiniGrabber from GND to GND.  Use another MiniGrabber to connect 3.3V to A1.  The light will turn magenta.  Disconnect the 3.3V and the light will change to blue.  This shows a circuit that has been connected.
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/bluelights.jpg"
             /> 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/magentalights.jpg"
             /> 
 <br></br><br></br><br></br><br></br><br></br><br>
+</br><br>
+</br><br>
 </br>
 
 A CPX not powered and not connected with MiniGrabbers.
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
-            src="/images/MiniGrabber.jpg"
+            src="/images/MiniGrabbers.jpg"
             /> 
 <br></br><br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br>
