@@ -55,7 +55,7 @@ Pressing the A button (left button when battery adapter is facing down) will res
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br>
 
 IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged.
 
@@ -209,7 +209,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br><br></br><br></br><br></br><br></br>
 
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
@@ -217,5 +217,5 @@ Save the program by clicking on the blue Save button.  Then download the file by
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program08.jpg" />
 
-
+<br></br><br></br><br></br>
 Continue with the procedure in [Source 1](#Source-1) to program the CPX with the new bootloader.
