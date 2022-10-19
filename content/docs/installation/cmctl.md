@@ -50,8 +50,8 @@ Then connect the battery pack and switch the power to on.
 When the CPX is running the program, all LEDs will display green. 
 
 <img src="/images/greenfive.png" style="height: 300px; width: 300px; float: left;" />
-<br></br><br></br><br></br><br></br><br></br><br>
-<br></br><br></br><br></br><br>
+<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br>
 
 IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged.
 
