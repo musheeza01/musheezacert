@@ -42,7 +42,7 @@ Note any items that are damaged, not working, or missing (including consumables)
 1.	The redundancy program utilizes Universal Asynchronous Receiver-Transmitter (UART), a serial communication protocol.  See [Program 1](#Program-1) below for programming details.
 
 ### Get Help
-For any questions contact Kristie Morris at v-kmorris@microsoft.com
+For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a> Appendix
 Once the Circuit Playground Express (CPX) is connected and powered, the program will display 1 or 2 green solid lit LEDs. 
