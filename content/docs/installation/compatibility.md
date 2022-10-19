@@ -47,27 +47,27 @@ Note any items that are damaged, not working, or missing (including consumables)
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a>Appendix
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/greencircuit.png" />
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/redcircuit.png"  />
 <br></br><br></br><br></br><br></br><br></br>
 <p>Moist Soil Needs Water</p>
 
 <br></br>
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/c1.png" />
 
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/c2.png" />
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/c3.png" />
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/c4.png" />
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/c5.png" />
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/c6.png" />
 
 <br></br><br></br><br></br><br></br><br></br>
@@ -78,15 +78,15 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <br></br>
 
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/yellowcircuit1.png" />
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/yellowcircuit2.png" />
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/yellowcircuit3.png" />
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/yellowcircuit4.png" />
-<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "100px"}}
             src="/images/yellowcircuit5.png" />
             
 
@@ -118,7 +118,7 @@ Lights give us different signals in the world around us.  Crosswalk lights, stop
 <br></br>
 <br></br>
 <br></br>
-<br></br><br></br>
+<br></br><br></br><br></br>
 
 ### Source:
 https://blogs.microsoft.com/blog/2022/03/10/an-update-on-microsofts-sustainability-commitments-building-a-foundation-for-2030/ 
@@ -205,14 +205,14 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
             <br></br><br></br><br></br>
             <br></br><br></br><br></br>
-    <br></br><br></br><br></br><br></br><br></br><br></br>
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
 ### Program 1 Continued
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program06b.jpg" />
    <br></br> <br></br>
-            <br></br><br></br><br></br>   <br></br><br></br><br></br>
+            <br></br><br></br><br></br>   <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program07.jpg" />
 <br></br><br></br>
