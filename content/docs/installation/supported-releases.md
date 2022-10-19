@@ -44,20 +44,17 @@ Note any items that are damaged, not working, or missing (including consumables)
 ### Get Help
 For any questions contact Kristie Morris at v-kmorris@microsoft.com
 
-#### <a id="Appendix"></a>Appendix
+#### <a id="Appendix"></a> Appendix
 Once the Circuit Playground Express (CPX) is connected and powered, the program will display 1 or 2 green solid lit LEDs. 
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/LED.png"
             /> 
 <br></br><br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-
+<br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
 
 To connect the circuits, connect the following:
 
@@ -68,7 +65,6 @@ RX to TX and TX to RX and GND to GND
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/circuit.png"
             /> 
-<br></br>
 <br></br>
 <br></br>
 <br></br>
@@ -95,6 +91,8 @@ Once the ‘customer’ sends the data to the Datacenters A and B
 <br></br>
 <br></br>
 <br></br>
+<br></br>
+<br></br>
 
 To reset the device, press the small reset button once in the center of the CPX.  A reset is sometimes needed after powering on all devices together.  Each device may need a reset.
 
@@ -109,13 +107,13 @@ To reset the device, press the small reset button once in the center of the CPX.
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br><br></br>
 
 
 A CPX not powered
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
-            src="/images/nopowercpx.png"
+            src="/images/nopowercpx.jpg"
             /> 
 <br></br>
 <br></br>
@@ -127,7 +125,7 @@ A CPX not powered
 <br></br>
 
 
-#### <a id="Lesson"></a>Lesson
+#### <a id="Lesson"></a> Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
 #### What:
@@ -172,9 +170,10 @@ When the CPX is first connected to a computer with the USB cable, it will run th
 To **create this program**, open learn.adafruit.com/uart-communication-between-two-circuitpython-boards/code.  Scroll down on the page and select Download Project Bundle.
 
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "center", width: "200px"}}
             src="/images/projectbundle.png"
             /> 
+<br></br>
 <br></br>
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
@@ -244,10 +243,10 @@ To troubleshoot the CPX device and program:
 Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "center", width: "200px"}}
             src="/images/circuitplaygroundexpress.png"
             /> 
-<br></br>
+<br></br><br></br>
 
 To **move the bootloader** to the CPX:
 
