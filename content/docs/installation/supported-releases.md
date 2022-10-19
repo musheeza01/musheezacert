@@ -51,7 +51,12 @@ Once the Circuit Playground Express (CPX) is connected and powered, the program 
             src="/images/LED.png"
             /> 
 <br></br><br></br>
-            <br></br><br></br><br></br><br><br></br><br></br><br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
 
 
 To connect the circuits, connect the following:
@@ -63,7 +68,15 @@ RX to TX and TX to RX and GND to GND
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/circuit.png"
             /> 
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 Once the ‘customer’ sends the data to the Datacenters A and B
 
@@ -73,8 +86,15 @@ Once the ‘customer’ sends the data to the Datacenters A and B
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/datacenters.png"
             /> 
-<br></br><br></br>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 To reset the device, press the small reset button once in the center of the CPX.  A reset is sometimes needed after powering on all devices together.  Each device may need a reset.
 
@@ -82,8 +102,14 @@ To reset the device, press the small reset button once in the center of the CPX.
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/cpx.png"
             /> 
-<br></br><br></br>
-            <br></br><br></br><br></br><br><br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 
 A CPX not powered
@@ -91,8 +117,14 @@ A CPX not powered
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/nopowercpx.png"
             /> 
-<br></br><br></br>
-            <br></br><br></br><br></br><br><br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 
 #### <a id="Lesson"></a>Lesson
@@ -148,9 +180,12 @@ To **create this program**, open learn.adafruit.com/uart-communication-between-t
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/projectcode.png"
             /> 
-<br></br><br></br>
-            <br></br><br></br><br></br><br><br></br>
-
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 
 To move the program to the CPX:
