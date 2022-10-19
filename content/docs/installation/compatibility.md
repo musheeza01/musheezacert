@@ -66,7 +66,7 @@ Moist Soil                              <p style="margin-left:110px; margin-top:
 <img src="/images/c6.png" style="margin-left:30px;float: left;" />
 
 <br></br><br></br><br></br><br></br><br></br>
-<p style="text-align: left;"><= 60 °F                             
+<p style="text-align: left;"> ≤ 60 °F                             
 <p style="margin-left:130px; margin-top:-27px;">61-62°F
 <p style="margin-left:260px; margin-top:-27px;">63-64°F
 <p style="margin-left:380px; margin-top:-27px;">65-66°F
