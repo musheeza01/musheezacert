@@ -52,6 +52,10 @@ Pressing the A button (left button when battery adapter is facing down) will res
 <br></br>
 <br></br>
 <br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged.
 
@@ -65,7 +69,10 @@ IR Tag is played by pressing the B button to transmit (TX) the signal to an oppo
 <br></br>
 <br></br>
 <br></br>
+<br></br><br></br>
 <br></br>
+<br></br>
+
 
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter
@@ -182,7 +189,10 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
+            <br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/infrared.png"
@@ -195,7 +205,12 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
+            <br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
