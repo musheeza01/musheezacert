@@ -51,18 +51,18 @@ Once the Circuit Playground Express (CPX) has been programmed and connected to t
             src="/images/capacitor.png"
             /> 
 <br></br><br></br>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
 Touching the SCL / A4 labeled capacitor will cause the following to repeat 5 times. (Red lights)
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/redone.png"
             /> 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/redfive.png"
             />         
 <br></br>
-<br></br>
+<br></br><br></br><br></br>
             <br></br>
             <br></br>
             <br></br> 
@@ -71,17 +71,17 @@ Touching the SCL / A4 labeled capacitor will cause the following to repeat 5 tim
 
 Touching the SDA / A5 or RX / A6 labeled capacitor will cause the following to repeat 3 times. (Yellow lights)
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/yellowone.png"
             /> 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/yellowfive.png"
             />             
 <br></br><br></br>
             <br></br>
             <br></br>
             <br></br>
-             <br></br>
+             <br></br><br></br><br></br>
 
 Or
 
@@ -92,7 +92,7 @@ Or
             src="/images/yellowlightsfive.png"
             />             
 <br></br><br></br>
-            <br></br><br></br><br></br> <br></br>
+            <br></br><br></br><br></br> <br></br><br></br><br></br><br></br><br></br>
 
 Touching the TX / A7 labeled capacitor will cause the following to repeat 3 times. (Green lights)
 
@@ -108,7 +108,7 @@ Touching the TX / A7 labeled capacitor will cause the following to repeat 3 time
             <br></br>
              <br></br>
              <br></br>
-             <br></br><br></br><br></br><br></br>
+             <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
