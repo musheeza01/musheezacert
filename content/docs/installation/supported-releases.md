@@ -47,8 +47,9 @@ For any questions contact Kristie Morris at v-kmorris@microsoft.com
 #### <a id="Appendix"></a>Appendix
 Once the Circuit Playground Express (CPX) is connected and powered, the program will display 1 or 2 green solid lit LEDs. 
 
-
-<img src="/images/LED.png" style="height: 300px; width:300px; float: left;"/>
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/LED.png"
+            /> 
 <br></br><br></br>
             <br></br><br></br><br></br><br><br></br><br></br><br></br>
 
@@ -59,7 +60,9 @@ RX to TX and TX to RX and GND to GND
 
 (RX – Receive, TX – Transmit, GND – Ground)
 
-<img src="/images/circuit.png" style="height: 300px; width:300px; float: left;"/>
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/circuit.png"
+            /> 
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
 Once the ‘customer’ sends the data to the Datacenters A and B
@@ -67,20 +70,27 @@ Once the ‘customer’ sends the data to the Datacenters A and B
 (The customer receives the intensity of the light source and transmits that signal to be displayed on each of the other two datacenters.)  Here the light signal is brightest showing all 10 LEDs lit.  However, this is not an indication of the strength of the connection to the data center.  Redundancy is a more important concept to deliver.  The signal is duplicated (redundant) between the two datacenters.
 
 
-<img src="/images/datacenters.png" style="height: 300px; width:300px; float: left;"/>
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/datacenters.png"
+            /> 
 <br></br><br></br>
             <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
 To reset the device, press the small reset button once in the center of the CPX.  A reset is sometimes needed after powering on all devices together.  Each device may need a reset.
 
-<img src="/images/cpx.png" style="height: 300px; width:300px; float: left;"/>
+
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/cpx.png"
+            /> 
 <br></br><br></br>
             <br></br><br></br><br></br><br><br></br><br></br><br></br>
 
 
 A CPX not powered
 
-<img src="/images/nopowercpx.jpg" style="height: 300px; width:300px; float: left;"/>
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/nopowercpx.png"
+            /> 
 <br></br><br></br>
             <br></br><br></br><br></br><br><br></br><br></br><br></br>
 
@@ -130,9 +140,14 @@ When the CPX is first connected to a computer with the USB cable, it will run th
 To **create this program**, open learn.adafruit.com/uart-communication-between-two-circuitpython-boards/code.  Scroll down on the page and select Download Project Bundle.
 
 
-<img src="/images/projectbundle.png" style="margin-left: 250px; align: center;"/>
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/projectbundle.png"
+            /> 
 <br>
-<img src="/images/projectcode.png" style="height: 50%; width:50%; float: left;"/>
+
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/projectcode.png"
+            /> 
 <br></br><br></br>
             <br></br><br></br><br></br><br><br></br>
 
@@ -193,7 +208,10 @@ To troubleshoot the CPX device and program:
 
 Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
-<img src="/images/circuitplaygroundexpress.png" style="height: 30%; width:30%; margin-left: 250px; align: center;"/>
+
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/circuitplaygroundexpress.png"
+            /> 
 <br><br>
 
 To **move the bootloader** to the CPX:
