@@ -48,22 +48,22 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 #### <a id="Appendix"></a>Appendix
 <img src="/images/greencircuit.png" style=" float: left;" />
-<img src="/images/redcircuit.png" style="margin-left:30px; float: left;" />
+<img src="/images/redcircuit.png" style="margin:30px; float: left;" />
 <br></br>
 <br></br>
 <br></br>
 <br></br><br></br>
 <p style="text-align: left;">
-Moist Soil                              <p style="margin-left:110px; margin-top:-28px;">Needs Water
+Moist Soil                              <p style="margin:110px; margin-top:-28px;">Needs Water
 
 <br></br>
 
 <img src="/images/c1.png" style="float: left;" />
 <img src="/images/c2.png" style="margin-left:30px; float: left;" />
-<img src="/images/c3.png" style="margin-left:30px;float: left;" />
-<img src="/images/c4.png" style="margin-left:30px;float: left;" />
-<img src="/images/c5.png" style="margin-left:30px;float: left;" />
-<img src="/images/c6.png" style="margin-left:30px;float: left;" />
+<img src="/images/c3.png" style="margin-left:30px; float: left;" />
+<img src="/images/c4.png" style="margin-left:30px; float: left;" />
+<img src="/images/c5.png" style="margin-left:30px; float: left;" />
+<img src="/images/c6.png" style="margin-left:30px; float: left;" />
 
 <br></br><br></br><br></br><br></br><br></br>
 <p style="text-align: left;"> ≤ 60 °F                             
@@ -77,16 +77,16 @@ Moist Soil                              <p style="margin-left:110px; margin-top:
 
 <img src="/images/yellowcircuit1.png" style="float: left;" />
 <img src="/images/yellowcircuit2.png" style="margin-left:30px; float: left;" />
-<img src="/images/yellowcircuit3.png" style="margin-left:30px;float: left;" />
-<img src="/images/yellowcircuit4.png" style="margin-left:30px;float: left;" />
-<img src="/images/yellowcircuit5.png" style="margin-left:30px;float: left;" />
+<img src="/images/yellowcircuit3.png" style="margin-left:30px; float: left;" />
+<img src="/images/yellowcircuit4.png" style="margin-left:30px; float: left;" />
+<img src="/images/yellowcircuit5.png" style="margin-left:30px; float: left;" />
 <br></br><br></br><br></br><br></br><br></br>
 
-<p style="text-align: left;"><= 60 °F                             
-<p style="margin-left:130px; margin-top:-27px;">72-73°F
-<p style="margin-left:260px; margin-top:-27px;">74-75°F
-<p style="margin-left:380px; margin-top:-27px;">76-77°F
-<p style="margin-left:500px; margin-top:-27px;"> >=80°F
+<p style="text-align: left;"> ≤ 60 °F                             
+<p style="margin-left:130px; margin-top:-27px;"> 72-73°F
+<p style="margin-left:260px; margin-top:-27px;"> 74-75°F
+<p style="margin-left:380px; margin-top:-27px;"> 76-77°F
+<p style="margin-left:500px; margin-top:-27px;"> ≥ 80°F
 
 
 #### <a id="Lesson"></a>Lesson
