@@ -51,7 +51,7 @@ Once the Circuit Playground Express (CPX) has been programmed and connected to t
             src="/images/capacitor.png"
             /> 
 <br></br><br></br>
-            <br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
 Touching the SCL / A4 labeled capacitor will cause the following to repeat 5 times. (Red lights)
 
@@ -66,7 +66,7 @@ Touching the SCL / A4 labeled capacitor will cause the following to repeat 5 tim
             <br></br>
             <br></br>
             <br></br> 
-            <br></br>
+            <br></br><br></br><br></br>
 
 
 Touching the SDA / A5 or RX / A6 labeled capacitor will cause the following to repeat 3 times. (Yellow lights)
@@ -108,7 +108,7 @@ Touching the TX / A7 labeled capacitor will cause the following to repeat 3 time
             <br></br>
              <br></br>
              <br></br>
-             <br></br>
+             <br></br><br></br><br></br><br></br>
             
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
