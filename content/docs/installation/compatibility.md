@@ -48,19 +48,19 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 #### <a id="Appendix"></a>Appendix
 
-<img src="\Github\public\images/greencircuit.png" style=" float: left;" />
-<img src="\Github\public\images/redcircuit.png" style=" :30px; float: left;" />
+<img src="/images/greencircuit.png" style=" float: left;" />
+<img src="/images/redcircuit.png" style=" :30px; float: left;" />
 <br></br><br></br><br></br><br></br><br></br><br>
-<p style="text-align: left;">
-Moist Soil                              <p style=" :110px; margin-top:-28px;">Needs Water
+<p style="text-align: left;">Moist Soil</p>                              
+<p style=" :110px; margin-top:-28px;">Needs Water</p>
 
 <br></br>
 <img style={{margin: "0", clear: "left", float: "left", width: "300px"}} src="/images/c1.png" /> 
-<img style={{ : "30px", clear: "left", float: "left", width: "300px"}} src="/images/c2.png" /> 
-<img style={{ : "30px", clear: "left", float: "left", width: "300px"}} src="/images/c3.png" /> 
-<img style={{ : "30px", clear: "left", float: "left", width: "300px"}} src="/images/c4.png" /> 
-<img style={{ : "30px", clear: "left", float: "left", width: "300px"}} src="/images/c5.png" /> 
-<img style={{ : "30px", clear: "left", float: "left", width: "300px"}} src="/images/c6.png" /> 
+<img style={{ margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c2.png" /> 
+<img style={{ margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c3.png" /> 
+<img style={{ margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c4.png" /> 
+<img style={{ margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c5.png" /> 
+<img style={{ margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c6.png" /> 
 
 <br></br>
 <br></br>
@@ -68,21 +68,21 @@ Moist Soil                              <p style=" :110px; margin-top:-28px;">Ne
 <br></br>
 <br></br>
 
-<p style="text-align: left;"><= 60 °F                             
-<p style=" :130px; margin-top:-27px;">61-62°F
-<p style=" :260px; margin-top:-27px;">63-64°F
-<p style=" :380px; margin-top:-27px;">65-66°F
-<p style=" :500px; margin-top:-27px;">67-68°F
-<p style=" :620px; margin-top:-27px;">69-71°F
+<p style="text-align: left;"> ≤ 60 °F</p>                             
+<p style="margin-left:130px; margin-top:-27px;"> 61-62°F</p>
+<p style="margin-left:260px; margin-top:-27px;"> 63-64°F</p>
+<p style="margin-left:380px; margin-top:-27px;"> 65-66°F</p>
+<p style="margin-left:500px; margin-top:-27px;">67-68°F</p>
+<p style="margin-left:620px; margin-top:-27px;">69-71°F</p>
 
 </br><br>
 </br><br>
 
-<img style={{ : "0px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit1.png" /> 
-<img style={{ : "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit2.png" /> 
-<img style={{ : "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit3.png" /> 
-<img style={{ : "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit4.png" /> 
-<img style={{ : "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit5.png" /> 
+<img style={{ margin-left: "0px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit1.png" /> 
+<img style={{ margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit2.png" /> 
+<img style={{ margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit3.png" /> 
+<img style={{ margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit4.png" /> 
+<img style={{ margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit5.png" /> 
 
 <br></br>
 <br></br>
@@ -90,11 +90,11 @@ Moist Soil                              <p style=" :110px; margin-top:-28px;">Ne
 <br></br>
 <br></br>
 
-<p style="text-align: left;"><= 60 °F                             
-<p style=" :130px; margin-top:-27px;">72-73°F
-<p style=" :260px; margin-top:-27px;">74-75°F
-<p style=" :380px; margin-top:-27px;">76-77°F
-<p style="margin-left:500px; margin-top:-27px;"> >=80°F
+<p style="text-align: left;"> ≤ 60 °F</p>                             
+<p style=" margin-left:130px; margin-top:-27px;">72-73°F</p>
+<p style=" margin-left:260px; margin-top:-27px;">74-75°F</p>
+<p style=" margin-left:380px; margin-top:-27px;">76-77°F</p>
+<p style=" margin-left:500px; margin-top:-27px;"> ≥80°F</p>
 
 
 #### <a id="Lesson"></a> Lesson
