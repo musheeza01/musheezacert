@@ -1,112 +1,241 @@
----
-title: Compatibility with Kubernetes Platform Providers
-description: 'cert-manager installation: Cloud provider compatibility'
----
+# Soil Tester
+#### Purpose
+Statement of Work Template intended for Datacenter Volunteer Lead Community Engagements.  
 
-Below you will find details on various compatibility issues and quirks that you
-may be affected by when deploying cert-manager. If you believe we've missed something
-please feel free to raise an issue or a pull request with the details!
+#### Materials
+1 AAA Battery housing
 
-<div className="alert">
-If you're using AWS Fargate or else if you've specifically configured
-cert-manager to run the host's network, be aware that kubelet listens on port
-`10250` by default which clashes with the default port for the cert-manager
-webhook.
+6 AAA Batteries (3 spare)
 
-As such, you'll need to change the webhook's port when setting up cert-manager.
+1 Circuit Playground Express
 
-For installations using Helm, you can set the `webhook.securePort` parameter
-when installing cert-manager either using a command line flag or an entry in
-your `values.yaml` file.
+2 Minigrabber test lead cables or Alligator Clip test lead cables
 
-If you have a port clash, you could see confusing error messages regarding
-untrusted certs. See [#3237](https://github.com/cert-manager/cert-manager/issues/3237)
-for more details.
-</div>
+2 large paper clips (2”) – (without plastic coating)
 
-## GKE
+Data/Sync USB Cable
 
-When Google configure the control plane for private clusters, they automatically
-configure VPC peering between your Kubernetes cluster's network and a separate
-Google-managed project.
-
-In order to restrict what Google are able to access within your cluster, the
-firewall rules configured restrict access to your Kubernetes pods. This means
-that the webhook won't work, and you'll see errors such as
-`Internal error occurred: failed calling admission webhook ... the server is
-currently unable to handle the request`.
-
-In order to use the webhook component with a GKE private cluster, you must
-configure an additional firewall rule to allow the GKE control plane access to
-your webhook pod.
-
-You can read more information on how to add firewall rules for the GKE control
-plane nodes in the [GKE
-docs](https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters#add_firewall_rules).
+2 cups soil, 1 with plant or 2 potted plants
 
 
-### GKE Autopilot
+#### Before
+Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
-GKE Autopilot mode with Kubernetes < 1.21 does not support cert-manager,
-due to a [restriction on mutating admission webhooks](https://github.com/cert-manager/cert-manager/issues/3717).
+### Start
+Read through  [Source 1](#Source-1) below. When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
-As of October 2021, only the "rapid" Autopilot release channel has rolled
-out version 1.21 for Kubernetes masters. Installation via the helm chart
-may end in an error message but cert-manager is reported to be working by
-some users. Feedback and PRs are welcome.
+#### Get Ready
+**Prep the soil**: Add water to one pot/cup of soil.  Leave the other pot/cup dry.
 
-**Problem**: GKE Autopilot does not allow modifications to the `kube-system`-namespace.
+**Prep the lead cables**: Straighten both paperclips, leaving the outer edge bent at a sweeping 90°.  Insert the batteries into the battery pack.  Connect one end of the black test lead cable to the GND on the CPX.  Connect the other end to a paper clip.  Place the paper clip into the moistened soil. Connect one end of the red test lead cable to the A1 port on the CPX.  Connect the other end of the red test lead cable to the second paper clip.  Insert the paper clip into the dry pot/cup of soil.  
 
-Historically we've used the `kube-system` namespace to prevent multiple installations of cert-manager in the same cluster.
+**Power the CPX**: Insert the batteries into the battery pack.  Connect the battery pack to the CPX. Power on the battery pack.
 
-Installing cert-manager in these environments with default configuration can cause issues with bootstrapping.
-Some signals are:
+#### Go
+The running program will refresh every two seconds.  Let the device come to temperature.  With the battery connector facing straight down, the right-side LEDs will display all red (needs water/not conductive) or all green (has water/conductive).  The lights on the left-side will display the temperature with 2°F increments. See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-* `cert-manager-cainjector` logging errors like:
 
-```text
-E0425 09:04:01.520150       1 leaderelection.go:334] error initially creating leader election record: leases.coordination.k8s.io is forbidden: User "system:serviceaccount:cert-manager:cert-manager-cainjector" cannot create resource "leases" in API group "coordination.k8s.io" in the namespace "kube-system": GKEAutopilot authz: the namespace "kube-system" is managed and the request's verb "create" is denied
-```
+### After
+Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
-* `cert-manager-startupapicheck` not completing and logging messages like:
+### Source
+1. https://learn.adafruit.com/soil-moisture-sensor-with-circuit-playground-express?msclkid=c5ab76f9c25211eca9ade6549ce5cca6
 
-```text
-Not ready: the cert-manager webhook CA bundle is not injected yet
-```
+2. https://learn.adafruit.com/assets/78944
 
-**Solution**: Configure cert-manager to use a different namespace for leader election, like this:
+### Get Help
+For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
-```console
-helm install \
-  cert-manager jetstack/cert-manager \
-  --namespace cert-manager \
-  --create-namespace \
-  --version ${CERT_MANAGER_VERSION} --set global.leaderElection.namespace=cert-manager
-```
+#### <a id="Appendix"></a>Appendix
 
-## AWS EKS
+<img src="\Github\public\images/greencircuit.png" style=" float: left;" />
+<img src="\Github\public\images/redcircuit.png" style="margin-left:30px; float: left;" />
+<br></br><br></br><br></br><br></br><br></br><br>
+<p style="text-align: left;">
+Moist Soil                              <p style="margin-left:110px; margin-top:-28px;">Needs Water
 
-When using a custom CNI (such as Weave or Calico) on EKS, the webhook cannot be
-reached by cert-manager. This happens because the control plane cannot be
-configured to run on a custom CNI on EKS, so the CNIs differ between control
-plane and worker nodes.
+<br></br><br>
+<img style={{margin: "0", clear: "left", float: "left", width: "300px"}} src="/images/c1.png" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c2.png" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c3.png" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c4.png" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c5.png" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c6.png" /> 
 
-To address this, the webhook can be run in the host network so it can be reached
-by cert-manager, by setting the `webhook.hostNetwork` key to true on your
-deployment, or, if using Helm, configuring it in your `values.yaml` file.
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
-Note that running on the host network will necessitate changing the webhook's
-port; see the warning at the top of the page for details.
+<p style="text-align: left;"><= 60 °F                             
+<p style="margin-left:130px; margin-top:-27px;">61-62°F
+<p style="margin-left:260px; margin-top:-27px;">63-64°F
+<p style="margin-left:380px; margin-top:-27px;">65-66°F
+<p style="margin-left:500px; margin-top:-27px;">67-68°F
+<p style="margin-left:620px; margin-top:-27px;">69-71°F
 
-### AWS Fargate
+</br><br>
+</br><br>
 
-It's worth noting that using AWS Fargate doesn't allow much network configuration and
-will cause the webhook's port to clash with the kubelet running on port 10250, as seen
-in [#3237](https://github.com/cert-manager/cert-manager/issues/3237).
+<img style={{margin-left: "0px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit1.png" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit2.png" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit3.png" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit4.png" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit5.png" /> 
 
-When deploying cert-manager on Fargate, you _must_ change the port on which
-the webhook listens. See the warning at the top of this page for more details.
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
-Because Fargate forces you to use its networking, you cannot manually set the networking
-type and options such as `webhook.hostNetwork` on the helm chart will cause your
-cert-manager deployment to fail in surprising ways.
+<p style="text-align: left;"><= 60 °F                             
+<p style="margin-left:130px; margin-top:-27px;">72-73°F
+<p style="margin-left:260px; margin-top:-27px;">74-75°F
+<p style="margin-left:380px; margin-top:-27px;">76-77°F
+<p style="margin-left:500px; margin-top:-27px;"> >=80°F
+
+
+#### <a id="Lesson"></a> Lesson
+The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
+
+### What
+This lab tests the moisture (conductivity) and temperature.  
+
+### Details
+The moisture test is a test of conductivity.  When the soil is dry (or not grounded with the second wire) the light is red, alerting the audience to a problem.  Just like the lights on the servers in a datacenter rack, a red light is an indicator of failure.  This indicator means there is an immediate issue that needs to be resolved.
+
+The temperature test gives the ambient temperature by every 2°F.  See [Source 2](#Source-2) for specifics.  The datacenters create lots of heat with the equipment running and must be cooled.  Microsoft is committed to using 100% renewable energy by 2030.  Temperature is an important factor, just like August heat or January cold is to our bodies.
+
+### Share
+Lights give us different signals in the world around us.  Crosswalk lights, stop lights, self-checkout register lights, even car brake lights give us signals for what is ahead.  When this plant does not have enough water, the lights turn red.  When the plant has enough water, the lights turn green.  If it is too cold, the lights are blue.  If the plant is too warm, the lights are yellow.  Datacenters have the same alerts.  If a server has a red light, there is a device failure that must be resolved, or you may not be able to retrieve your photo from your Cloud drive on your phone (any relatable example).  We also have a commitment to remove the carbon by 2030 that we have put into the environment since 1975 and become carbon negative.  Carbon negative means we will remove more carbon than we have emitted in our energy consumption.  We are also committed to renewable energy goals.
+
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/progress.jpg" /> 
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+### Source:
+https://blogs.microsoft.com/blog/2022/03/10/an-update-on-microsofts-sustainability-commitments-building-a-foundation-for-2030/ 
+
+#### <a id="Source-1"></a> Source 1 
+The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
+
+#### Source:
+https://learn.adafruit.com/adafruit-circuit-playground-express
+[i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
+
+There are three ways to program the CPX:
+
+1.	makecode.adafruit.com
+
+2.	CircuitPython
+
+3.	Arduino
+
+This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
+
+When the CPX is first connected to a computer with the USB cable, it will run the program that is stored on the device.  This may not be the program that you desire to run.  Follow the procedure in Source 3 to reset the CPX to the factory settings.  The CPX will hold the program and not reset to factory settings upon power off.
+
+#### <a id="Source-2"></a>Source 2
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required in [Program 1](#Program-1). Save the file.
+
+To **move the program** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The CPX is now ready with the installed program.
+
+If the soil tester program is running:
+
+The small on LED will turn on / solid green
+
+Right side – LEDs will turn on / solid red (if not grounded)
+
+Left side – LEDs will turn yellow or blue, depending on ambient room temperature (see Appendix)
+
+To troubleshoot the CPX device and program:
+
+1.	Check the batteries
+
+2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+
+3.	Follow steps in Source 1 to download the program to the CPX device.
+
+4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+
+5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Soil Tester program.
+
+#### <a id="Source-3"></a>Source 3
+**Download** the original CPX **bootloader**, navigate to UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+
+
+
+Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+
+#### <a id="Program-1"></a>Program 1
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below.  Save the file.  Program the CPX as listed in [Source 1](#Source-1).
+
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program01.jpg" /> 
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program04.jpg" /> 
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+### Program 1 Continued
+
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program06b.jpg" /> 
+<br></br> 
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+            
+<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program07.jpg" /> 
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+    
+
+Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
+
+<img style={{margin-left: "200px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program08.jpg" /> 
+
+Continue with the procedure in [Source 1](#Source-1) to program the CPX with the new bootloader.
