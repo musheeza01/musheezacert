@@ -1,270 +1,224 @@
----
-title: Supported Releases
-description: Supported releases, Kubernetes versions, OpenShift versions and upcoming release timeline
----
-
-{/*
-Inspired by https://istio.io/latest/about/supported-releases/
-*/}
-
-This page lists the status, timeline and policy for currently supported releases.
-
-Each release is supported for a period of four months, and we aim to create a new
-release every two months.
-
-<h2 id="supported-releases">Currently supported releases</h2>
-
-| Release | Release Date |  End of Life    | [Supported Kubernetes versions][s] | [Supported OpenShift versions][s] |
-|---------|:------------:|:---------------:|:----------------------------------:|:---------------------------------:|
-| [1.9][] | Jul 22, 2022 | Release of 1.11 |             1.20 → 1.24            |             4.7 → 4.11            |
-| [1.8][] | Apr 05, 2022 | Release of 1.10 |             1.19 → 1.24            |             4.6 → 4.11            |
-
-## Upcoming releases
-
-| Release  |     Release Date    |    End of life     | [Supported Kubernetes versions][s] | [Supported OpenShift versions][s] |
-|----------|:-------------------:|:------------------:|:----------------------------------:|:---------------------------------:|
-| [1.10][] | ~Mid/Late Sep, 2022 | Mid January, 2023  |             1.20 → 1.24            |             4.7 → 4.11            |
-
-Dates in the future are uncertain and might change.
-
-## Old releases
-
-| Release  | Release Date |     EOL      | Compatible Kubernetes versions | Compatible OpenShift versions |
-|----------|:------------:|:------------:|:------------------------------:|:-----------------------------:|
-| [1.7][]  | Jan 26, 2021 | Jul 22, 2022 |          1.18 → 1.23           |           4.5 → 4.9           |
-| [1.6][]  | Oct 26, 2021 | Apr 05, 2022 |          1.17 → 1.22           |           4.4 → 4.9           |
-| [1.5][]  | Aug 11, 2021 | Jan 26, 2022 |          1.16 → 1.22           |           4.3 → 4.8           |
-| [1.4][]  | Jun 15, 2021 | Oct 26, 2021 |          1.16 → 1.21           |           4.3 → 4.7           |
-| [1.3][]  | Apr 08, 2021 | Aug 11, 2021 |          1.16 → 1.21           |           4.3 → 4.7           |
-| [1.2][]  | Feb 10, 2021 | Jun 15, 2021 |          1.16 → 1.21           |           4.3 → 4.7           |
-| [1.1][]  | Nov 24, 2020 | Apr 08, 2021 |          1.11 → 1.21           |          3.11 → 4.7           |
-| [1.0][]  | Sep 02, 2020 | Feb 10, 2021 |          1.11 → 1.21           |          3.11 → 4.7           |
-| [0.16][] | Jul 23, 2020 | Nov 24, 2020 |          1.11 → 1.21           |          3.11 → 4.7           |
-| [0.15][] | May 06, 2020 | Sep 02, 2020 |          1.11 → 1.21           |          3.11 → 4.7           |
-| [0.14][] | Mar 11, 2020 | Jul 23, 2020 |          1.11 → 1.21           |          3.11 → 4.7           |
-| [0.13][] | Jan 21, 2020 | May 06, 2020 |          1.11 → 1.21           |          3.11 → 4.7           |
-| [0.12][] | Nov 27, 2019 | Mar 11, 2020 |          1.11 → 1.21           |          3.11 → 4.7           |
-| [0.11][] | Oct 10, 2019 | Jan 21, 2020 |           1.9 → 1.21           |          3.09 → 4.7           |
-
-[s]: #kubernetes-supported-versions
-[1.10]: https://github.com/cert-manager/cert-manager/milestone/31
-[1.9]: https://cert-manager.io/docs/release-notes/release-notes-1.9
-[1.8]: https://cert-manager.io/docs/release-notes/release-notes-1.8
-[1.7]: https://cert-manager.io/docs/release-notes/release-notes-1.7
-[1.6]: https://cert-manager.io/docs/release-notes/release-notes-1.6
-[1.5]: https://cert-manager.io/docs/release-notes/release-notes-1.5
-[1.4]: https://cert-manager.io/docs/release-notes/release-notes-1.4
-[1.3]: https://cert-manager.io/docs/release-notes/release-notes-1.3
-[1.2]: https://cert-manager.io/docs/release-notes/release-notes-1.2
-[1.1]: https://cert-manager.io/docs/release-notes/release-notes-1.1
-[1.0]: https://cert-manager.io/docs/release-notes/release-notes-1.0
-[0.16]: https://cert-manager.io/docs/release-notes/release-notes-0.16
-[0.15]: https://cert-manager.io/docs/release-notes/release-notes-0.15
-[0.14]: https://cert-manager.io/docs/release-notes/release-notes-0.14
-[0.13]: https://cert-manager.io/docs/release-notes/release-notes-0.13
-[0.12]: https://cert-manager.io/docs/release-notes/release-notes-0.12
-[0.11]: https://cert-manager.io/docs/release-notes/release-notes-0.11
-
-We list cert-manager releases on [GitHub](https://github.com/cert-manager/cert-manager/releases),
-and release notes on [cert-manager.io](https://cert-manager.io/docs/release-notes/).
-
-We also maintain detailed [upgrade instructions](https://cert-manager.io/docs/installation/upgrading/).
-
-## Support policy
-
-### What we mean by support
-
-Our support window is four months for each release branch. In the below
-diagram, `release-1.2` is an example of a release branch. The support
-window corresponds to the two latest releases, given that we produce a new
-final release every two months. We offer two types of support:
-
-- [Technical support](#technical-support),
-- [Security and bug fixes](#bug-fixes-support).
-
-For example, imagining that the latest release is `v1.2.0`, you can expect
-support for both `v1.2.0` and `v1.1.0`. Only the last patch release of each
-branch is actually supported.
-
-```diagram
-   v1.0.0                                                          ^
- Sep 2, 2020                                                       | UNSUPPORTED
-------+---------------------------------------------> release-1.0  | RELEASES
-       \                                                           v
-        \
-         \       v1.1.0
-          \    Nov 24, 2020                                        ^
-           ---------+-------------------------------> release-1.1  |
-                     \                                             | SUPPORTED
-                      \                                            | RELEASES
-                       \         v1.2.0                            | = the two
-                        \      Feb 10, 2021                        |   last
-                         ------------+--------------> release-1.2  |   releases
-                                      \                            v
-                                       \
-                                        \
-                                         \
-                                          -----------> master branch
-                                                       April 1, 2021
-```
+# CPX Redundancy
+#### Purpose
+Statement of Work Template intended for Datacenter Volunteer Lead Community Engagements.  
 
-<h3 id="technical-support">Technical support</h3>
+#### Materials
+3 AAA Battery housing
 
-Technical assistance is offered on a best-effort basis for supported
-releases only. You can request support from the community on [Kubernetes
-Slack](https://slack.k8s.io/) (in the `#cert-manager` channel), using
-[GitHub Discussions][discussions] or using the [cert-manager-dev][group]
-Google group.
+12 AAA Batteries (3 spare)
 
-[discussions]: https://github.com/cert-manager/cert-manager/discussions
-[group]: https://groups.google.com/g/cert-manager-dev
+3 Circuit Playground Express
 
-<h3 id="bug-fixes-support">Security and bug fixes</h3>
+6 MiniGrabber cables (2 blue, 2 green 2 black)
 
-We back-port important bug fixes — including security fixes — to all
-currently supported releases.
+Data/Sync USB Cable
 
-- [Security issues](#security-issues),
-- [Critical bugs](#critical-bugs),
-- [Long-standing bugs](#long-standing-bugs).
+#### Before
+Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
-<h4 id="security-issues">Security issues</h4>
+### Start
+Read through  [Source 1](#Source-1) below. When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
-**Security issues** are fixed as soon as possible. They get back-ported to
-the last two releases, and a new patch release is immediately created for them.
+#### Get Ready
+**Prep the CPX:** Connect the USB-A/MicroUSB cable to the computer USB port.  Connect the MicroUSB end to the CPX.  Press the reset button twice, like a double-click.  A CPLAYBOOT drive should appear.  Use the information in [Program 1](#Program-1) to add the bootloader to the CPX as in [Source 2](#Source-2).
+**Power the CPX:** Insert the batteries into the battery pack.  Connect the battery pack to the CPX. Power on the battery pack.
 
-<h4 id="critical-bugs">Critical bugs</h4>
+#### Go
+This program contains three elements:
 
-**Critical bugs** include both regression bugs as well as upgrade bugs.
+1.	Programming the CPX Bootloader to work with CircuitPython
 
-Regressions are functionalities that worked in a previous release but no longer
-work. [#4142][], [#3393][] and [#2857][] are three examples of regressions.
+2.	Using the light sensor to display the intensity of the light
 
-Upgrade bugs are issues (often Helm-related) preventing users from
-upgrading to currently supported releases from earlier releases of
-cert-manager. [#3882][] and [#3644][] are examples of upgrade bugs.
+3.	Light intensity is replicated/redundant between two CPX boards
 
-Note that [intentional breaking changes](#breaking-changes) do not belong to
-this category.
+See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-Fixes for critical bugs are (usually) immediately back-ported by creating a new
-patch release for the currently supported releases.
+### After
+Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
-<h4 id="long-standing-bugs">Long-standing bugs</h4>
 
-**Long-standing bug**: sometimes a bug exists for a long time, and may have
-known workarounds. [#3444][] is an example of a long-standing bug.
+**Source**
+1.	The redundancy program utilizes Universal Asynchronous Receiver-Transmitter (UART), a serial communication protocol.  See [Program 1](#Program-1) below for programming details.
 
-Where we feel that back-porting would be difficult or might be a stability
-risk to clusters running cert-manager, we'll make the fix in a major
-release but avoid back-porting the fix.
+### Get Help
+For any questions contact Kristie Morris at v-kmorris@microsoft.com
 
-<h4 id="breaking-changes">Breaking changes</h4>
+#### <a id="Appendix"></a>Appendix
+Once the Circuit Playground Express (CPX) is connected and powered, the program will display 1 or 2 green solid lit LEDs. 
 
-Breaking changes are changes that intentionally break the cert-manager
-Kubernetes API or the command line flags. We avoid making breaking changes
-where possible, and where they're required we'll give as much notice as
-possible.
 
-<h4 id="other-backports">Other back-ports</h4>
+<img src="/images/LED.png" style="height: 300px; width:300px; float: left;"/>
+<br></br><br></br>
+            <br></br><br></br><br></br><br><br></br><br></br><br></br>
 
-We aim to be conservative in what we back-port. That applies especially for anything which
-could be a _runtime_ change - that is, a change which might alter behavior for someone
-upgrading between patch releases.
 
-That means that if a candidate for back-porting has a chance of having a runtime impact we're
-unlikely to accept the change unless it addresses a security issue or a critical bug.
+To connect the circuits, connect the following:
 
-We reserve the right to back-port other changes which are unlikely to have a runtime impact, such as
-documentation or tooling changes. An example would be [#5209][] which updated how we perform a release of
-cert-manager but didn't have any realistic chance of having a runtime impact.
+RX to TX and TX to RX and GND to GND
 
-Generally we'll seek to be pragmatic. A rule of thumb might be to ask:
+(RX – Receive, TX – Transmit, GND – Ground)
 
-"Does this back-port improve cert-manager, bearing in mind that we really value stability for already-released versions?"
+<img src="/images/circuit.png" style="height: 300px; width:300px; float: left;"/>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
-[#3393]: https://github.com/cert-manager/cert-manager/issues/3393 "Broken CloudFlare DNS01 challenge"
-[#2857]: https://github.com/cert-manager/cert-manager/issues/2857 "CloudDNS DNS01 challenge crashes cert-manager"
-[#4142]: https://github.com/cert-manager/cert-manager/issues/4142 "Cannot issue a certificate that has the same subject and issuer"
-[#3444]: https://github.com/cert-manager/cert-manager/issues/3444 "Certificates do not get immediately updated after updating them"
-[#3882]: https://github.com/cert-manager/cert-manager/pull/3882 "Certificate's revision history limit validated by webhook"
-[#3644]: https://github.com/cert-manager/cert-manager/issues/3644 "Helm upgrade from v1.2 to v1.2 impossible due to a Helm bug"
-[#5209]: https://github.com/cert-manager/cert-manager/pull/5209 "release-1.8: rclone"
+Once the ‘customer’ sends the data to the Datacenters A and B
 
+(The customer receives the intensity of the light source and transmits that signal to be displayed on each of the other two datacenters.)  Here the light signal is brightest showing all 10 LEDs lit.  However, this is not an indication of the strength of the connection to the data center.  Redundancy is a more important concept to deliver.  The signal is duplicated (redundant) between the two datacenters.
 
-<h2 id="kubernetes-supported-versions">How we determine supported Kubernetes versions</h2>
 
-The list of supported Kubernetes versions displayed in the [Supported Releases](#supported-releases) section
-depends on what the cert-manager maintainers think is reasonable to support and to test.
+<img src="/images/datacenters.png" style="height: 300px; width:300px; float: left;"/>
+<br></br><br></br>
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
-In practice, this is largely determined based on what versions of [kind](https://github.com/kubernetes-sigs/kind)
-are available for testing, and which versions of Kubernetes are provided by major upstream cloud Kubernetes vendors
-including EKS, GKE, AKS and OpenShift.
+To reset the device, press the small reset button once in the center of the CPX.  A reset is sometimes needed after powering on all devices together.  Each device may need a reset.
 
-|      Vendor       | Oldest Kubernetes Release\*  |               Other Older Kubernetes Releases                 |
-|:-----------------:|------------------------------|---------------------------------------------------------------|
-|    [EKS][eks]     | 1.20 (EOL Nov 2022)          | 1.21 (EOL Feb 2023), 1.22 (EOL May 2023)                      |
-|    [GKE][gke]     | 1.20 (EOL Aug 2022)          | 1.21 (EOL Dec 2022), 1.22 (EOL Mar 2023)                      |
-|    [AKS][aks]     | 1.22 (EOL Nov 2022)          |                                                               |
-| [OpenShift 4][os] | 1.19 (4.6 EUS, EOL Dec 2022) | 1.20 (4.7, EOL Aug 2022), 1.21 (4.8, EOL Jan 2023, EUS after) |
+<img src="/images/cpx.png" style="height: 300px; width:300px; float: left;"/>
+<br></br><br></br>
+            <br></br><br></br><br></br><br><br></br><br></br><br></br>
 
-\*Oldest release relevant to the next cert-manager release, as of 2022-07-18
 
-[eks]: https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html#kubernetes-release-calendar
-[gke]: https://cloud.google.com/kubernetes-engine/docs/release-schedule
-[aks]: https://docs.microsoft.com/en-us/azure/aks/supported-kubernetes-versions#aks-kubernetes-release-calendar
-[os]: https://access.redhat.com/support/policy/updates/openshift#dates
+A CPX not powered
 
-### OpenShift
+<img src="/images/nopowercpx.jpg" style="height: 300px; width:300px; float: left;"/>
+<br></br><br></br>
+            <br></br><br></br><br></br><br><br></br><br></br><br></br>
 
-cert-manager supports several versions of OpenShift 4, based on the versions of Kubernetes
-that each version maps to. For convenience, the following table shows these version mappings:
 
-| OpenShift versions | Kubernetes version |
-|--------------------|--------------------|
-| 4.11               | 1.24               |
-| 4.10, 4.10 EUS     | 1.23               |
-| 4.9                | 1.22               |
-| 4.8, 4.8 EUS       | 1.21               |
-| 4.7                | 1.20               |
-| 4.6, 4.6 EUS       | 1.19               |
+#### <a id="Lesson"></a>Lesson
+The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
-The last version of cert-manager to support OpenShift 3 was cert-manager 1.2, which is
-no longer maintained.
+#### What:
+This lab demonstrates light signals as a method demonstrate redundancy between datacenters.  
 
-## Terminology
+#### Details:
+The term redundancy may need to be explained.  A good start may be to ask the audience to define redundancy.  Note that Microsoft Datacenters have triple redundancy.
 
-The term "release" (or "minor release") refers to one minor version of
-cert-manager. For example, 1.2 and 1.3 are two releases. Note that we do
-not use the prefix `v` for releases (just "1.2"). This is because releases
-are not used as git tags.
+NOTE:
+The labs works by measuring the intensity of the light given to the ‘customer’ and then transmitted signal to the redundant datacenters.  It is imperative the cables are connected correctly for this lab to demonstrate the message of redundancy properly.  RX  TX, TX  RX, GND  GND
 
-Patch releases use the `v` prefix (e.g., `v1.2.0`, `v1.3.1`...) since one
-patch release = one git tag. The initial patch release is called "final
-release":
+It is easier to explain if using the same color cables to go out from the Customer CPX to the Datacenters.  As an example:
+From Customer:
 
-| Type of release | Example of git tag | Corresponding release | Corresponding release branch\* |
-| --------------- | ------------------ | --------------------- | ------------------------------ |
-| Final release   | `v1.3.0`           | 1.3                   | `release-1.3`                  |
-| Patch release   | `v1.3.1`           | 1.3                   | `release-1.3`                  |
-| Pre-release     | `v1.4.0-alpha.0`   | N/A\*\*               | `release-1.4`                  |
+RX out = Red MiniGrabber Cable
 
-\*For maintainers: each release has an associated long-lived branch that we
-call the “release branch”. For example, `release-1.2` is the release branch
-for release 1.2.
+TX out = Green MiniGrabber Cable
 
-\*\*Pre-releases (e.g., `v1.3.0-alpha.0`) don't have a corresponding
-release (e.g., 1.3) since a release only exists after a final release
-(e.g., `v1.3.0`) has been created.
+GND out = Black MiniGrabber Cable
 
-Our naming scheme mostly follows [Semantic Versioning
-2.0.0](https://semver.org/) with `v` prepended to git tags and docker
-images:
+#### <a id="Source-1"></a> Source 1 
+The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
 
-```plain
-v<major>.<minor>.<patch>
-```
+**Source**:
+https://learn.adafruit.com/adafruit-circuit-playground-express
+[i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
 
-where `<minor>` is increased for each release, and `<patch>` counts the
-number of patches for the current `<minor>` release. A patch is usually a
-small change relative to the `<minor>` release.
+
+There are three ways to program the CPX:
+
+1.	makecode.adafruit.com
+
+2.	CircuitPython
+
+3.	Arduino
+
+This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
+
+When the CPX is first connected to a computer with the USB cable, it will run the program that is stored on the device.  This may not be the program that you desire to run.  Follow the procedure in Source 3 to reset the CPX to the factory settings.  The CPX will hold the program and not reset to factory settings upon power off.
+
+#### <a id="Source-2"></a>Source 2
+To **create this program**, open learn.adafruit.com/uart-communication-between-two-circuitpython-boards/code.  Scroll down on the page and select Download Project Bundle.
+
+
+<img src="/images/projectbundle.png" style="margin-left: 250px; align: center;"/>
+<br>
+<img src="/images/projectcode.png" style="height: 50%; width:50%; float: left;"/>
+<br></br><br></br>
+            <br></br><br></br><br></br><br><br></br>
+
+
+
+To move the program to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file from the CPX_OS_to_CircuitPy and paste it on the CPLAYBOOT root drive.  (The UF2 file can be downloaded from circuitpython.org/downloads, select Circuit Playground Express.  Download the most recent Stable Version.  Locate the downloaded file: update-bootloader-circuitplay-m0-v3.7.0.uf2.  Copy this file and paste it into the CPLAYBOOT drive, which is the Circuit Playground Express board)
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The CPX will now appear as a folder called CPYTHON
+
+Rename the code.py file in CPYTHON to oldcode.py
+
+Copy the code.py file from UART-Between-Boards/CircuitPython 7.x  (This will be part of the downloaded project bundle form the top of the page.)
+
+Paste the code.py file into the CPYTHON directory on the CPX
+
+Open the UART-Between-BOARDS/CircuitPython 7.x/lib
+
+Copy the two py files (adafruit_pixelbuf.mpy and neopixel.mpy)
+
+Paste the files in the CPYTHON/lib folder
+
+Press the reset button on the CPX.
+
+If there is 1-2 green solid lit LEDs on the CPX, the CPX is now ready with the installed program.
+
+To troubleshoot the CPX device and program:
+
+1.	Check the batteries
+
+2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+
+3.	Follow steps in Source 1 to download the program to the CPX device.
+
+4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+
+5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Redundancy program.
+
+#### <a id="Source-3"></a>Source 3
+**Download** the original CPX **bootloader**, navigate to UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  
+
+Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+
+<img src="/images/circuitplaygroundexpress.png" style="height: 30%; width:30%; margin-left: 250px; align: center;"/>
+<br><br>
+
+To **move the bootloader** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file (from the above procedure) and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The CPX is now ready with the original bootloader.
+
+#### <a id="Program-1"></a>Program 1
+To **create this program**, open [Code | UART Communication Between Two CircuitPython Boards | Adafruit Learning System](https://learn.adafruit.com/uart-communication-between-two-circuitpython-boards/code). Follow the instructions located at the [link here](https://learn.adafruit.com/uart-communication-between-two-circuitpython-boards/code). Program the CPX as listed in [Source 1](#Source-1).
+
+Continue with the procedure in [Source 1](#Source-1) to program the CPX with Circuit Python.
