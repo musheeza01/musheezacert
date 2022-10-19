@@ -64,10 +64,10 @@ Moist Soil</p>                              <p style="margin-left:110px; margin-
 <img src="/images/c6.png" style="margin-left:30px loat: left;" />
 
 <br></br><br></br><br></br><br></br><br></br>
-<p style="text-align: left;"><= 60 °F                             
-<p style="margin-left:130px; margin-top:-27px;">61-62°F</p>
-<p style="margin-left:260px; margin-top:-27px;">63-64°F</p>
-<p style="margin-left:380px; margin-top:-27px;">65-66°F</p>
+<p style="text-align: left;"> ≤ 60 °F</p>                             
+<p style="margin-left:130px; margin-top:-27px;"> 61-62°F</p>
+<p style="margin-left:260px; margin-top:-27px;"> 63-64°F</p>
+<p style="margin-left:380px; margin-top:-27px;"> 65-66°F</p>
 <p style="margin-left:500px; margin-top:-27px;">67-68°F</p>
 <p style="margin-left:620px; margin-top:-27px;">69-71°F</p>
 
@@ -80,11 +80,11 @@ Moist Soil</p>                              <p style="margin-left:110px; margin-
 <img src="/images/yellowcircuit5.png" style="margin-left:30px loat: left;" />
 <br></br><br></br><br></br><br></br><br></br><br>
 
-<p style="text-align: left;"><= 60 °F                             
+<p style="text-align: left;"> ≤  60 °F</p>                             
 <p style="margin-left:130px; margin-top:-27px;">72-73°F</p>
 <p style="margin-left:260px; margin-top:-27px;">74-75°F</p>
 <p style="margin-left:380px; margin-top:-27px;">76-77°F</p>
-<p style="margin-left:500px; margin-top:-27px;"> >=80°F</p>
+<p style="margin-left:500px; margin-top:-27px;"> ≥ 80°F</p>
 
 
 #### <a id="Lesson"></a>Lesson
