@@ -52,8 +52,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/redcircuit.png"  />
 <br></br><br></br><br></br><br></br><br></br>
-<p style="text-align: left;">Moist Soil</p>                              
-<p style="margin-left:110px; margin-top:-28px;">Needs Water</p>
+<p>Moist Soil Needs Water</p>
 
 <br></br>
 
@@ -72,7 +71,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
             src="/images/c6.png" />
 
 <br></br><br></br><br></br><br></br><br></br>
-<p> ≤  60 °F         61-62°F   63-64°F</p>
+<p> ≤  60 °F         61-62°F   63-64°F
 65-66°F
 67-68°F
 69-71°F</p>
@@ -113,7 +112,13 @@ Lights give us different signals in the world around us.  Crosswalk lights, stop
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/progress.jpg" />
             
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
 
 ### Source:
 https://blogs.microsoft.com/blog/2022/03/10/an-update-on-microsofts-sustainability-commitments-building-a-foundation-for-2030/ 
