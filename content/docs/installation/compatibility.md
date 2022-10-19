@@ -51,8 +51,8 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <img src="/images/greencircuit.png" style=" float: left;" />
 <img src="/images/redcircuit.png" style="margin-left:30px; float: left;" />
 <br></br><br></br><br></br><br></br><br></br>
-<p style="text-align: left;">
-Moist Soil</p>                              <p style="margin-left:110px; margin-top:-28px;">Needs Water</p>
+<p style="text-align: left;">Moist Soil</p>                              
+<p style="margin-left:110px; margin-top:-28px;">Needs Water</p>
 
 <br></br>
 
