@@ -54,7 +54,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <p style="text-align: left;">
 Moist Soil                              <p style="margin-left:110px; margin-top:-28px;">Needs Water
 
-<br></br><br>
+<br></br>
 <img style={{margin: "0", clear: "left", float: "left", width: "300px"}} src="/images/c1.png" /> 
 <img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c2.png" /> 
 <img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c3.png" /> 
