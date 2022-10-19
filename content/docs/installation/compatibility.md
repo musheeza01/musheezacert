@@ -38,7 +38,7 @@ The running program will refresh every two seconds.  Let the device come to temp
 ### After
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
-### Source
+**Source**
 1. https://learn.adafruit.com/soil-moisture-sensor-with-circuit-playground-express?msclkid=c5ab76f9c25211eca9ade6549ce5cca6
 
 2. https://learn.adafruit.com/assets/78944
@@ -47,27 +47,25 @@ Note any items that are damaged, not working, or missing (including consumables)
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a>Appendix
-
 <img src="\Github\public\images/greencircuit.png" style=" float: left;" />
 <img src="\Github\public\images/redcircuit.png" style="margin-left:30px; float: left;" />
-<br></br><br></br><br></br><br></br><br></br><br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
 <p style="text-align: left;">
 Moist Soil                              <p style="margin-left:110px; margin-top:-28px;">Needs Water
 
 <br></br>
-<img style={{margin: "0", clear: "left", float: "left", width: "300px"}} src="/images/c1.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c2.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c3.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c4.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c5.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/c6.png" /> 
 
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+<img src="\Github\public\images/c1.png" style="float: left;" />
+<img src="\Github\public\images/c2.png" style="margin-left:30px; float: left;" />
+<img src="\Github\public\images/c3.png" style="margin-left:30px;float: left;" />
+<img src="\Github\public\images/c4.png" style="margin-left:30px;float: left;" />
+<img src="\Github\public\images/c5.png" style="margin-left:30px;float: left;" />
+<img src="\Github\public\images/c6.png" style="margin-left:30px;float: left;" />
 
+<br></br><br></br><br></br><br></br><br></br>
 <p style="text-align: left;"><= 60 °F                             
 <p style="margin-left:130px; margin-top:-27px;">61-62°F
 <p style="margin-left:260px; margin-top:-27px;">63-64°F
@@ -75,20 +73,14 @@ Moist Soil                              <p style="margin-left:110px; margin-top:
 <p style="margin-left:500px; margin-top:-27px;">67-68°F
 <p style="margin-left:620px; margin-top:-27px;">69-71°F
 
-</br><br>
-</br><br>
+<br></br><br></br>
 
-<img style={{margin-left: "0px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit1.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit2.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit3.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit4.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/yellowcircuit5.png" /> 
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+<img src="\Github\public\images/yellowcircuit1.png" style="float: left;" />
+<img src="\Github\public\images/yellowcircuit2.png" style="margin-left:30px; float: left;" />
+<img src="\Github\public\images/yellowcircuit3.png" style="margin-left:30px;float: left;" />
+<img src="\Github\public\images/yellowcircuit4.png" style="margin-left:30px;float: left;" />
+<img src="\Github\public\images/yellowcircuit5.png" style="margin-left:30px;float: left;" />
+<br></br><br></br><br></br><br></br><br></br>
 
 <p style="text-align: left;"><= 60 °F                             
 <p style="margin-left:130px; margin-top:-27px;">72-73°F
@@ -97,7 +89,7 @@ Moist Soil                              <p style="margin-left:110px; margin-top:
 <p style="margin-left:500px; margin-top:-27px;"> >=80°F
 
 
-#### <a id="Lesson"></a> Lesson
+#### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
 ### What
@@ -111,16 +103,14 @@ The temperature test gives the ambient temperature by every 2°F.  See [Source 2
 ### Share
 Lights give us different signals in the world around us.  Crosswalk lights, stop lights, self-checkout register lights, even car brake lights give us signals for what is ahead.  When this plant does not have enough water, the lights turn red.  When the plant has enough water, the lights turn green.  If it is too cold, the lights are blue.  If the plant is too warm, the lights are yellow.  Datacenters have the same alerts.  If a server has a red light, there is a device failure that must be resolved, or you may not be able to retrieve your photo from your Cloud drive on your phone (any relatable example).  We also have a commitment to remove the carbon by 2030 that we have put into the environment since 1975 and become carbon negative.  Carbon negative means we will remove more carbon than we have emitted in our energy consumption.  We are also committed to renewable energy goals.
 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/progress.jpg" /> 
-
+<img src="\Github\public\images/progress.jpg" style="height: 70%; width: 70%; float: left;" />
 <br></br>
 <br></br>
 <br></br>
 <br></br>
 <br></br>
 <br></br>
-<br></br>
-<br></br>
+<br></br><br></br>
 
 ### Source:
 https://blogs.microsoft.com/blog/2022/03/10/an-update-on-microsofts-sustainability-commitments-building-a-foundation-for-2030/ 
@@ -199,43 +189,27 @@ Click on the link (make sure it is for the Circuit Playground Express).  The fil
 #### <a id="Program-1"></a>Program 1
 To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below.  Save the file.  Program the CPX as listed in [Source 1](#Source-1).
 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program01.jpg" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program04.jpg" /> 
-
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+<img src="\Github\public\images/MakeCode_Program01.jpg" style="height: 30%; width:30%; float: left; "/>
+<img src="\Github\public\images/MakeCode_Program04.jpg" style="height: 30%; width:30%; float: left;"/>
+<br></br><br></br>
+            <br></br><br></br><br></br>
+            <br></br><br></br><br></br>
+    <br></br><br></br>
 
 ### Program 1 Continued
 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program06b.jpg" /> 
-<br></br> 
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+<img src="\Github\public\images/MakeCode_Program06b.jpg" style="height: 30%; width:30%; float: left; "/>
+   <br></br> <br></br>
+            <br></br><br></br><br></br>   <br></br><br></br><br></br>
             
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program07.jpg" /> 
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+<img src="\Github\public\images/MakeCode_Program07.jpg" style="height: 30%; width:30%; float: left;"/>
+<br></br><br></br>
+            <br></br><br></br>
     
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
-<img style={{margin-left: "200px", clear: "left", float: "left", width: "300px"}} src="/images/MakeCode_Program08.jpg" /> 
+<img src="\Github\public\images/MakeCode_Program08.jpg" style="height: 50%; width:50%; margin-left: 200px"/>
+
 
 Continue with the procedure in [Source 1](#Source-1) to program the CPX with the new bootloader.
