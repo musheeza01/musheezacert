@@ -242,7 +242,7 @@ To create this program, open adafruit.MakeCode.com.  Create the bootloader file 
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/blockcodethree.png" />
-<br></br<br></br><br></br>
+<br></br><br></br><br></br>
 <br></br>
 <br></br>
 <br></br>
