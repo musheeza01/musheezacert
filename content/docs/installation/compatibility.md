@@ -49,7 +49,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 #### <a id="Appendix"></a>Appendix
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/greencircuit.png" />
-<<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/redcircuit.png"  />
 <br></br><br></br><br></br><br></br><br></br>
 <p style="text-align: left;">Moist Soil</p>                              
