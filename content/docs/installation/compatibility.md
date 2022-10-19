@@ -1,4 +1,4 @@
-# CPX Circuit On/Off
+# CPX Intrusion
 #### Purpose
 Statement of Work Template intended for Datacenter Volunteer Lead Community Engagements.  
 
@@ -9,9 +9,8 @@ Statement of Work Template intended for Datacenter Volunteer Lead Community Enga
 
 1 Circuit Playground Express
 
-2 MiniGrabber cables
-
 Data/Sync USB Cable
+
 
 #### Before
 Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
@@ -20,7 +19,7 @@ Test the equipment Start Procedure below and note any failures or missing items 
 Read through  [Source 1](#Source-1) below. When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
 #### Get Ready
-**Prep the CPX** : Connect the USB-A/MicroUSB cable to the computer USB port.  Connect the MicroUSB end to the CPX.  Press the reset button twice, like a double-click.  A CPLAYBOOT drive should appear. Use the information in [Program 1](#Program-1) to add the bootloader to the CPX as in [Source 2](#Source-2). 
+**Prep the CPX** : Connect the USB-A/MicroUSB cable to the computer USB port.  Connect the MicroUSB end to the CPX.  Press the reset button twice, like a double-click.  A CPLAYBOOT drive should appear.  Use the information in Program 1 to add the bootloader to the CPX as in [Source 2](#Source-2). 
 
 **Power the CPX**: Insert the batteries into the battery pack.  Connect the battery pack to the CPX. Power on the battery pack.
 
@@ -29,9 +28,10 @@ This program contains three elements:
 
 1.	Programming the CPX Bootloader to work with MakeCode Bootloader
 
-2.	Using the analog read to determine voltage transmitted
+2.	Using the light sensor to read the intensity of the light
 
-3.	When voltage is detected, lights will change to magenta
+3.	When light is not detected, sound an alarm
+
 
 See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
@@ -39,49 +39,72 @@ See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
 ### Source
-1.	The program utilizes a simple code in MakeCode.  See [Program 1](#Program-1) below for programming details.
+1.	IR Tag and Reset are all programmed through Makecode.adafruit.com. See [Program 1](#Program-1) below for programming details.
 
 ### Get Help
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a>Appendix
-Once the Circuit Playground Express (CPX) has been programmed and connected to the battery pack, the lights will display blue.  Connect one MiniGrabber from GND to GND.  Use another MiniGrabber to connect 3.3V to A1.  The light will turn magenta.  Disconnect the 3.3V and the light will change to blue.  This shows a circuit that has been connected.
-
-<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
-            src="/images/bluelights.jpg"
-            /> 
-<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
-            src="/images/magentalights.jpg"
-            /> 
-<br></br><br></br><br></br><br></br><br></br><br>
-</br><br>
-</br><br>
-</br>
-
-A CPX not powered and not connected with MiniGrabbers.
+Once the Circuit Playground Express (CPX) is connected, shine a bright light on the light sensor near .
+Then connect the battery pack and switch the power to on.
+When the CPX is running the program, all LEDs will display green. 
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
-            src="/images/MiniGrabbers.jpg"
+            src="/images/greenfive.png"
             /> 
-<br></br><br></br><br></br><br></br><br></br>
-<br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
+IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged.
+
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/redlights.png"
+            /> 
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+A CPX not powered.
+
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/nopowercpx.jpg"
+            /> 
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
 ### What:
-This lab demonstrates security intrusion and can be used to explain basic electrical circuits.  
+This lab demonstrates security intrusion and can be used to explain Cyber Security or Physical Security.  
 
 #### Details:
-Without proper critical environments in a Microsoft Datacenter, the power and network systems would become unstable.  Using the most basic concept of electricity (continuity on a circuit), this lab will explain simpler aspects of Critical Environments.
+Security is imperative concerning the data that is housed on any of Microsoft Datacenter servers.  Not only do we have the highest cyber security protocols, we also have secure facilities that require appropriate level badge access.  We also take precautions to avoid piggy-back entry into buildings.  Piggy-back entry is a term that may need to be explained.  (One gains entrance when closely entering in after a person in front has scanned and gain access to the building.  The second person does not need to scan their badge.)
 
 ### Share:
-Define Critical Environment and basic concepts. Critical environments are separate, stand-alone areas within a building that require different environmental conditions.  Air quality, humidity, temperature, air flow, spacing, and other requirements make up the controlled conditions that are required.  The most basic of these is a steady source of power/energy to power the equipment.  Datacenters have thousands of servers that contain many many Terabytes of data.  Essential and consistent power is needed to keep the data and equipment stabilized and available 24/7/365.  Heating, cooling, and backup generators are a major maintenance concern.  Here we will show how electricity powers a device.
+When you take a photo and save it to your cloud storage account, you are trusting the file will not be shared to others without your permission.  Certain security protocols are created and practiced to avoid security risks.  Similarly, datacenter buildings are secured to keep data vulnerabilities.  Employees also have different levels of access depending upon job needs.
 
 NOTE:
-This lab works by connecting the 3.3V output to the A1 touch capacitor which is reading the voltage in amount.
-To reset the program, press the reset button on the CPX.
+The labs works by measuring the intensity of the light read by the circuit.  If the light intensity falls below a certain value, an alarm will sound and the LEDs will turn red indicating a breach.
+
+To turn off the alarm, simply restore the light source.  To reset the program, press the reset button on the CPX.
 
 #### <a id="Source-1"></a> Source 1 
 The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
@@ -129,7 +152,11 @@ The program is now installed
 
 Press the reset button on the CPX.
 
-Once the Circuit Playground Express (CPX) is connected, without MiniGrabbers attached, all LEDs will display blue. 
+Once the Circuit Playground Express (CPX) is connected, shine a bright light on the light sensor near .
+
+Then connect the battery pack and switch the power to on.
+
+When the CPX is running the program, all LEDs will display green. 
 
 To **troubleshoot** the CPX device and program:
 
@@ -141,12 +168,10 @@ To **troubleshoot** the CPX device and program:
 
 4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
 
-5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Intrusion program.
+5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the TrioCombo program.
 
 #### <a id="Source-3"></a>Source 3
 **Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
-
-Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
 To **move the bootloader** to the CPX:
 
@@ -171,15 +196,23 @@ The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear fro
 The CPX is now ready with the original bootloader.
 
 #### <a id="Program-1"></a>Program 1
-To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below.  Save the file.  Program the CPX as listed in [Source 1](#Source-1).
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below:
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
-            src="/images/blockcodeprogram.png"
+            src="/images/bootloader.png"
             /> 
-<br></br><br></br>
-            <br></br><br></br>
-            <br></br><br></br>
-            <br></br><br></br>
-            <br></br><br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
 
 Program the CPX as listed in [Source 1](#Source-1).
