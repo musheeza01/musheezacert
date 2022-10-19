@@ -48,8 +48,8 @@ Note any items that are damaged, not working, or missing (including consumables)
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a>Appendix
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/greencircuit.png" /> 
-<img style={{margin-left: "30px", clear: "left", float: "left", width: "300px"}} src="/images/redcircuit.png" /> 
+<img style={{margin-left: "30px", float: "left", width: "300px"}} src="/images/greencircuit.png" /> 
+<img style={{margin-left: "30px", float: "left", width: "300px"}} src="/images/redcircuit.png" /> 
 
 <br></br><br></br><br></br><br></br><br></br>
 <p style="text-align: left;">Moist Soil</p>                              
