@@ -212,7 +212,7 @@ Click on the link (make sure it is for the Circuit Playground Express).  The fil
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/circuitplaygroundexpress.png"
             /> 
-<br><br>
+<br></br>
 
 To **move the bootloader** to the CPX:
 
