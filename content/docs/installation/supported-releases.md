@@ -122,7 +122,7 @@ A CPX not powered
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br>
 
 
 #### <a id="Lesson"></a> Lesson
@@ -170,7 +170,7 @@ When the CPX is first connected to a computer with the USB cable, it will run th
 To **create this program**, open learn.adafruit.com/uart-communication-between-two-circuitpython-boards/code.  Scroll down on the page and select Download Project Bundle.
 
 
-<img style={{margin: "0", clear: "right", float: "center", width: "200px"}}
+<img style={{margin: "0", clear: "right", align: "center", width: "200px"}}
             src="/images/projectbundle.png"
             /> 
 <br></br>
@@ -179,6 +179,8 @@ To **create this program**, open learn.adafruit.com/uart-communication-between-t
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/projectcode.png"
             /> 
+<br></br>
+<br></br>
 <br></br>
 <br></br>
 <br></br>
