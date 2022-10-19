@@ -47,9 +47,9 @@ Note any items that are damaged, not working, or missing (including consumables)
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a>Appendix
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/greencircuit.png" />
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/redcircuit.png"  />
 <br></br><br></br><br></br><br></br><br></br>
 <p>Moist Soil Needs Water</p>
@@ -59,15 +59,15 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/c1.png" />
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/c2.png" />
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/c3.png" />
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/c4.png" />
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/c5.png" />
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/c6.png" />
 
 <br></br><br></br><br></br><br></br><br></br>
@@ -78,15 +78,15 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <br></br>
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/yellowcircuit1.png" />
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/yellowcircuit2.png" />
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/yellowcircuit3.png" />
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/yellowcircuit4.png" />
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height:"200px", width: "300px"}}
             src="/images/yellowcircuit5.png" />
             
 
@@ -109,7 +109,7 @@ The temperature test gives the ambient temperature by every 2°F.  See [Source 2
 ### Share
 Lights give us different signals in the world around us.  Crosswalk lights, stop lights, self-checkout register lights, even car brake lights give us signals for what is ahead.  When this plant does not have enough water, the lights turn red.  When the plant has enough water, the lights turn green.  If it is too cold, the lights are blue.  If the plant is too warm, the lights are yellow.  Datacenters have the same alerts.  If a server has a red light, there is a device failure that must be resolved, or you may not be able to retrieve your photo from your Cloud drive on your phone (any relatable example).  We also have a commitment to remove the carbon by 2030 that we have put into the environment since 1975 and become carbon negative.  Carbon negative means we will remove more carbon than we have emitted in our energy consumption.  We are also committed to renewable energy goals.
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", width: "500px"}}
             src="/images/progress.jpg" />
             
 <br></br>
@@ -205,7 +205,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
             <br></br><br></br><br></br>
             <br></br><br></br><br></br>
-    <br></br><br></br>
+    <br></br><br></br><br></br><br></br><br></br><br></br>
 
 ### Program 1 Continued
 
@@ -216,7 +216,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program07.jpg" />
 <br></br><br></br>
-            <br></br><br></br>
+            <br></br><br></br><br></br><br></br>
     
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
