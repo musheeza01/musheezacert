@@ -58,10 +58,10 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <img src="/images/c1.png" style="float: left;" />
 <img src="/images/c2.png" style="margin-left:30px; float: left;" />
-<img src="/images/c3.png" style="margin-left:30px loat: left;" />
-<img src="/images/c4.png" style="margin-left:30px loat: left;" />
-<img src="/images/c5.png" style="margin-left:30px loat: left;" />
-<img src="/images/c6.png" style="margin-left:30px loat: left;" />
+<img src="/images/c3.png" style="margin-left:30px float: left;" />
+<img src="/images/c4.png" style="margin-left:30px float: left;" />
+<img src="/images/c5.png" style="margin-left:30px float: left;" />
+<img src="/images/c6.png" style="margin-left:30px float: left;" />
 
 <br></br><br></br><br></br><br></br><br></br>
 <p style="text-align: left;"> ≤ 60 °F</p>                             
@@ -75,9 +75,9 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <img src="/images/yellowcircuit1.png" style="float: left;" />
 <img src="/images/yellowcircuit2.png" style="margin-left:30px; float: left;" />
-<img src="/images/yellowcircuit3.png" style="margin-left:30px loat: left;" />
-<img src="/images/yellowcircuit4.png" style="margin-left:30px loat: left;" />
-<img src="/images/yellowcircuit5.png" style="margin-left:30px loat: left;" />
+<img src="/images/yellowcircuit3.png" style="margin-left:30px float: left;" />
+<img src="/images/yellowcircuit4.png" style="margin-left:30px float: left;" />
+<img src="/images/yellowcircuit5.png" style="margin-left:30px float: left;" />
 <br></br><br></br><br></br><br></br><br></br><br>
 
 <p style="text-align: left;"> ≤  60 °F</p>                             
@@ -102,6 +102,7 @@ The temperature test gives the ambient temperature by every 2°F.  See [Source 2
 Lights give us different signals in the world around us.  Crosswalk lights, stop lights, self-checkout register lights, even car brake lights give us signals for what is ahead.  When this plant does not have enough water, the lights turn red.  When the plant has enough water, the lights turn green.  If it is too cold, the lights are blue.  If the plant is too warm, the lights are yellow.  Datacenters have the same alerts.  If a server has a red light, there is a device failure that must be resolved, or you may not be able to retrieve your photo from your Cloud drive on your phone (any relatable example).  We also have a commitment to remove the carbon by 2030 that we have put into the environment since 1975 and become carbon negative.  Carbon negative means we will remove more carbon than we have emitted in our energy consumption.  We are also committed to renewable energy goals.
 
 <img src="/images/progress.jpg" style="height: 70%; width: 70%; float: left;" />
+
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br>
 
 ### Source:
