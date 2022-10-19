@@ -61,8 +61,8 @@ A CPX not powered and not connected with MiniGrabbers.
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MiniGrabber.jpg"
             /> 
-<br></br><br></br><br></br><br></br><br></br><br>
-<br></br><br></br><br></br><br>
+<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br>
 
 
 #### <a id="Lesson"></a>Lesson
