@@ -175,7 +175,7 @@ To **create this program**, open learn.adafruit.com/uart-communication-between-t
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/projectbundle.png"
             /> 
-<br>
+<br></br>
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/projectcode.png"
