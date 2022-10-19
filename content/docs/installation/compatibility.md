@@ -81,14 +81,14 @@ Touching the SDA / A5 or RX / A6 labeled capacitor will cause the following to r
             <br></br>
             <br></br>
             <br></br>
-             <br></br><br></br><br></br>
+             <br></br><br></br><br></br><br></br>
 
 Or
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/yellow.png"
             /> 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/yellowlightsfive.png"
             />             
 <br></br><br></br>
@@ -96,18 +96,16 @@ Or
 
 Touching the TX / A7 labeled capacitor will cause the following to repeat 3 times. (Green lights)
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/green.png"
             /> 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/greenfive.png"
             />             
 <br></br><br></br>
             <br></br>
             <br></br>
             <br></br>
-             <br></br>
-             <br></br>
              <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             
 #### <a id="Lesson"></a>Lesson
@@ -227,11 +225,11 @@ To create this program, open adafruit.MakeCode.com.  Create the bootloader file 
 <br></br>
 <br></br>
 <br></br>
-<br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br><br></br><br></br>
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/blockcodetwo.png" />
-<br></br>
+<br></br><br></br>
 <br></br>
 <br></br>
 <br></br>
@@ -248,7 +246,7 @@ To create this program, open adafruit.MakeCode.com.  Create the bootloader file 
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br>
 <br></br>
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/blockcodefour.png" />
@@ -259,7 +257,7 @@ To create this program, open adafruit.MakeCode.com.  Create the bootloader file 
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br>
 
 Program the CPX as listed in [Source 1](#Source-1).
 
