@@ -190,7 +190,7 @@ Click on the link (make sure it is for the Circuit Playground Express).  The fil
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/circuitplaygroundexpress.png" />
 <br></br>
-
+<br></br>
 
 To **move the bootloader** to the CPX:
 
@@ -227,7 +227,7 @@ To create this program, open adafruit.MakeCode.com.  Create the bootloader file 
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br><br></br>
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/blockcodetwo.png" />
@@ -238,11 +238,11 @@ To create this program, open adafruit.MakeCode.com.  Create the bootloader file 
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br><br></br>
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/blockcodethree.png" />
-<br></br>
+<br></br<br></br><br></br>
 <br></br>
 <br></br>
 <br></br>
@@ -255,7 +255,7 @@ To create this program, open adafruit.MakeCode.com.  Create the bootloader file 
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br><br></br>
 <br></br>
 <br></br>
 <br></br>
