@@ -45,19 +45,19 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 #### <a id="Appendix"></a>Appendix
 
-<p style="text-align: left;"> The TrioCombo program is ready and                             
-<p style="margin-left:310px; margin-top:-28px;">Moving the switch to the left will play the tune 'Bruno'
-<p style="text-align: left;"> installed when all lights display blue.                           
-<p style="margin-left:310px; margin-top:-28px;">from the movie Encanto
-<p style="text-align: left;">                           
-<p style="margin-left:310px; margin-top:10px;">Lights will change in color after each note.
+<p style="text-align: left;"> The TrioCombo program is ready and</p>                             
+<p style="margin-left:310px; margin-top:-28px;">Moving the switch to the left will play the tune 'Bruno'</p>  
+<p style="text-align: left;"> installed when all lights display blue.</p>  
+<p style="margin-left:310px; margin-top:-28px;">from the movie Encanto</p>  
+<p style="text-align: left;"></p>  
+<p style="margin-left:310px; margin-top:10px;">Lights will change in color after each note.</p>  
 
 <br></br>
 
 <img src=" /images/skybluelights.png" style="height: 200px; width: 200px; float: left;" />
 <img src=" /images/magentalights.jpg" style="height: 200px; width: 200px; float: right; margin-right: 240px;" />
 
-<br></br><br></br><br></br><br></br><br></br><br></br><br>
+<br></br><br></br><br></br><br></br><br></br><br></br>
 <img src=" /images/greenir.png" style="height: 200px; width: 200px; float: left; " />
 <img src=" /images/redir.png" style="height: 200px; width: 200px; float: left; " />
 <img src=" /images/yellowir.png" style="height: 200px; width: 200px; float: left; " />
