@@ -53,8 +53,8 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <br></br>
 <br></br>
 <br></br><br></br>
-<p style="text-align: left;">
-Moist Soil                 </p>              <p style="margin:110px; margin-top:-28px;">Needs Water </p> 
+<p style="text-align: left;"></p> 
+Moist Soil                              <p style="margin:110px; margin-top:-28px;"></p> Needs Water 
 
 <br></br>
 
@@ -66,12 +66,12 @@ Moist Soil                 </p>              <p style="margin:110px; margin-top:
 <img src="/images/c6.png" style="margin-left:30px; float: left;" />
 
 <br></br><br></br><br></br><br></br><br></br>
-<p style="text-align: left;"> ≤ 60 °F   </p>                          
-<p style="margin-left:130px; margin-top:-27px;">61-62°F </p> 
-<p style="margin-left:260px; margin-top:-27px;">63-64°F </p> 
-<p style="margin-left:380px; margin-top:-27px;">65-66°F </p> 
-<p style="margin-left:500px; margin-top:-27px;">67-68°F </p> 
-<p style="margin-left:620px; margin-top:-27px;">69-71°F </p> 
+<p style="text-align: left;"> </p> ≤ 60 °F                            
+<p style="margin-left:130px; margin-top:-27px;"> </p> 61-62°F
+<p style="margin-left:260px; margin-top:-27px;"> </p> 63-64°F 
+<p style="margin-left:380px; margin-top:-27px;"> </p> 65-66°F 
+<p style="margin-left:500px; margin-top:-27px;"> </p> 67-68°F 
+<p style="margin-left:620px; margin-top:-27px;"> </p> 69-71°F
 
 <br></br><br></br>
 
@@ -82,11 +82,11 @@ Moist Soil                 </p>              <p style="margin:110px; margin-top:
 <img src="/images/yellowcircuit5.png" style="margin-left:30px; float: left;" />
 <br></br><br></br><br></br><br></br><br></br>
 
-<p style="text-align: left;"> ≤ 60 °F                 </p>             
-<p style="margin-left:130px; margin-top:-27px;"> 72-73°F </p> 
-<p style="margin-left:260px; margin-top:-27px;"> 74-75°F </p> 
-<p style="margin-left:380px; margin-top:-27px;"> 76-77°F </p> 
-<p style="margin-left:500px; margin-top:-27px;"> ≥ 80°F </p> 
+<p style="text-align: left;"></p>  ≤ 60 °F                           
+<p style="margin-left:130px; margin-top:-27px;"></p>  72-73°F 
+<p style="margin-left:260px; margin-top:-27px;"></p>  74-75°F 
+<p style="margin-left:380px; margin-top:-27px;"></p>  76-77°F 
+<p style="margin-left:500px; margin-top:-27px;"> </p> ≥ 80°F 
 
 
 #### <a id="Lesson"></a>Lesson
