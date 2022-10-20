@@ -230,14 +230,14 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/buttondownprogram.png"
             />           
 <p style={{margin: " -332px 80px 0px 0px"}}>             
-<img src="/images/infraredreceived.png" style="float: right; height: 300px; width: 300px;"></p>
+<img src="/images/infraredreceived.png" style="float: right; height: 300px; width: 300px;"/></p>
           <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
 
-<img src="/images/movedleft.png" style=" float: left; height: 500px; width: 300px;">
+<img src="/images/movedleft.png" style=" float: left; height: 500px; width: 300px;"/>
 <p style={{margin: " -500px 70px 0px 0px"}}> 
-<img src="/images/movedright.png" style="float: right; height: 500px; width: 300px;"></p>
+<img src="/images/movedright.png" style="float: right; height: 500px; width: 300px;"/></p>
                <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
             
