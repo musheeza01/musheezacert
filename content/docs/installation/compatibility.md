@@ -57,47 +57,68 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <br></br>
 
-<img style={{float: "left", height:"300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height:"300px", width: "300px"}}
             src="/images/skybluelights.png"
             /> 
-<img style={{float: "right", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "right", height: "300px", width: "300px"}}
             src="/images/magentalights.jpg"
             />
 
 <br></br><br></br>
 <br></br><br></br>
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
 
 Pressing the A button (left button when battery adapter is facing down) will cycle signal lights from green, yellow, red.  Then the lights will reset at blue.  This also resets the IR tag count.
 
-<img style={{ float: "left", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/greenir.png"
             /> 
-<img style={{ float: "left", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/redir.png"
             /> 
-<img style={{ float: "left", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/yellowir.png"
             /> 
 
 
 <br></br>
 <br></br>
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged .
 
-<img style={{ float: "right", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "right", height: "300px", width: "300px"}}
             src="/images/redlights.png"
             /> 
-<img style={{ float: "right", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "right", height: "300px", width: "300px"}}
             src="/images/bluelights.jpg"
             />             
 <br></br>
 <br></br>
 <br></br>
-<br></br><br></br>
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 
 #### <a id="Lesson"></a>Lesson
@@ -207,7 +228,7 @@ The CPX is now ready with the original bootloader.
 #### <a id="Program-1"></a>Program 1
 To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below:
 
-<img style={{ float: "left", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/onstart.png"
             /> 
 <br></br><br></br>
@@ -215,11 +236,11 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
             <br></br><br></br>
 
-<img style={{ float: "left", height: "500px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "500px", width: "300px"}}
             src="/images/button.png"
             />    
-<p style={{margin: " 240px 0px 0px 70px"}}> 
-<img style={{float: "left", height: "300px", width: "300px"}}
+<p style={{margin: "240px 0px 0px 70px"}}> 
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/ring.png"
             /></p>
 <br></br><br></br>
@@ -228,42 +249,42 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br>
 
-<img style={{float: "left", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/buttondownprogram.png"
             />           
-<p style={{margin: " -332px 80px 0px 0px"}}>             
-<img src="/images/infraredreceived.png" style="float: right; height: 300px; width: 300px;"/></p>
+<p style={{margin: "-332px 80px 0px 0px"}}>             
+<img style={{ margin: "0", clear: "right", float: "right", height: "300px", width: "300px"}} src="/images/infraredreceived.png""/></p>
           <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
 
 <img src="/images/movedleft.png" style=" float: left; height: 500px; width: 300px;"/>
-<p style={{margin: " -500px 70px 0px 0px"}}> 
-<img src="/images/movedright.png" style="float: right; height: 500px; width: 300px;"/></p>
+<p style={{margin: "-500px 70px 0px 0px"}}> 
+ <img  style={{ margin: "0", clear: "right", float: "right", height: "500px",  width: "300px"}} src="/images/movedright.png" /></p>
                <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
             
-<img style={{ float: "left", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/bracket.png"
             />         
               <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
-<img style={{ float: "left", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/intro.png"
             />       
             
 <p style={{ margin: "-300px 70px 0px 0px"}}> 
-<img style={{ float: "right", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "right", height: "300px", width: "300px"}}
             src="/images/beat.png"
             /></p>    
 
   <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
             
-<img style={{ float: "left", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/intro2.png"
             />                     
-<img style={{ float: "left", height: "300px", width: "300px"}}
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/middle.png"
             />     
               <br></br><br></br><br></br><br></br>
@@ -274,7 +295,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
 <p align="center">
-<img style={{ width: "300px"}}
+<img style={{ margin: "0", clear: "right", width: "300px"}}
             src="/images/MakeCode_Program08.jpg" /></p>
             
 Program the CPX as listed in [Source 1](#Source-1).
