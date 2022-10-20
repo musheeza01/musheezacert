@@ -78,10 +78,10 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <br></br><br></br><br></br><br></br><br></br><br></br>
 <p> ≤  60 °F</p>
 <p style={{margin: "-52px 0px 0px 120px"}}>61-62°F</p>
-<p style={{margin: "-52px 0px 0px 120px"}}63-64°F</p>
-<p style={{margin: "-52px 0px 0px 120px"}}65-66°F</p>
-<p style={{margin: "-52px 0px 0px 120px"}}67-68°F</p>
-<p style={{margin: "-52px 0px 0px 120px"}}69-71°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}> 63-64°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}>65-66°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}>67-68°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}>69-71°F</p>
 
 <br></br>
 
