@@ -200,19 +200,18 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program01.jpg" />
             
-<img style={{margin: "0", clear: "right", float: "bottom", width: "300px"}}
+<img style={{margin: "0", clear: "right", vertical-align: "bottom"; width: "300px"}}
             src="/images/MakeCode_Program04.jpg" />
 <br></br><br></br>
             <br></br><br></br><br></br>
             <br></br><br></br><br></br>
-    <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
 ### Program 1 Continued
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program06b.jpg" />
    <br></br> <br></br>
-            <br></br><br></br><br></br>   <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br>   <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program07.jpg" />
 <br></br><br></br>
