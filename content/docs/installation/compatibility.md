@@ -231,19 +231,13 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/buttondownprogram.png"
             />            
 <p style={{margin: " 0px 0px 0px 70px"}}> 
-<img style={{margin: " 0px 100px 0px 0px", clear: "left", float: "left", height: "300px", width: "300px"}}
-            src="/images/infraredreceived.png"
-            /> </p>
+<img src="/images/infraredreceived.png" style="margin: -332px 80px 0px 0px; clear: left; float: right; height: 300px; width: 300px;"> </p>
           <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
 
-<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
-            src="/images/movedleft.png"
-            />  
-<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
-            src="/images/movedright.png"
-            />     
+<img src="/images/movedleft.png" style="margin: 0px; clear: left; float: left; height: 500px; width: 300px;">
+<img src="/images/movedright.png" style="margin: -500px 70px 0px 0px; clear: left; float: right; height: 500px; width: 300px;">
                <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
             
@@ -257,9 +251,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             />       
             
             
-<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
-            src="/images/beat.png"
-            />    
+<img src="/images/beat.png" style="margin: -300px 70px 0px 0px; clear: left; float: right; height: 300px; width: 300px;">
   <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
             
