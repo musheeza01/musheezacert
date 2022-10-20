@@ -253,7 +253,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/buttondownprogram.png"
             />           
 <p style={{margin: "-332px 80px 0px 0px"}}>             
-<img style={{  clear: "right", float: "right", height: "300px", width: "300px"}} src="/images/infraredreceived.png""/></p>
+<img style={{  clear: "right", float: "right", height: "300px", width: "300px"}} src="/images/infraredreceived.png"/></p>
           <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
