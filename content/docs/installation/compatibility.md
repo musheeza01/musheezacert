@@ -235,7 +235,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <p style={{margin: " 0px 0px 0px 70px"}}> 
 <img style={{margin: " 0px 100px 0px 0px", clear: "left", float: "right", height: "300px", width: "300px"}}
             src="/images/infraredreceived.png"
-            /> 
+            /> </p>
           <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
