@@ -78,14 +78,18 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <br></br><br></br><br></br><br></br><br></br><br></br>
 <p> ≤  60 °F</p>
 <p style={{margin: "-52px 0px 0px 120px"}}>61-62°F</p>
+
 <p style={{margin: "-52px 0px 0px 120px"}}> 63-64°F</p>
+
 <p style={{margin: "-52px 0px 0px 120px"}}>65-66°F</p>
+
 <p style={{margin: "-52px 0px 0px 120px"}}>67-68°F</p>
+
 <p style={{margin: "-52px 0px 0px 120px"}}>69-71°F</p>
 
 <br></br>
 
-<img style={{margin: "0px 0px 0px 0px", clear: "right", float: "left", height:"150px", width: "70px"}}
+<img style={{margin: "0px 0px 0px 0px",  float: "left", height:"150px", width: "70px"}}
             src="/images/yellowcircuit1.png" />
 <img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/yellowcircuit2.png" />
@@ -110,6 +114,10 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <br></br>
 <br></br>
+<br></br>
+<br></br>
+
+
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
