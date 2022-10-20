@@ -200,7 +200,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program01.jpg" />
             
-<img style={{margin: "0", clear: "right", align: "bottom"; width: "300px"}}
+<img style={{margin: "0", clear: "right", align: "bottom", width: "300px"}}
             src="/images/MakeCode_Program04.jpg" />
 <br></br><br></br>
             <br></br><br></br><br></br>
