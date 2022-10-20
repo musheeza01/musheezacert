@@ -46,11 +46,13 @@ For any questions contact the Microsoft Datacenter Community Development team at
 #### <a id="Appendix"></a>Appendix
 
 <p> The TrioCombo program is ready and  </p>
+
 <p style={{margin: " -50px 0px 0px 400px"}}> Moving the switch to the left will play the tune 'Bruno'</p>
 
 <p style={{margin: "-35px 0px 0px 000px"}}>installed when all lights display blue.</p>
                            
 <p style={{margin: "margin: -78px 0px 0px 400px"}}> from the movie Encanto</p>
+
 <p style={{margin: "-31px 0px 0px 400px"}}> Lights will change in color after each note.</p>
 
 <br></br>
@@ -219,7 +221,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <p style={{margin: " 240px 0px 0px 70px"}}> 
 <img style={{float: "left", height: "300px", width: "300px"}}
             src="/images/ring.png"
-            /> </p>
+            /></p>
 <br></br><br></br>
             <br></br><br></br>
             <br></br><br></br><br></br><br></br>
@@ -241,16 +243,16 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
                <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
             
-<img style={{float: "left", height: "300px", width: "300px"}}
+<img style={{ float: "left", height: "300px", width: "300px"}}
             src="/images/bracket.png"
             />         
               <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
-<img style={{float: "left", height: "300px", width: "300px"}}
+<img style={{ float: "left", height: "300px", width: "300px"}}
             src="/images/intro.png"
             />       
             
-<p style={{margin: "-300px 70px 0px 0px"}}> 
+<p style={{ margin: "-300px 70px 0px 0px"}}> 
 <img style={{ float: "right", height: "300px", width: "300px"}}
             src="/images/beat.png"
             /></p>    
