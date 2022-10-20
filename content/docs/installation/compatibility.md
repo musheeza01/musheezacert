@@ -54,23 +54,26 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <br></br><br></br><br></br><br></br><br></br><br></br>
 <p>Moist Soil</p>
 
-<p style={{margin: "-55px 0px 0px 70px"}}>Needs Water</p>
+<p style={{margin: "-52px 0px 0px 120px"}}>Needs Water</p>
 
 <br></br>
 
 <img style={{margin: "0px", clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c1.png" />
-<p style={{margin: "-10px 0px 0px 50px"}}>
+<p style={{margin: "-52px 0px 0px 120px"}}>
 <img style={{margin: "0px 0px 0px 50px" , clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c2.png" /></p>
+<p style={{margin: "-52px 0px 0px 120px"}}>
 <img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"150px", width: "70px"}}
-            src="/images/c3.png" />
+            src="/images/c3.png" /></p>
+<p style={{margin: "-52px 0px 0px 120px"}}>
 <img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
-            src="/images/c4.png" />
+            src="/images/c4.png" /></p>
+<p style={{margin: "-52px 0px 0px 120px"}}>
 <img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
-            src="/images/c5.png" />
-<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
-            src="/images/c6.png" />
+            src="/images/c5.png" /></p>
+<p><img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
+            src="/images/c6.png" /></p>
 
 <br></br><br></br><br></br><br></br><br></br>
 <p> ≤  60 °F</p>
@@ -95,7 +98,11 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <br></br><br></br><br></br><br></br><br></br>
 
-<p> ≤  60 °F 72-73°F 74-75°F 76-77°F ≥80°F</p>
+<p> ≤  60 °F </p>
+<p style={{margin: "-52px 0px 0px 120px"}}>72-73°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}>74-75°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}>76-77°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}> ≥80°F</p>
 
 
 #### <a id="Lesson"></a>Lesson
