@@ -59,7 +59,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <img style={{margin: "0", clear: "left", float: "left", height:"300px", width: "300px"}}
             src="/images/skybluelights.png"
             /> 
-<p style={{margin: " 0px 240px 0px 0px"}}>
+<p style={{margin: " 0px 0px 0px 240px"}}>
 <img style={{margin: "0", clear: "left", float: "right", height: "300px", width: "300px"}}
             src="/images/magentalights.jpg"
             /> </p>
