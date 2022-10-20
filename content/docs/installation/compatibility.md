@@ -53,7 +53,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
             src="/images/redcircuit.png"  />
 <br></br><br></br><br></br><br></br><br></br><br></br>
 <p>Moist Soil</p>
-<p style={{margin: "-10px 0px 0px 50px"}}>Needs Water</p>
+<p style={{margin: "-20px 0px 0px 70px"}}>Needs Water</p>
 
 <br></br>
 
@@ -72,7 +72,8 @@ For any questions contact the Microsoft Datacenter Community Development team at
             src="/images/c6.png" />
 
 <br></br><br></br><br></br><br></br><br></br>
-<p> ≤  60 °F         61-62°F   63-64°F
+<p> ≤  60 °F</p>
+<p style={{margin: "-20px 0px 0px 40px"}}>61-62°F   63-64°F
 65-66°F
 67-68°F
 69-71°F</p>
@@ -213,10 +214,10 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/MakeCode_Program06b.jpg" />
    <br></br> <br></br>
             <br></br><br></br>  <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-<img style={{margin: "-10px 0px 0px 0px", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "-15px 0px 0px 0px", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program07.jpg" />
 <br></br><br></br>
-            <br></br><br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br>
     
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
