@@ -51,7 +51,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <p style={{margin: "-35px 0px 0px 000px"}}>installed when all lights display blue.</p>
                            
-<p style={{margin: "margin: -78px 0px 0px 400px"}}> from the movie Encanto</p>
+<p style={{margin: "-78px 0px 0px 400px"}}> from the movie Encanto</p>
 
 <p style={{margin: "-31px 0px 0px 400px"}}> Lights will change in color after each note.</p>
 
@@ -240,7 +240,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/button.png"
             />    
 <p style={{margin: "240px 0px 0px 70px"}}> 
-<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
+<img style={{ clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/ring.png"
             /></p>
 <br></br><br></br>
@@ -253,14 +253,14 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/buttondownprogram.png"
             />           
 <p style={{margin: "-332px 80px 0px 0px"}}>             
-<img style={{ margin: "0", clear: "right", float: "right", height: "300px", width: "300px"}} src="/images/infraredreceived.png""/></p>
+<img style={{  clear: "right", float: "right", height: "300px", width: "300px"}} src="/images/infraredreceived.png""/></p>
           <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
 
 <img src="/images/movedleft.png" style=" float: left; height: 500px; width: 300px;"/>
 <p style={{margin: "-500px 70px 0px 0px"}}> 
- <img  style={{ margin: "0", clear: "right", float: "right", height: "500px",  width: "300px"}} src="/images/movedright.png" /></p>
+ <img  style={{ clear: "right", float: "right", height: "500px",  width: "300px"}} src="/images/movedright.png" /></p>
                <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
             
@@ -274,7 +274,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             />       
             
 <p style={{ margin: "-300px 70px 0px 0px"}}> 
-<img style={{ margin: "0", clear: "right", float: "right", height: "300px", width: "300px"}}
+<img style={{ clear: "right", float: "right", height: "300px", width: "300px"}}
             src="/images/beat.png"
             /></p>    
 
