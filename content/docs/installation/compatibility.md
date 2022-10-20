@@ -47,12 +47,13 @@ Note any items that are damaged, not working, or missing (including consumables)
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a>Appendix
-<img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"150px", width: "50px"}}
+<img style={{clear: "right", float: "left", height:"150px", width: "50px"}}
             src="/images/greencircuit.png" />
 <img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"150px", width: "50px"}}
             src="/images/redcircuit.png"  />
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-<p>Moist Soil Needs Water</p>
+<br></br><br></br><br></br><br></br><br></br><br></br>
+<p>Moist Soil</p>
+<p style={{margin: "0px 0px 0px 50px"}}>Needs Water</p>
 
 <br></br>
 
@@ -204,18 +205,18 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/MakeCode_Program04.jpg" />
 <br></br><br></br>
             <br></br><br></br><br></br>
-            <br></br><br></br><br></br>
+           
 
 ### Program 1 Continued
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program06b.jpg" />
    <br></br> <br></br>
-            <br></br><br></br><br></br>   <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            <br></br><br></br>  <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program07.jpg" />
 <br></br><br></br>
-            <br></br><br></br><br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br>
     
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
