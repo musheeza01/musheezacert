@@ -278,8 +278,8 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
-<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
-            src="/images/MakeCode_Program08.jpg"
-            />    
+<p align="center">
+<img style={{ width: "300px"}}
+            src="/images/MakeCode_Program08.jpg" /></p>
             
 Program the CPX as listed in [Source 1](#Source-1).
