@@ -47,28 +47,29 @@ Note any items that are damaged, not working, or missing (including consumables)
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a>Appendix
-<img style={{clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/greencircuit.png" />
-<img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/redcircuit.png"  />
 <br></br><br></br><br></br><br></br><br></br><br></br>
 <p>Moist Soil</p>
-<p style={{margin: "-35px 0px 0px 70px"}}>Needs Water</p>
+
+<p style={{margin: "-55px 0px 0px 70px"}}>Needs Water</p>
 
 <br></br>
 
-<img style={{margin: "0px", clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px", clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c1.png" />
 <p style={{margin: "-10px 0px 0px 50px"}}>
-<img style={{margin: "0px 0px 0px 50px" , clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px" , clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c2.png" /></p>
-<img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c3.png" />
-<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c4.png" />
-<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c5.png" />
-<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c6.png" />
 
 <br></br><br></br><br></br><br></br><br></br>
@@ -80,15 +81,15 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <br></br>
 
-<img style={{margin: "0px 0px 0px 0px", clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 0px", clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/yellowcircuit1.png" />
-<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/yellowcircuit2.png" />
-<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/yellowcircuit3.png" />
-<img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/yellowcircuit4.png" />
-<img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"180px", width: "50px"}}
+<img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/yellowcircuit5.png" />
             
 
@@ -205,7 +206,6 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <img style={{margin: "40px 0px 0px 0px",  clear: "right", align: "bottom", width: "300px"}}
             src="/images/MakeCode_Program04.jpg" />
 <br></br><br></br>
-            <br></br>
            
 
 ### Program 1 Continued
@@ -213,11 +213,11 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program06b.jpg" />
    <br></br> <br></br>
-            <br></br><br></br>  <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            <br></br><br></br>  <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <img style={{margin: "-15px 0px 0px 0px", clear: "right", float: "left", width: "300px"}}
             src="/images/MakeCode_Program07.jpg" />
 <br></br><br></br>
-            <br></br>
+<br></br><br></br><br></br>
     
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
