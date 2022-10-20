@@ -214,10 +214,10 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
             <br></br><br></br>
 
-<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+<img style={{margin: "0", clear: "left", float: "left", height: "500px", width: "300px"}}
             src="/images/button.png"
             />    
-<p style={{margin: " -58px 0px 0px 70px"}}> 
+<p style={{margin: " 240px 0px 0px 70px"}}> 
 <img style={{float: "left", height: "300px", width: "300px"}}
             src="/images/ring.png"
             /> </p>
@@ -226,15 +226,12 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br>
-           <br></br><br></br><br></br>
-           <br></br><br></br><br></br>
-
 
 <img style={{float: "left", height: "300px", width: "300px"}}
             src="/images/buttondownprogram.png"
             />            
 <p style={{margin: " 0px 0px 0px 70px"}}> 
-<img style={{margin: " 0px 100px 0px 0px", clear: "left", float: "right", height: "300px", width: "300px"}}
+<img style={{margin: " 0px 100px 0px 0px", clear: "left", float: "left", height: "300px", width: "300px"}}
             src="/images/infraredreceived.png"
             /> </p>
           <br></br><br></br><br></br><br></br>
