@@ -60,16 +60,16 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <img style={{margin: "0px", clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c1.png" />
-<p style={{margin: "-52px 0px 0px 120px"}}>
+<p style={{margin: "-52px 0px 0px 50px"}}>
 <img style={{margin: "0px 0px 0px 50px" , clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c2.png" /></p>
-<p style={{margin: "-52px 0px 0px 120px"}}>
+<p style={{margin: "-52px 0px 0px 50px"}}>
 <img style={{margin: "0px 0px 0px 50px", clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c3.png" /></p>
-<p style={{margin: "-52px 0px 0px 120px"}}>
+<p style={{margin: "-52px 0px 0px 50px"}}>
 <img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c4.png" /></p>
-<p style={{margin: "-52px 0px 0px 120px"}}>
+<p style={{margin: "-52px 0px 0px 50px"}}>
 <img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
             src="/images/c5.png" /></p>
 <p><img style={{margin: "0px 0px 0px 50px",  clear: "right", float: "left", height:"150px", width: "70px"}}
@@ -77,10 +77,11 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <br></br><br></br><br></br><br></br><br></br><br></br>
 <p> ≤  60 °F</p>
-<p style={{margin: "-20px 0px 0px 40px"}}>61-62°F   63-64°F
-65-66°F
-67-68°F
-69-71°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}>61-62°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}63-64°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}65-66°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}67-68°F</p>
+<p style={{margin: "-52px 0px 0px 120px"}}69-71°F</p>
 
 <br></br>
 
