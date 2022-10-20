@@ -51,9 +51,9 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <p style={{ margin: " -35px 0px 0px 000px" }}>installed when all lights display blue.</p>
                            
-<p style={{ margin: " -78px 0px 0px 400px" }}> from the movie Encanto</p>
+<p style={{ margin: "08px 0px 0px 400px" }}> from the movie Encanto</p>
 
-<p style={{ margin: " -31px 0px 0px 400px" }}> Lights will change in color after each note.</p>
+<p style={{ margin: "08px 0px 0px 400px" }}> Lights will change in color after each note.</p>
 
 <br></br>
 
@@ -72,4 +72,26 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <br></br><br></br>
 
 Pressing the A button (left button when battery adapter is facing down) will cycle signal lights from green, yellow, red.  Then the lights will reset at blue.  This also resets the IR tag count.
+
+<img style={{ margin: "0px", clear: "right", float: "left", height: "300px", width: "300px"}}
+            src="/images/greenir.png"
+            /> 
+<img style={{ margin: "0px", clear: "right", float: "left", height: "300px", width: "300px"}}
+            src="/images/redir.png"
+            /> 
+<img style={{ margin: "0px", clear: "right", float: "left", height: "300px", width: "300px"}}
+            src="/images/yellowir.png"
+            /> 
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br><br></br>
+
+IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged .
 
