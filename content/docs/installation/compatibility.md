@@ -46,13 +46,13 @@ For any questions contact the Microsoft Datacenter Community Development team at
 #### <a id="Appendix"></a>Appendix
 
 <p> The TrioCombo program is ready and  </p>
-<p style={{margin: " -28px 0px 310px 0px"}}> Moving the switch to the left will play the tune 'Bruno'</p>
+<p style={{margin: " -50px 0px 0px 400px"}}> Moving the switch to the left will play the tune 'Bruno'</p>
 
-<p> installed when all lights display blue.</p>
+<p style={{margin: "-50px 0px 0px 400px"}}>installed when all lights display blue.</p>
                            
-<p style={{margin: " -28px 0px 310px 0px"}}> from the movie Encanto</p>
+<p style={{margin: "margin: -78px 0px 0px 400px"}}> from the movie Encanto</p>
 <p>         </p>                  
-<p style={{margin: " -28px 0px 310px 0px"}}> Lights will change in color after each note.</p>
+<p style={{margin: "-31px 0px 0px 400px"}}> Lights will change in color after each note.</p>
 
 <br></br>
 
