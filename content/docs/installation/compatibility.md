@@ -68,13 +68,13 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <br></br><br></br>
 <br></br><br></br>
 
-<img style={{margin: "0", clear: "left", float: "right", height: "300px", width: "300px"}}
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
             src="/images/greenir.png"
             /> 
-<img style={{margin: "0", clear: "left", float: "right", height: "300px", width: "300px"}}
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
             src="/images/redir.png"
             /> 
-<img style={{margin: "0", clear: "left", float: "right", height: "300px", width: "300px"}}
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
             src="/images/yellowir.png"
             /> 
 
@@ -205,7 +205,7 @@ The CPX is now ready with the original bootloader.
 #### <a id="Program-1"></a>Program 1
 To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below:
 
-<img style={{margin: "0", clear: "left", float: "right", height: "300px", width: "300px"}}
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
             src="/images/onstart.png"
             /> 
 <br></br><br></br>
@@ -213,12 +213,13 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
             <br></br><br></br>
 
-<img style={{margin: "0", clear: "left", float: "right", height: "300px", width: "300px"}}
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
             src="/images/button.png"
-            />          
-<img style={{margin: " 250px 0px 0px 0px", clear: "left", float: "right", height: "300px", width: "300px"}}
+            />    
+<p style={{margin: " -58px 0px 0px 70px"}}> 
+<img style={{float: "left", height: "300px", width: "300px"}}
             src="/images/ring.png"
-            />                
+            /> </p>
 <br></br><br></br>
             <br></br><br></br>
             <br></br><br></br><br></br><br></br>
@@ -227,9 +228,11 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
            <br></br><br></br><br></br>
            <br></br><br></br><br></br>
 
-<img style={{margin: "0", clear: "left", float: "right", height: "300px", width: "300px"}}
+
+<img style={{float: "left", height: "300px", width: "300px"}}
             src="/images/buttondownprogram.png"
             />            
+<p style={{margin: " 0px 0px 0px 70px"}}> 
 <img style={{margin: " 0px 100px 0px 0px", clear: "left", float: "right", height: "300px", width: "300px"}}
             src="/images/infraredreceived.png"
             /> 
@@ -237,5 +240,46 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br>
 
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/movedleft.png"
+            />  
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/movedright.png"
+            />     
+               <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br>
+            
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/bracket.png"
+            />         
+              <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br>
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/intro.png"
+            />       
+            
+            
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/beat.png"
+            />    
+  <br></br><br></br><br></br><br></br>          <br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br>
+            
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/intro2.png"
+            />                     
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/middle.png"
+            />     
+              <br></br><br></br><br></br><br></br>
+              <br></br><br></br><br></br><br></br>
+              <br></br><br></br><br></br><br></br>
+   
 
+Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
+
+<img style={{margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/MakeCode_Program08.jpg"
+            />    
+            
 Program the CPX as listed in [Source 1](#Source-1).
