@@ -260,7 +260,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 
 
   
- <img style={{ float: left; height: 500px; width: 300px}} src="/images/movedleft.png"/>
+ <img style={{ float: "left", height: "500px", width: "300px"}} src="/images/movedleft.png"/>
 <p style={{margin: "-500px 70px 0px 0px"}}> 
  <img  style={{ clear: "right", float: "right", height: "500px",  width: "300px"}} src="/images/movedright.png" /></p>
   
