@@ -229,29 +229,93 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/button.png"
             />
 
-<p style={{margin: "240px 70px 0px 0px"}}> 
- <img style={{ margin: "0px", clear: "left", float: "left", height: "400px", width: "300px" }}
+<p style={{margin: "100px 70px 0px 0px"}}> 
+ <img style={{ margin: "0px", clear: "right", float: "left", height: "400px", width: "300px" }}
             src="/images/ring.png"
             /></p>
 
  
-<br></br><br></br>
+<br></br><br></br><br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
 
-<img style={{ margin: "0px", clear: "left", float: "left", height: "500px", width: "300px" }} src="/images/buttondownprogram.png" />
+<p style={{margin: "38px 0px 0px 0px"}}>   
+<img style={{ margin: "0px", clear: "left", float: "left", height: "300px", width: "300px" }} src="/images/buttondownprogram.png" /></p>
 
 
 <p style={{margin: "-332px 80px 0px 0px"}}>             
-<img style={{  clear: "right", float: "right", height: "300px", width: "300px"}} src="/images/infraredreceived.png"/></p>
+<img style={{  clear: "right", float: "right", height: "500px", width: "300px"}} src="/images/infraredreceived.png"/></p>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br><br></br><br></br>
+<br></br><br></br>
+<br></br><br></br><br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+
+
+  
+ <img style={{ float: left; height: 500px; width: 300px}} src="/images/movedleft.png"/>
+<p style={{margin: "-500px 70px 0px 0px"}}> 
+ <img  style={{ clear: "right", float: "right", height: "500px",  width: "300px"}} src="/images/movedright.png" /></p>
+  
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
+<br></br><br></br>    
+ 
+ 
+            
+<img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/bracket.png"
+            />         
+            <br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br><br></br>
+
+<img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/intro.png"
+            />              
+<p style={{ margin: "-300px 70px 0px 0px"}}> 
+<img style={{ clear: "right", float: "right", height: "300px", width: "300px"}}
+            src="/images/beat.png"
+            /></p>    
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br><br></br>
+            
+<img style={{ margin: "0px", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/intro2.png"
+            />                     
+<img style={{ margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
+            src="/images/middle.png"
+            />     
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
