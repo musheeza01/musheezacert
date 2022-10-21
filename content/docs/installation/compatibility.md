@@ -222,8 +222,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
+<br></br>
   
  <img style={{ margin: "0px", clear: "left", float: "left", height: "500px", width: "300px" }}
             src="/images/button.png"
@@ -234,43 +233,16 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/ring.png"
             /></p>
 
- 
-<br></br><br></br><br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-
 <p style={{margin: "38px 0px 0px 0px"}}>   
 <img style={{ margin: "0px", clear: "left", float: "left", height: "300px", width: "300px" }} src="/images/buttondownprogram.png" /></p>
 
 
 <p style={{margin: "-332px 80px 0px 0px"}}>             
 <img style={{  clear: "right", float: "right", height: "500px", width: "300px"}} src="/images/infraredreceived.png"/></p>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br><br></br><br></br>
-<br></br><br></br>
-<br></br><br></br><br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-
-
   
  <img style={{ float: "left", height: "500px", width: "300px"}} src="/images/movedleft.png"/>
 <p style={{margin: "-500px 70px 0px 0px"}}> 
- <img  style={{ clear: "right", float: "right", height: "500px",  width: "300px"}} src="/images/movedright.png" /></p>
-  
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>    
- 
+ <img  style={{ clear: "right", float: "right", height: "500px",  width: "300px"}} src="/images/movedright.png" /></p> 
  
             
 <img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
