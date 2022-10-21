@@ -247,7 +247,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
 <br></br><br></br>
 
- <img style={{ margin: "0px", clear: "left", float: "left", height: 3500px", width: "300px" }}
+ <img style={{ margin: "0px", clear: "left", float: "left", height: "500px", width: "300px" }}
             src="/images/buttondownprogram.png"
             />
 
@@ -265,8 +265,55 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
-<br></br><br></br>         
+<br></br><br></br>    
+ 
+ 
+            
+<img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/bracket.png"
+            />         
+            <br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br><br></br>
 
+<img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/intro.png"
+            />       
+            
+<p style={{ margin: "-300px 70px 0px 0px"}}> 
+<img style={{ clear: "right", float: "right", height: "300px", width: "300px"}}
+            src="/images/beat.png"
+            /></p>    
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br><br></br>
+            
+<img style={{ margin: "0px", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/intro2.png"
+            />                     
+<img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
+            src="/images/middle.png"
+            />     
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br><br></br>
+  
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
 <p align="center">
