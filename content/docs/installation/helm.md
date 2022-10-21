@@ -1,206 +1,222 @@
----
-title: Helm
-description: 'cert-manager installation: Using Helm'
----
+# CPX IR Tag and DC Light Signals
+#### Purpose
+Statement of Work Template intended for Datacenter Volunteer Lead Community Engagements.  
 
-## Installing with Helm
+#### Materials
+2 AAA Battery housing
 
-cert-manager provides Helm charts as a first-class method of installation on both Kubernetes and OpenShift.
+9 AAA Batteries (3 spare)
 
-Be sure never to embed cert-manager as a sub-chart of other Helm charts; cert-manager manages
-non-namespaced resources in your cluster and care must be taken to ensure that it is installed exactly once.
+2 Circuit Playground Express
 
-### Prerequisites
-
-- [Install Helm version 3 or later](https://helm.sh/docs/intro/install/).
-- Install a [supported version of Kubernetes or OpenShift](./supported-releases.md).
-- Read [Compatibility with Kubernetes Platform Providers](./compatibility.md) if you are using Kubernetes on a cloud platform.
-
-### Steps
+Data/Sync USB Cable
 
 
-#### 1. Add the Helm repository
+#### Before
+Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
-This repository is the only supported source of cert-manager charts. There are some other mirrors and copies across the internet, but those are entirely unofficial and could present a security risk.
+### Start
+Read through  [Source 1](#Source-1) below. When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
-Notably, the "Helm stable repository" version of cert-manager is deprecated and should not be used.
+#### Get Ready
+**Prep the CPX** : Connect the USB-A/MicroUSB cable to the computer USB port.  Connect the MicroUSB end to the CPX.  Press the reset button twice, like a double-click.  A CPLAYBOOT drive should appear. Use the information in [Program 1](#Program-1) to add the bootloader to the CPX as in [Source 2](#Source-2). 
 
-```bash
-helm repo add jetstack https://charts.jetstack.io
-```
+**Power the CPX**: Insert the batteries into the battery pack.  Connect the battery pack to the CPX. Power on the battery pack.
 
-#### 2. Update your local Helm chart repository cache:
+#### Go
+This program contains three elements:
 
-```bash
-helm repo update
-```
+1.	IR Tag ‘laser’ transmitted (Button B)
 
-#### 3. Install `CustomResourceDefinitions`
+2.	Reset lights, tag count (Button A)
 
-cert-manager requires a number of CRD resources, which can  be installed manually using `kubectl`,
-or using the `installCRDs` option when installing the Helm chart.
+See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-##### Option 1: installing CRDs with `kubectl`
+### After
+Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
+### Source
+1.	IR Tag and Reset are all programmed through Makecode.adafruit.com. See [Program 1](#Program-1) below for programming details.
 
-```bash
-kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.9.1/cert-manager.crds.yaml
-```
+### Get Help
+For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
-##### Option 2: install CRDs as part of the Helm release
+#### <a id="Appendix"></a>Appendix
+Pressing the A button (left button when battery adapter is facing down) will reset the IR tag count and set all lights to blue.
 
-To automatically install and manage the CRDs as part of your Helm release, you
-must add the `--set installCRDs=true` flag to your Helm installation command.
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
+            src="/images/bluelights.jpg"
+            /> 
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
 
-Uncomment the relevant line in the next steps to enable this.
+IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged.
 
-Note that if you're using a `helm` version based on Kubernetes `v1.18` or below (Helm `v3.2`), `installCRDs` will not work with cert-manager `v0.16`. See the [v0.16 upgrade notes](./upgrading/upgrading-0.15-0.16.md#helm) for more details.
-
-#### 4. Install cert-manager
-
-To install the cert-manager Helm chart, use the [Helm install command](https://helm.sh/docs/helm/helm_install/) as described below.
-
-```bash
-helm install \
-  cert-manager jetstack/cert-manager \
-  --namespace cert-manager \
-  --create-namespace \
-  --version v1.9.1 \
-  # --set installCRDs=true
-```
-
-A full list of available Helm values is on [cert-manager's ArtifactHub page](https://artifacthub.io/packages/helm/cert-manager/cert-manager).
-
-The example below shows how to tune the cert-manager installation by overwriting the default Helm values:
-
-```bash
-helm install \
-  cert-manager jetstack/cert-manager \
-  --namespace cert-manager \
-  --create-namespace \
-  --version v1.9.1 \
-  --set prometheus.enabled=false \  # Example: disabling prometheus using a Helm parameter
-  --set webhook.timeoutSeconds=4   # Example: changing the webhook timeout using a Helm parameter
-```
-
-Once you have deployed cert-manager, you can [verify](./verify.md) the installation.
-
-### Installing cert-manager as subchart
-
-If you have configured cert-manager as a subchart all the components of cert-manager will be installed into the namespace of the helm release you are installing.
-
-There may be a situation where you want to specify the namespace to install cert-manager different to the umbrella chart's namespace.
-
-This is a [known issue](https://github.com/helm/helm/issues/5358) with helm and subcharts, that you can't specify the namespace for the subchart and is being solved by most public charts by allowing users to set the namespace via the values file, but needs to be a capability added to the chart by the maintainers.
-
-This capability is now available in the cert-manager chart and can be set either in the values file or via the `--set` switch.
-
-#### Example usage
-
-Below is an example `Chart.yaml` with cert-manager as a subchart 
-
-```yaml
-apiVersion: v2
-name: example_chart
-description: A Helm chart with cert-manager as subchart
-type: application
-version: 0.1.0
-appVersion: "0.1.0"
-dependencies:
-  - name: cert-manager
-    version: v1.9.1
-    repository: https://charts.jetstack.io
-    alias: cert-manager
-    condition: cert-manager.enabled
-```
-You can then override the namespace in 2 ways
-1. In `Values.yaml` file
-```yaml
-cert-manager: #defined by either the name or alias of your dependency in Chart.yaml
-  namespace: security
-```
-2. In the helm command using `--set`
-```bash
-helm install example example_chart \
-  --namespace example \
-  --create-namespace \
-  --set cert-manager.namespace=security
-```
-
-The above example will install cert-manager into the security namespace.
-
-## Output YAML
-
-Instead of directly installing cert-manager using Helm, a static YAML manifest can be created using the [Helm template command](https://helm.sh/docs/helm/helm_template/).
-This static manifest can be tuned by providing the flags to overwrite the default Helm values:
-
-```bash
-helm template \
-  cert-manager jetstack/cert-manager \
-  --namespace cert-manager \
-  --create-namespace \
-  --version v1.9.1 \
-  # --set prometheus.enabled=false \   # Example: disabling prometheus using a Helm parameter
-  # --set installCRDs=true \           # Uncomment to also template CRDs
-  > cert-manager.custom.yaml
-```
-
-## Uninstalling
-
-> **Warning**: To uninstall cert-manger you should always use the same process for
-> installing but in reverse. Deviating from the following process whether
-> cert-manager has been installed from static manifests or Helm can cause issues
-> and potentially broken states. Please ensure you follow the below steps when
-> uninstalling to prevent this happening.
-
-Before continuing, ensure that all cert-manager resources that have been created
-by users have been deleted. You can check for any existing resources with the
-following command:
-
-```bash
-kubectl get Issuers,ClusterIssuers,Certificates,CertificateRequests,Orders,Challenges --all-namespaces
-```
-
-Once all these resources have been deleted you are ready to uninstall
-cert-manager using the procedure determined by how you installed.
-
-### Uninstalling with Helm
-
-Uninstalling cert-manager from a `helm` installation is a case of running the
-installation process, *in reverse*, using the delete command on both `kubectl`
-and `helm`.
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
+            src="/images/redlights.png"
+            /> 
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
+            src="/images/bluelights.jpg"
+            /> 
+<br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
+<br></br>
+<br></br>
 
 
-```bash
-helm --namespace cert-manager delete cert-manager
-```
+#### <a id="Lesson"></a>Lesson
+The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter
 
-Next, delete the cert-manager namespace:
+### What:
+This lab demonstrates light signals as a method to alert problems in a Datacenter Colo.  
 
-```bash
-kubectl delete namespace cert-manager
-```
+#### Details:
+Explaining a Colo may not be needed, however, explaining the significance of lights is more important.  Pressing B sends an IR signal.  If the receiving CPX board receives the signal, lights turn to red and a sound is heard.  When Button A is press, the IR Tag count is reset and the lights return to blue.
 
-Finally, delete the cert-manger
-[`CustomResourceDefinitions`](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
-using the link to the version `vX.Y.Z` you installed:
-> **Warning**: This command will also remove installed cert-manager CRDs. All
-> cert-manager resources (e.g. `certificates.cert-manager.io` resources) will
-> be removed by Kubernetes' garbage collector.
+### Share:
+Lights give us different signals in the world around us.  Crosswalk lights, stop lights, self-checkout register lights, even car brake lights give us signals for what is ahead.  When you are ‘tagged’ with the IR Signal, the lights on your CPX turn red and emit a sound alerting you that you have just lost the game.  Datacenters have the same alerts.  If a server has a red light, there is a device failure that must be resolved, or you may not be able to retrieve your photo from your Cloud drive on your phone (any relatable example).  
 
-```bash
-kubectl delete -f https://github.com/cert-manager/cert-manager/releases/download/vX.Y.Z/cert-manager.crds.yaml
-```
+ There are also larger fans that cool Colos by removing heat from the air and replacing with cooler air.  While the fans will not play an audible tune, they may change sounds if there is an eminent problem of failure.  This allows employees to diagnose problems before the failure occurs.
 
-### Namespace Stuck in Terminating State
+IR Tag signals us to a security breach.  When you have been tagged, you were sent a signal that was intended to tag you out of a game.  However, your goal was to keep from getting tagged and keep your threat and vulnerabilities low.  When your CPX received the signal, your vulnerability was low, threat was high, and security threshold was breached!  There is one thing that you can do to remove your vulnerability and threat and increase your security level.  What is it?
 
-If the namespace has been marked for deletion without deleting the cert-manager
-installation first, the namespace may become stuck in a terminating state. This
-is typically due to the fact that the [`APIService`](https://kubernetes.io/docs/tasks/access-kubernetes-api/setup-extension-api-server) resource still exists
-however the webhook is no longer running so is no longer reachable. To resolve
-this, ensure you have run the above commands correctly, and if you're still
-experiencing issues then run:
+(Answer: Cover the RX sensor.)  Allow time to test this hypothesis.
 
-```bash
-kubectl delete apiservice v1beta1.webhook.cert-manager.io
-```
+#### <a id="Source-1"></a> Source 1 
+The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
+
+**Source**:
+https://learn.adafruit.com/adafruit-circuit-playground-express
+[i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
+
+There are three ways to program the CPX:
+
+1.	makecode.adafruit.com
+
+2.	CircuitPython
+
+3.	Arduino
+
+This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
+
+When the CPX is first connected to a computer with the USB cable, it will run the program that is stored on the device.  This may not be the program that you desire to run.  Follow the procedure in Source 3 to reset the CPX to the factory settings.  The CPX will hold the program and not reset to factory settings upon power off.
+	
+
+#### <a id="Source-2"></a>Source 2
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required in [Program 1](#Program-1). Save the file.
+
+To **move the program** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The CPX is now ready with the installed program.
+
+If the TrioCombo program is running:
+
+The small LEDs will turn blue.
+
+To **troubleshoot** the CPX device and program:
+
+1.	Check the batteries
+
+2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+
+3.	Follow steps in Source 1 to download the program to the CPX device.
+
+4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+
+5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the TrioCombo program.
+
+#### <a id="Source-3"></a>Source 3
+**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+
+To **move the bootloader** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file (from the above procedure) and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The CPX is now ready with the original bootloader.
+
+#### <a id="Program-1"></a>Program 1
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below.  Save the file.  Program the CPX as listed in [Source 1](#Source-1).
+
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/blockcodeprogram.png"
+            /> 
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/infrared.png"
+            /> 
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/buttondown.png"
+            />             
+<br></br>
+<br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br><br></br><br></br><br></br>
+
+
+Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
+
+<p align="center">
+<img style={{ width: "300px"}}
+            src="/images/MakeCode_Program08.jpg" /></p>
+
+<br></br>
+Continue with the procedure in [Source 1](#Source-1) to program the CPX with the new bootloader.
