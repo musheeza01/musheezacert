@@ -245,7 +245,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <img style={{  clear: "right", float: "left", height: "500px", width: "300px"}} src="/images/infraredreceived.png"/>
   
  <img style={{ float: "left", height: "500px", width: "300px"}} src="/images/movedleft.png"/>
-<p style={{margin: "-500px 70px 0px 0px"}}> 
+<p style={{margin: "0px 70px 0px 0px"}}> 
  <img  style={{ clear: "right", float: "right", height: "500px",  width: "300px"}} src="/images/movedright.png" /></p> 
  
             
@@ -262,10 +262,9 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
 <br></br><br></br>
 
-<p style={{margin: "0px 0px 0px 0px"}}> 
 <img style={{ margin: "0", clear: "left", float: "left", height: "500px", width: "300px"}}
             src="/images/intro.png"
-            /></p>         
+            />  
             
 <p style={{ margin: "0px 0px 0px 0px"}}> 
 <img style={{ clear: "right", float: "left", height: "300px", width: "300px"}}
@@ -277,6 +276,8 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br>
+<br></br><br></br>   <br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br>
 <br></br><br></br>          
 
@@ -302,7 +303,6 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
