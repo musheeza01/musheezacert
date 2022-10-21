@@ -60,11 +60,12 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <img style={{ margin: "0px", clear: "right", float: "left", height:"200px", width: "200px" }}
             src="/images/skybluelights.png"
             /> 
+<p style={{ margin: " 0px 100px 0px 0px" }}> 
 <img style={{ margin: "0px", clear: "right", float: "right", height: "200px", width: "200px" }}
             src="/images/magentalights.jpg"
             />
 
-<br></br><br></br>
+<br></br>
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
@@ -86,7 +87,7 @@ Pressing the A button (left button when battery adapter is facing down) will cyc
 
 <br></br>
 <br></br>
-<br></br>
+<br></br><br></br><br></br>
 <br></br><br></br><br></br>
 
 IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged .
@@ -95,11 +96,9 @@ IR Tag is played by pressing the B button to transmit (TX) the signal to an oppo
 <img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
             src="/images/redlights.png"
             /> 
-<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
+<img style={{ margin: "0px", clear: "right", float: "left", height: "200px", width: "200px"}}
             src="/images/bluelights.jpg"
             />             
-<br></br>
-<br></br>
 <br></br>
 <br></br>
 <br></br>
@@ -226,7 +225,23 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
 <br></br><br></br>
   
+ <img style={{ margin: "0px", clear: "left", float: "left", height: "500px", width: "300px" }}
+            src="/images/button.png"
+            />
+
+<p style={{margin: "240px 70px 0px 0px"}}> 
+ <img style={{ margin: "0px", clear: "left", float: "left", height: "400px", width: "300px" }}
+            src="/images/ring.png"
+            /></p>
+
  
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
 <p align="center">
