@@ -285,22 +285,17 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/intro.png"
             /></p>
             
-<p style={{ margin: "235px 0px 0px 0px"}}> 
+<p style={{ margin: "202px 0px 0px 0px"}}> 
 <img style={{ clear: "right", float: "left", height: "300px", width: "300px"}}
             src="/images/beat.png"
             /></p>  
             
  <br></br><br></br>
 <br></br><br></br><br></br><br></br>
-<br></br><br></br><br></br><br></br>
-<br></br><br></br><br></br><br></br>
-<br></br><br></br><br></br><br></br>
-<br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <br></br><br></br>   <br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br>
-<br></br><br></br>          
 
-<br></br><br></br>
 <p style={{ margin: "50px 0px 0px 0px"}}>           
 <img style={{ margin: "0px", clear: "left", float: "left", height: "300px", width: "300px"}}
             src="/images/intro2.png"
@@ -316,8 +311,6 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br>
 <br></br>
 <br></br>
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
