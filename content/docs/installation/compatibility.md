@@ -69,25 +69,21 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
-<br></br><br></br>
+
 
 Pressing the A button (left button when battery adapter is facing down) will cycle signal lights from green, yellow, red.  Then the lights will reset at blue.  This also resets the IR tag count.
 
 <img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
             src="/images/greenir.png"
             /> 
-<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
+<img style={{ margin: "0px", clear: "rigth", float: "left", height: "200px", width: "200px"}}
             src="/images/redir.png"
             /> 
-<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
+<img style={{ margin: "0px", clear: "right", float: "left", height: "200px", width: "200px"}}
             src="/images/yellowir.png"
             /> 
 
 
-<br></br>
-<br></br>
-<br></br>
-<br></br>
 <br></br>
 <br></br>
 <br></br>
@@ -216,8 +212,21 @@ The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear fro
 
 The CPX is now ready with the original bootloader.
 
+#### <a id="Program-1"></a>Program 1
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below:
 
+<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px" }}
+            src="/images/onstart.png"
+            />
+ 
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
   
+ 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
 <p align="center">
