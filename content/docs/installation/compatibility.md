@@ -73,13 +73,13 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 Pressing the A button (left button when battery adapter is facing down) will cycle signal lights from green, yellow, red.  Then the lights will reset at blue.  This also resets the IR tag count.
 
-<img style={{ margin: "0px", clear: "right", float: "left", height: "200px", width: "200px"}}
+<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
             src="/images/greenir.png"
             /> 
-<img style={{ margin: "0px", clear: "right", float: "left", height: "200px", width: "200px"}}
+<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
             src="/images/redir.png"
             /> 
-<img style={{ margin: "0px", clear: "right", float: "left", height: "200px", width: "200px"}}
+<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
             src="/images/yellowir.png"
             /> 
 
@@ -96,10 +96,10 @@ Pressing the A button (left button when battery adapter is facing down) will cyc
 IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged .
 
 
-<img style={{ margin: "0px", clear: "right", float: "right", height: "200px", width: "200px"}}
+<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
             src="/images/redlights.png"
             /> 
-<img style={{ margin: "0px", clear: "right", float: "right", height: "200px", width: "200px"}}
+<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px"}}
             src="/images/bluelights.jpg"
             />             
 <br></br>
@@ -216,103 +216,7 @@ The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear fro
 
 The CPX is now ready with the original bootloader.
 
-#### <a id="Program-1"></a>Program 1
-To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below:
 
-<img style={{ margin: "0px", clear: "left", float: "left", height: "200px", width: "200px" }}
-            src="/images/onstart.png"
-            />
- 
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-
- <img style={{ margin: "0px", clear: "left", float: "left", height: "500px", width: "300px" }}
-            src="/images/button.png"
-            />
-
-<p style={{margin: "240px 0px 0px 70px"}}> 
- <img style={{ margin: "0px", clear: "left", float: "left", height: "400px", width: "300px" }}
-            src="/images/ring.png"
-            /></p>
-
- 
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-
- <img style={{ margin: "0px", clear: "left", float: "left", height: "500px", width: "300px" }}
-            src="/images/buttondownprogram.png"
-            />
-
-
-<p style={{margin: "-332px 80px 0px 0px"}}>             
-<img style={{  clear: "right", float: "right", height: "300px", width: "300px"}} src="/images/infraredreceived.png"/></p>
-  
- <img src="/images/movedleft.png" style=" float: left; height: 500px; width: 300px;"/>
-<p style={{margin: "-500px 70px 0px 0px"}}> 
- <img  style={{ clear: "right", float: "right", height: "500px",  width: "300px"}} src="/images/movedright.png" /></p>
-  
-  
-   <br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>
-<br></br><br></br>    
- 
- 
-            
-<img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
-            src="/images/bracket.png"
-            />         
-            <br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br><br></br><br></br>
-
-<img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
-            src="/images/intro.png"
-            />       
-            
-<p style={{ margin: "-300px 70px 0px 0px"}}> 
-<img style={{ clear: "right", float: "right", height: "300px", width: "300px"}}
-            src="/images/beat.png"
-            /></p>    
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br><br></br><br></br>
-            
-<img style={{ margin: "0px", clear: "left", float: "left", height: "300px", width: "300px"}}
-            src="/images/intro2.png"
-            />                     
-<img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
-            src="/images/middle.png"
-            />     
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br><br></br><br></br>
   
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
