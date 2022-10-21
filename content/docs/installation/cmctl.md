@@ -277,8 +277,6 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br><br></br><br></br>
-<br></br>
-
 
 <p style={{margin: "78px 0px 0px 0px"}}> 
 <img style={{ margin: "0", clear: "left", float: "left", height: "500px", width: "300px"}}
@@ -292,8 +290,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             
 <br></br><br></br><br></br><br></br>
 <br></br><br></br>   <br></br><br></br><br></br><br></br>
-<br></br><br></br><br></br>
-
+<br></br><br></br>
 
 <p style={{ margin: "50px 0px 0px 0px"}}>           
 <img style={{ margin: "0px", clear: "left", float: "left", height: "300px", width: "300px"}}
