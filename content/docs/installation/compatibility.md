@@ -259,10 +259,10 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             src="/images/bracket.png"
             />         
 
-
+<p style={{margin: "30px 0px 0px 0px"}}> 
 <img style={{ margin: "0", clear: "left", float: "left", height: "300px", width: "300px"}}
             src="/images/intro.png"
-            />              
+            /></p>              
 <p style={{ margin: "-300px 70px 0px 0px"}}> 
 <img style={{ clear: "right", float: "right", height: "300px", width: "300px"}}
             src="/images/beat.png"
