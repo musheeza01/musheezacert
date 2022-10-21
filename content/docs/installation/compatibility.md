@@ -232,7 +232,17 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
  <img style={{ margin: "0px", clear: "right", float: "left", height: "400px", width: "300px" }}
             src="/images/ring.png"
             /></p>
-
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br>
+  <br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br>
+  
 <p style={{margin: "38px 0px 0px 0px"}}>   
 <img style={{ margin: "0px", clear: "left", float: "left", height: "300px", width: "300px" }} src="/images/buttondownprogram.png" /></p>
 
