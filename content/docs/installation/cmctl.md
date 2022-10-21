@@ -261,6 +261,23 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br><br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
 
 <img style={{ margin: "0", clear: "left", float: "left", height: "500px", width: "300px"}}
             src="/images/intro.png"
