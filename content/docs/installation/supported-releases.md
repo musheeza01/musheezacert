@@ -136,7 +136,7 @@ The term redundancy may need to be explained.  A good start may be to ask the au
 
 NOTE:
 
-The labs works by measuring the intensity of the light given to the ‘customer’ and then transmitted signal to the redundant datacenters.  It is imperative the cables are connected correctly for this lab to demonstrate the message of redundancy properly.  RX -> TX, TX -> RX, GND -> GND
+The labs works by measuring the intensity of the light given to the ‘customer’ and then transmitted signal to the redundant datacenters.  It is imperative the cables are connected correctly for this lab to demonstrate the message of redundancy properly.  RX → TX, TX → RX, GND → GND
 
 It is easier to explain if using the same color cables to go out from the Customer CPX to the Datacenters.  As an example:
 From Customer:
