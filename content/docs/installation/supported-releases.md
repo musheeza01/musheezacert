@@ -79,7 +79,7 @@ Once the ‘customer’ sends the data to the Datacenters A and B
 (The customer receives the intensity of the light source and transmits that signal to be displayed on each of the other two datacenters.)  Here the light signal is brightest showing all 10 LEDs lit.  However, this is not an indication of the strength of the connection to the data center.  Redundancy is a more important concept to deliver.  The signal is duplicated (redundant) between the two datacenters.
 
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", width: "500px"}}
             src="/images/datacenters.png"
             /> 
 <br></br>
@@ -135,7 +135,8 @@ This lab demonstrates light signals as a method demonstrate redundancy between d
 The term redundancy may need to be explained.  A good start may be to ask the audience to define redundancy.  Note that Microsoft Datacenters have triple redundancy.
 
 NOTE:
-The labs works by measuring the intensity of the light given to the ‘customer’ and then transmitted signal to the redundant datacenters.  It is imperative the cables are connected correctly for this lab to demonstrate the message of redundancy properly.  RX  TX, TX  RX, GND  GND
+
+The labs works by measuring the intensity of the light given to the ‘customer’ and then transmitted signal to the redundant datacenters.  It is imperative the cables are connected correctly for this lab to demonstrate the message of redundancy properly.  RX -> TX, TX -> RX, GND -> GND
 
 It is easier to explain if using the same color cables to go out from the Customer CPX to the Datacenters.  As an example:
 From Customer:
