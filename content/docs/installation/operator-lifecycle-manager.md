@@ -1,236 +1,191 @@
----
-title: Operator Lifecycle Manager
-description: 'cert-manager installation: Using OLM'
----
+# CPX Circuit On/Off
+#### Purpose
+Statement of Work Template intended for Datacenter Volunteer Lead Community Engagements.  
 
-## Installation managed by OLM
+#### Materials
+1 AAA Battery housing
 
-### Prerequisites
+6 AAA Batteries (3 spare)
 
-- Install a [supported version of Kubernetes or OpenShift](./supported-releases.md).
-- Read [Compatibility with Kubernetes Platform Providers](./compatibility.md) if you are using Kubernetes on a cloud platform.
+1 Circuit Playground Express
 
-### Option 1: Installing from OperatorHub Web Console on OpenShift
+2 MiniGrabber cables
 
-cert-manager is in the [Red Hat-provided Operator catalog][] called "community-operators".
-On OpenShift 4 you can install cert-manager from the [OperatorHub web console][] or from the command line.
-These installation methods are described in Red Hat's [Adding Operators to a cluster][] documentation.
+Data/Sync USB Cable
 
-[Red Hat-provided Operator catalog]: https://docs.openshift.com/container-platform/4.7/operators/understanding/olm-rh-catalogs.html#olm-rh-catalogs_olm-rh-catalogs
-[OperatorHub web console]: https://docs.openshift.com/container-platform/4.7/operators/understanding/olm-understanding-operatorhub.html
-[Adding Operators to a cluster]: https://docs.openshift.com/container-platform/4.7/operators/admin/olm-adding-operators-to-cluster.html
+#### Before
+Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
+### Start
+Read through  [Source 1](#Source-1) below. When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
-### Option 2: Installing from OperatorHub.io
+#### Get Ready
+**Prep the CPX** : Connect the USB-A/MicroUSB cable to the computer USB port.  Connect the MicroUSB end to the CPX.  Press the reset button twice, like a double-click.  A CPLAYBOOT drive should appear. Use the information in [Program 1](#Program-1) to add the bootloader to the CPX as in [Source 2](#Source-2). 
 
-Browse to the [cert-manager page on OperatorHub.io](https://operatorhub.io/operator/cert-manager),
-click the "Install" button and follow the installation instructions.
+**Power the CPX**: Insert the batteries into the battery pack.  Connect the battery pack to the CPX. Power on the battery pack.
 
-### Option 3: Manual install via `kubectl operator` plugin
+#### Go
+This program contains three elements:
 
-[Install OLM][] and [install the `kubectl operator` plugin][]
-from the [Krew Kubectl plugins index][] and then use that to install the cert-manager as follows:
+1.	Programming the CPX Bootloader to work with MakeCode Bootloader
 
-```sh
-operator-sdk olm install
-kubectl krew install operator
-kubectl operator install cert-manager -n operators --channel stable --approval Automatic
-```
+2.	Using the analog read to determine voltage transmitted
 
-You can monitor the progress of the installation as follows:
+3.	When voltage is detected, lights will change to magenta
 
-```sh
-kubectl get events -w -n operators
-```
+See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-And you can see the status of the installation with:
+### After
+Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
-```sh
-kubectl operator list
-```
+### Source
+1.	The program utilizes a simple code in MakeCode.  See [Program 1](#Program-1) below for programming details.
 
-[install OLM]: https://sdk.operatorframework.io/docs/installation/
-[install the `kubectl operator` plugin]: https://github.com/operator-framework/kubectl-operator#install
-[Krew Kubectl plugins index]: https://krew.sigs.k8s.io/plugins/#:~:text=cert-manager
+### Get Help
+For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
-## Release Channels
+#### <a id="Appendix"></a>Appendix
+Once the Circuit Playground Express (CPX) has been programmed and connected to the battery pack, the lights will display blue.  Connect one MiniGrabber from GND to GND.  Use another MiniGrabber to connect 3.3V to A1.  The light will turn magenta.  Disconnect the 3.3V and the light will change to blue.  This shows a circuit that has been connected.
 
-Whichever installation method you chose, there will now be an [OLM Subscription resource][] for cert-manager,
-tracking the "stable" release channel. E.g.
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
+            src="/images/bluelights.jpg"
+            /> 
+<img style={{margin: "0", clear: "right", float: "left", height: "300px", width: "300px"}}
+            src="/images/magentalights.jpg"
+            /> 
+<br></br><br></br><br></br><br></br><br></br><br>
+</br><br>
+</br><br>
+</br>
+<br>
+</br>
+<br>
+</br>
 
-```console
-$ kubectl get subscription cert-manager -n operators -o yaml
-...
-spec:
-  channel: stable
-  installPlanApproval: Automatic
-  name: cert-manager
-...
-status:
-  currentCSV: cert-manager.v1.7.1
-  state: AtLatestKnown
-...
-```
+A CPX not powered and not connected with MiniGrabbers.
 
-This means that OLM will discover new cert-manager releases in the stable channel,
-and, depending on the Subscription settings it will upgrade cert-manager automatically,
-when new releases become available.
-Read [Manually Approving Upgrades via Subscriptions][] for information about automatic and manual upgrades.
-
-[OLM Subscription resource]: https://olm.operatorframework.io/docs/concepts/crds/subscription/
-[Manually Approving Upgrades via Subscriptions]: https://olm.operatorframework.io/docs/concepts/crds/subscription/#manually-approving-upgrades-via-subscriptions
-
-**NOTE:** There is a single release channel called "stable" which will contain all cert-manager releases, shortly after they are released.
-In future we may introduce other release channels with alternative release schedules,
-in accordance with [OLM's Recommended Channel Naming][].
-
-[OLM's Recommended Channel Naming]: https://olm.operatorframework.io/docs/best-practices/channel-naming/#recommended-channel-naming
-
-## Debugging installation issues
-
-If you have any issues with your installation, please refer to the
-[FAQ](../faq/README.md).
-
-## Configuration
-
-The configuration options are quite limited when you install cert-manager using OLM.
-There are a few Deployment settings which can be overridden permanently in the Subscription
-and most other elements of the cert-manager manifests can be changed by editing the ClusterServiceVersion,
-but changes to the ClusterServiceVersion are temporary and will be lost if OLM upgrades cert-manager,
-because an upgrade results in a new ClusterServiceVersion resource.
-
-### Configuration Via Subscription
-
-When you create an OLM Subscription you can override **some** of the cert-manager Deployment settings,
-but the options are quite limited.
-The configuration which you add to the Subscription will be applied immediately to the current cert-manager Deployments.
-It will also be re-applied if OLM upgrades cert-manager.
-
-> 🔰 Read the [Configuring Operators deployed by OLM](https://github.com/operator-framework/operator-lifecycle-manager/blob/master/doc/design/subscription-config.md#configuring-operators-deployed-by-olm) design doc in the OLM repository.
->
-> 🔰 Refer to the [Subscription API documentation](https://pkg.go.dev/github.com/operator-framework/api@v0.14.0/pkg/operators/v1alpha1#Subscription).
-
-Here are some examples of configuration that can be achieved by modifying the Subscription resource.
-In each case we assume that you are starting with the following [default Subscription from OperatorHub.io]((https://operatorhub.io/install/cert-manager.yaml)):
-
-```yaml
-# cert-manager.yaml
-apiVersion: operators.coreos.com/v1alpha1
-kind: Subscription
-metadata:
-  name: my-cert-manager
-  namespace: operators
-spec:
-  channel: stable
-  name: cert-manager
-  source: operatorhubio-catalog
-  sourceNamespace: olm
-```
-
-```bash
-kubectl create -f https://operatorhub.io/install/cert-manager.yaml
-```
-
-#### Change the Resource Requests and Limits
-
-It is possible to change the resource requests and limits by adding a `config` stanza to the Subscription:
-
-```yaml
-# resources-patch.yaml
-spec:
-  config:
-    resources:
-      requests:
-        memory: "64Mi"
-        cpu: "250m"
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
-```
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/MiniGrabbers.jpg"
+            /> 
+<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br><br>
+</br>
 
 
-```bash
-kubectl -n operators patch subscription my-cert-manager --type merge --patch-file resources-patch.yaml
-```
 
-You will see **all** the cert-manager Pods are restarted with the new resources:
+#### <a id="Lesson"></a>Lesson
+The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
-```console
-$ kubectl -n operators get pods -o "custom-columns=name:.metadata.name,mem:.spec.containers[*].resources"
-name                                       mem
-cert-manager-669867589c-n8dcn              map[limits:map[cpu:500m memory:128Mi] requests:map[cpu:250m memory:100Mi]]
-cert-manager-cainjector-7b7fff8b9c-dxw6b   map[limits:map[cpu:500m memory:128Mi] requests:map[cpu:250m memory:100Mi]]
-cert-manager-webhook-975bc87b5-tqdj4       map[limits:map[cpu:500m memory:128Mi] requests:map[cpu:250m memory:100Mi]]
-```
+### What:
+This lab demonstrates security intrusion and can be used to explain basic electrical circuits.  
 
-> ⚠️ This configuration will apply to **all** the cert-manager Deployments.
-> This is a known limitation of OLM which [does not support configuration of individual Deployments](https://github.com/operator-framework/operator-lifecycle-manager/issues/1794).
+#### Details:
+Without proper critical environments in a Microsoft Datacenter, the power and network systems would become unstable.  Using the most basic concept of electricity (continuity on a circuit), this lab will explain simpler aspects of Critical Environments.
 
-#### Change the NodeSelector
+### Share:
+Define Critical Environment and basic concepts. Critical environments are separate, stand-alone areas within a building that require different environmental conditions.  Air quality, humidity, temperature, air flow, spacing, and other requirements make up the controlled conditions that are required.  The most basic of these is a steady source of power/energy to power the equipment.  Datacenters have thousands of servers that contain many many Terabytes of data.  Essential and consistent power is needed to keep the data and equipment stabilized and available 24/7/365.  Heating, cooling, and backup generators are a major maintenance concern.  Here we will show how electricity powers a device.
 
-It is possible to change the `nodeSelector` for cert-manager Pods by adding the following stanza to the Subscription:
+NOTE:
+This lab works by connecting the 3.3V output to the A1 touch capacitor which is reading the voltage in amount.
+To reset the program, press the reset button on the CPX.
 
-```yaml
-# nodeselector-patch.yaml
-spec:
-  config:
-    nodeSelector:
-      kubernetes.io/arch: amd64
-```
+#### <a id="Source-1"></a> Source 1 
+The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
 
-```bash
-kubectl -n operators patch subscription my-cert-manager --type merge --patch-file nodeselector-patch.yaml
-```
+**Source**:
+https://learn.adafruit.com/adafruit-circuit-playground-express
+[i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
 
-You will see **all** the cert-manager Pods are restarted with the new `nodeSelector`:
+There are three ways to program the CPX:
 
-```console
-$ kubectl -n operators get pods -o "custom-columns=name:.metadata.name,nodeselector:.spec.nodeSelector"
-name                                      nodeselector
-cert-manager-5b6b8f7d74-k7l94             map[kubernetes.io/arch:amd64 kubernetes.io/os:linux]
-cert-manager-cainjector-b89cd6f46-kdkk2   map[kubernetes.io/arch:amd64 kubernetes.io/os:linux]
-cert-manager-webhook-8464bc7cc8-64b4w     map[kubernetes.io/arch:amd64 kubernetes.io/os:linux]
-```
+1.	makecode.adafruit.com
 
-> ⚠️ This configuration will apply to **all** the cert-manager Deployments.
-> This is a known limitation of OLM which [does not support configuration of individual Deployments](https://github.com/operator-framework/operator-lifecycle-manager/issues/1794).
+2.	CircuitPython
 
-### Configuration Via ClusterServiceVersion (CSV)
+3.	Arduino
 
-The ClusterServiceVersion (CSV) resource contains the templates for all the cert-manager Deployments.
-If you patch these templates, OLM will immediately roll out the changes to the Deployments.
+This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
 
-> ⚠️ If OLM upgrades cert-manager your changes will be lost because it will create a new CSV with default Deployment templates.
+When the CPX is first connected to a computer with the USB cable, it will run the program that is stored on the device.  This may not be the program that you desire to run.  Follow the procedure in Source 3 to reset the CPX to the factory settings.  The CPX will hold the program and not reset to factory settings upon power off.
 
-Nevertheless, editing (patching) the CSV can be a useful way to override certain cert-manager settings. An example:
+#### <a id="Source-2"></a>Source 2
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required in [Program 1](#Program-1). Save the file.
 
-#### Change the log level of cert-manager components
+To **move the program** to the CPX:
 
-The following JSON patch will append `-v=6` to command line arguments of the cert-manager controller-manager
-(the first container of the first Deployment).
+Plug in the CPX via the USB/Micro USB cable.
 
-```bash
-kubectl patch csv cert-manager.v1.9.0 \
-  --type json \
-  -p '[{"op": "add", "path": "/spec/install/spec/deployments/0/spec/template/spec/containers/0/args/-", "value": "-v=6" }]'
-```
+Press the reset button twice on the CPX.
 
-You will see the controller-manager Pod is restarted with the new arguments.
+All Pixel LED lights will turn on / solid green
 
-```console
-$ kubectl  -n operators get pods -o "custom-columns=name:.metadata.name,args:.spec.containers[0].args"
-name                                      args
-cert-manager-797979cbdb-g444r             [-v=2 --cluster-resource-namespace=$(POD_NAMESPACE) --leader-election-namespace=kube-system -v=6]
-...
-```
+The on small LED will turn on / solid green
 
-> 🔰 Refer to the [ClusterServiceVersion API documentation](https://pkg.go.dev/github.com/operator-framework/api@v0.14.0/pkg/operators/v1alpha1#ClusterServiceVersion).
+D13 small LED will slowly blink red
 
-## Uninstall
+A folder will appear as CPLAYBOOT.
 
-Below is the processes for uninstalling cert-manager on OpenShift.
+This will be very similar to a USB thumb drive in function.
 
-> ⚠️ To uninstall cert-manger you should always use the same process for
-> installing but in reverse. Deviating from the following process can cause
-> issues and potentially broken states. Please ensure you follow the below steps
-> when uninstalling to prevent this happening.
+Copy the saved UF2 file from the Intrusion folder and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The program is now installed
+
+Press the reset button on the CPX.
+
+Once the Circuit Playground Express (CPX) is connected, without MiniGrabbers attached, all LEDs will display blue. 
+
+To **troubleshoot** the CPX device and program:
+
+1.	Check the batteries
+
+2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+
+3.	Follow steps in Source 1 to download the program to the CPX device.
+
+4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+
+5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Intrusion program.
+
+#### <a id="Source-3"></a>Source 3
+**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+
+Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+
+To **move the bootloader** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file (from the above procedure) and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The CPX is now ready with the original bootloader.
+
+#### <a id="Program-1"></a>Program 1
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below.  Save the file.  Program the CPX as listed in [Source 1](#Source-1).
+
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/blockcodeprogram.png"
+            /> 
+<br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+
+Program the CPX as listed in [Source 1](#Source-1).
