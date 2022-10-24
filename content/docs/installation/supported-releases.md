@@ -184,6 +184,8 @@ To **create this program**, open learn.adafruit.com/uart-communication-between-t
 <br></br>
 <br></br>
 <br></br>
+<br></br><br></br>
+<br></br>
 <br></br>
 
 To move the program to the CPX:
@@ -241,7 +243,6 @@ Click on the link (make sure it is for the Circuit Playground Express).  The fil
 <img style={{margin: "0", clear: "right", float: "center", width: "200px"}}
             src="/images/circuitplaygroundexpress.png"
             /> </p>
-<br></br><br></br>
 
 To **move the bootloader** to the CPX:
 
