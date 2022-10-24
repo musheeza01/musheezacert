@@ -142,7 +142,7 @@ Lights give us different signals in the world around us.  Crosswalk lights, stop
 ### Source:
 https://blogs.microsoft.com/blog/2022/03/10/an-update-on-microsofts-sustainability-commitments-building-a-foundation-for-2030/ 
 
-#### <a id="Source-1"></a> Source 1 
+### <a id="Source-1"></a> Source 1 
 The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
 
 **Source**:
@@ -184,7 +184,7 @@ The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear fro
 
 The CPX is now ready with the installed program.
 
-If the soil tester program is running:
+If the **soil tester program is running:**
 
 The small on LED will turn on / solid green
 
@@ -204,6 +204,27 @@ To **troubleshoot** the CPX device and program:
 **Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
 
+To **move the bootloader** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file (from the above procedure) and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The CPX is now ready with the original bootloader.
 
 Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
@@ -232,9 +253,6 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
-<p align="center">
 <img style={{ width: "300px"}}
-            src="/images/makecode_program08.jpg" /></p>
+            src="/images/makecode_program08.jpg" />
 
-
-Continue with the procedure in [Source 1](#Source-1) to program the CPX with the new bootloader. 
