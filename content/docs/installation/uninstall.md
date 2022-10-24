@@ -1,7 +1,7 @@
 # UART Activating Light Sensor to Show Redundancy
-________________________________________________________________________________________
+---
 ### *Information*
-________________________________________________________________________________________
+---
 
 This document provides the procedure to use the CircuitPython Language to code Circuit Playground Express devices to transmit and receive data.  The project is located here: 
 
@@ -17,9 +17,9 @@ There are three ways to code the Circuit Playground Express.  This document will
 
 3.	Arduino IDE 
 
-________________________________________________________________________________________
+---
 ### *Required Parts*
-________________________________________________________________________________________
+---
 
 *	At least two Circuit Playground Express Devices (For Redundancy – at least three)
 
@@ -27,9 +27,9 @@ ________________________________________________________________________________
 
 *	1 USBA to MiniUSB cable per Circuit Playground Express Devices
 
-________________________________________________________________________________________
+---
 ### *Setup Procedure*
-________________________________________________________________________________________
+---
 
 Download the latest **stable** release CircuitPython UF2 Installer File, located here: [Circuit Playground Express Download (circuitpython.org)](https://circuitpython.org/board/circuitplayground_express/) or here:
 
@@ -59,9 +59,9 @@ Copy the CircuitPython UF2 Installer File to the CPLAYBOOT drive.
 
 The CPLAYBOOT drive will disappear and a new disk drive will appear called CIRCUITPY.  This verifies that the CircuitPython OS has been installed.
 
-________________________________________________________________________________________
+---
 ### *Install the Program*
-________________________________________________________________________________________
+---
 
 To use the UART Light Sensor Program, Download the Project Bundle located on the project page above in the Information Section or here: 
 [https://learn.adafruit.com/pages/22817/elements/3101703/download?type=zip](https://learn.adafruit.com/pages/22817/elements/3101703/download?type=zip)
@@ -75,9 +75,9 @@ Copy the lib\adafruit_pixelbuf.mpy and lib\neopixel.mpy files to the Root\lib di
 
 Repeat the steps Setup Procedure and Installing the Program. for each Circuit Playground Express.
 
-________________________________________________________________________________________
+---
 ### *Connect the Devices*
-________________________________________________________________________________________
+---
 
 Wire the Circuit Playground Express devices such that:
 RX pairs to TX
