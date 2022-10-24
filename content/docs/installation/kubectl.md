@@ -34,13 +34,11 @@ Read through  [Source 1](#Source-1) below. When you are ready, move the image ([
 #### Go
 The running program will refresh every two seconds.  Let the device come to temperature.  With the battery connector facing straight down, the right-side LEDs will display all red (needs water/not conductive) or all green (has water/conductive).  The lights on the left-side will display the temperature with 2°F increments. See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-
 ### After
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
 ### Source
 1. https://learn.adafruit.com/soil-moisture-sensor-with-circuit-playground-express?msclkid=c5ab76f9c25211eca9ade6549ce5cca6
-
 2. https://learn.adafruit.com/assets/78944
 
 ### Get Help
@@ -114,9 +112,6 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <p style={{margin: "-28px 0px 0px 480px"}}> ≥80°F</p>
 
 <br></br>
-<br></br>
-
-
 
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
@@ -142,6 +137,7 @@ Lights give us different signals in the world around us.  Crosswalk lights, stop
 <br></br>
 <br></br>
 <br></br><br></br><br></br>
+<br></br>
 
 ### Source:
 https://blogs.microsoft.com/blog/2022/03/10/an-update-on-microsofts-sustainability-commitments-building-a-foundation-for-2030/ 
@@ -155,11 +151,9 @@ https://learn.adafruit.com/adafruit-circuit-playground-express
 
 There are three ways to program the CPX:
 
-1.	makecode.adafruit.com
-
-2.	CircuitPython
-
-3.	Arduino
+1. makecode.adafruit.com
+2. CircuitPython
+3. Arduino
 
 This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
 
@@ -200,15 +194,11 @@ Left side – LEDs will turn yellow or blue, depending on ambient room temperatu
 
 To **troubleshoot** the CPX device and program:
 
-1.	Check the batteries
-
-2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
-
-3.	Follow steps in Source 1 to download the program to the CPX device.
-
-4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
-
-5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Soil Tester program.
+1. Check the batteries
+2. Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+3. Follow steps in Source 1 to download the program to the CPX device.
+4. Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+5. Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Soil Tester program.
 
 #### <a id="Source-3"></a>Source 3
 **Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
