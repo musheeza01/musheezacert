@@ -16,7 +16,7 @@ Data/Sync USB Cable
 #### Before
 Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
-### Start
+#### Start
 Read through  [Source 1](#Source-1) below. When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
 #### Get Ready
@@ -33,13 +33,13 @@ This program contains three elements:
 
 See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-### After
+#### After
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
-### Source
+#### Source
 1. The program utilizes a simple code in MakeCode.  See [Program 1](#Program-1) below for programming details.
 
-### Get Help
+#### Get Help
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a>Appendix
@@ -72,23 +72,24 @@ A CPX not powered and not connected with MiniGrabbers.
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
-### What:
+#### What:
 This lab demonstrates security intrusion and can be used to explain basic electrical circuits.  
 
 #### Details:
 Without proper critical environments in a Microsoft Datacenter, the power and network systems would become unstable.  Using the most basic concept of electricity (continuity on a circuit), this lab will explain simpler aspects of Critical Environments.
 
-### Share:
+#### Share:
 Define Critical Environment and basic concepts. Critical environments are separate, stand-alone areas within a building that require different environmental conditions.  Air quality, humidity, temperature, air flow, spacing, and other requirements make up the controlled conditions that are required.  The most basic of these is a steady source of power/energy to power the equipment.  Datacenters have thousands of servers that contain many many Terabytes of data.  Essential and consistent power is needed to keep the data and equipment stabilized and available 24/7/365.  Heating, cooling, and backup generators are a major maintenance concern.  Here we will show how electricity powers a device.
 
 NOTE:
+
 This lab works by connecting the 3.3V output to the A1 touch capacitor which is reading the voltage in amount.
 To reset the program, press the reset button on the CPX.
 
 #### <a id="Source-1"></a> Source 1 
 The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
 
-**Source**:
+Source:
 https://learn.adafruit.com/adafruit-circuit-playground-express
 [i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
 
@@ -140,7 +141,7 @@ To **troubleshoot** the CPX device and program:
 5. Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Intrusion program.
 
 #### <a id="Source-3"></a>Source 3
-**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details) (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
 Click on the link (make sure it is for the Circuit Playground Express). The file will download.
 
@@ -167,7 +168,7 @@ The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear fro
 The CPX is now ready with the original bootloader.
 
 #### <a id="Program-1"></a>Program 1
-To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below.  Save the file.  Program the CPX as listed in [Source 1](#Source-1).
+To **create this program**, open [makecode.adafruit.com.](MakeCode.adafruit.com.)  Create the bootloader file by creating the block code program below:
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/blockcodeprogram.png"
