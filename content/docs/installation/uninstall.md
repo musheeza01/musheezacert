@@ -36,6 +36,7 @@ Download the latest **stable** release CircuitPython UF2 Installer File, located
 [https://circuitpython.org/board/circuitplayground_express/](https://circuitpython.org/board/circuitplayground_express/)
 
 NOTE:
+
 Once this has been installed, the Circuit Playground Express BOOT drive will change from CPLAYBOOT or FEATHERBOOT to CIRCUITPY. Now you are ready to add the Python programming files.  Which allows python programming files to be added to the boot drive to run the UART program as in the link at the beginning of the document.  This procedure should be followed or the program will not work.
 
 Connect the Circuit Playground Express to the USB drive of the computer with a data sync USB cable (included in the Circuit Playground Express Education Kit).
@@ -80,9 +81,13 @@ Repeat the steps Setup Procedure and Installing the Program. for each Circuit Pl
 ---
 
 Wire the Circuit Playground Express devices such that:
+
 RX pairs to TX
+
 TX pairs to RX
+
 GRD pairs to GRD
+
 If RX – RX or TX to TX – this will not work.  The devices are coded to look for and then act when a signal is received or transmitted on the RX or TX port respectively.
 
 
