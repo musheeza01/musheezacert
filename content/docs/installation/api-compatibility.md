@@ -26,12 +26,9 @@ Read through  [Source 1](#Source-1) below. When you are ready, move the image ([
 #### Go
 This program contains three elements:
 
-1.	Programming the CPX Bootloader to work with MakeCode Bootloader
-
-2.	Using the light sensor to read the intensity of the light
-
-3.	When light is not detected, sound an alarm
-
+1. Programming the CPX Bootloader to work with MakeCode Bootloader
+2. Using the light sensor to read the intensity of the light
+3. When light is not detected, sound an alarm
 
 See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
@@ -39,7 +36,7 @@ See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
 ### Source
-1.	IR Tag and Reset are all programmed through Makecode.adafruit.com. See [Program 1](#Program-1) below for programming details.
+1. IR Tag and Reset are all programmed through Makecode.adafruit.com. See [Program 1](#Program-1) below for programming details.
 
 ### Get Help
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
@@ -117,11 +114,9 @@ https://learn.adafruit.com/adafruit-circuit-playground-express
 
 There are three ways to program the CPX:
 
-1.	makecode.adafruit.com
-
-2.	CircuitPython
-
-3.	Arduino
+1. makecode.adafruit.com
+2. CircuitPython
+3. Arduino
 
 This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
 
@@ -162,15 +157,11 @@ When the CPX is running the program, all LEDs will display green.
 
 To **troubleshoot** the CPX device and program:
 
-1.	Check the batteries
-
-2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
-
-3.	Follow steps in Source 1 to download the program to the CPX device.
-
-4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
-
-5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the TrioCombo program.
+1. Check the batteries
+2. Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+3. Follow steps in Source 1 to download the program to the CPX device.
+4. Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+5. Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the TrioCombo program.
 
 #### <a id="Source-3"></a>Source 3
 **Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
@@ -203,19 +194,19 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/bootloader.png"
             /> 
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br><br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br><br></br>
 
 Program the CPX as listed in [Source 1](#Source-1).
