@@ -59,9 +59,10 @@ RX to TX and TX to RX and GND to GND
 
 (RX – Receive, TX – Transmit, GND – Ground)
 
-<img style={{margin: "0", clear: "right", float: "left", width: "400px"}}
+<img style={{margin: "0", clear: "right", float: "left", width: "500px"}}
             src="/images/circuit.png"
             /> 
+<br></br>
 <br></br>
 <br></br>
 <br></br>
