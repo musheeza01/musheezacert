@@ -1,4 +1,4 @@
-# CPX Intrusion
+# CPX Redundancy
 #### Purpose
 Statement of Work Template intended for Datacenter Volunteer Lead Community Engagements.  
 
@@ -15,7 +15,7 @@ Data/Sync USB Cable
 #### Before
 Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
-### Start
+#### Start
 Read through  [Source 1](#Source-1) below. When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
 #### Get Ready
@@ -32,17 +32,17 @@ This program contains three elements:
 
 See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-### After
+#### After
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
-### Source
+#### Source
 1. IR Tag and Reset are all programmed through Makecode.adafruit.com. See [Program 1](#Program-1) below for programming details.
 
-### Get Help
+#### Get Help
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
 #### <a id="Appendix"></a>Appendix
-Once the Circuit Playground Express (CPX) is connected, shine a bright light on the light sensor near .
+Once the Circuit Playground Express (CPX) is connected, shine a bright light on the light sensor near 👁. 
 Then connect the battery pack and switch the power to on.
 When the CPX is running the program, all LEDs will display green. 
 
@@ -58,7 +58,7 @@ When the CPX is running the program, all LEDs will display green.
 <br></br>
 <br></br><br></br><br></br>
 
-IR Tag is played by pressing the B button to transmit (TX) the signal to an opposing CPX where the signal will be received (RX).  The ‘pew-pew’ sound is heard when the button is pressed (think Atari Asteroid game).  The dying sound is heard when the IR signal is received by the opposing device (think Atari and last life).  Blue lights indicate not yet hit/tagged or game reset.  Red lights indicate hit/tagged.
+When the light source is disrupted from the CPX sensor, all LEDs will display red and a siren alarm will begin.  Each will continue until the light source is returned.
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/redlights.png"
@@ -91,16 +91,17 @@ A CPX not powered.
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
-### What:
+#### What:
 This lab demonstrates security intrusion and can be used to explain Cyber Security or Physical Security.  
 
 #### Details:
 Security is imperative concerning the data that is housed on any of Microsoft Datacenter servers.  Not only do we have the highest cyber security protocols, we also have secure facilities that require appropriate level badge access.  We also take precautions to avoid piggy-back entry into buildings.  Piggy-back entry is a term that may need to be explained.  (One gains entrance when closely entering in after a person in front has scanned and gain access to the building.  The second person does not need to scan their badge.)
 
-### Share:
+#### Share:
 When you take a photo and save it to your cloud storage account, you are trusting the file will not be shared to others without your permission.  Certain security protocols are created and practiced to avoid security risks.  Similarly, datacenter buildings are secured to keep data vulnerabilities.  Employees also have different levels of access depending upon job needs.
 
 NOTE:
+
 The labs works by measuring the intensity of the light read by the circuit.  If the light intensity falls below a certain value, an alarm will sound and the LEDs will turn red indicating a breach.
 
 To turn off the alarm, simply restore the light source.  To reset the program, press the reset button on the CPX.
@@ -149,7 +150,7 @@ The program is now installed
 
 Press the reset button on the CPX.
 
-Once the Circuit Playground Express (CPX) is connected, shine a bright light on the light sensor near .
+Once the Circuit Playground Express (CPX) is connected, shine a bright light on the light sensor near 👁.
 
 Then connect the battery pack and switch the power to on.
 
@@ -164,7 +165,7 @@ To **troubleshoot** the CPX device and program:
 5. Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the TrioCombo program.
 
 #### <a id="Source-3"></a>Source 3
-**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details) [https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
 To **move the bootloader** to the CPX:
 
@@ -189,7 +190,7 @@ The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear fro
 The CPX is now ready with the original bootloader.
 
 #### <a id="Program-1"></a>Program 1
-To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below:
+To **create this program**, open [MakeCode.adafruit.com.](https://microsoft.sharepoint.com/teams/TeamDocumentSharing/Shared Documents/STEAM Kit/Intrusion/MakeCode.adafruit.com)  Create the bootloader file by creating the block code program below:
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/bootloader.png"
