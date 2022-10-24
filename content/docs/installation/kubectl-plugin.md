@@ -16,7 +16,7 @@ Data/Sync USB Cable
 #### Before
 Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
-### Start
+#### Start
 Read through  [Source 1](#Source-1) below. When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
 #### Get Ready
@@ -32,7 +32,7 @@ This program contains three elements:
 
 See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-### After
+#### After
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
 #### Source
@@ -109,19 +109,20 @@ Touching the TX / A7 labeled capacitor will cause the following to repeat 3 time
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
-### What:
+#### What:
 This lab demonstrates light signals as a method of demonstrating light signals and alerts within the datacenters.  
 
-### Details:
+#### Details:
 The term server or JBOD (just a bunch of disks) may need to be explained.  A good start may be to ask the audience to define server.  We see signals every day.  What things do you see around you that alert you?  Several things in our world alert us or caution us: stop lights, cross walk signals, flashing lights, fire alarms, security alarms, phone ringer, car horn, kitchen timer, and many more.  Servers have lights that alert technicians of their operability.  Green is good. Yellow signifies a problem.  Red signifies a failure.  Some servers have blue lights.  Equipment, like HVAC or heating and cooling systems, have motors with large fans.  As those units run, they make a specific sound.  Failures can be noticed by the change in sound of equipment.  The signals and sounds alert us of eminent failure.  Just like the seconds counting down on a crosswalk signal, lights and sounds notify technicians of issues that need attention.  
 
 NOTE:
+
 This lab works by touching the A4, A5, A6, or A7 touch capacitors on the CPX board.
 
 #### <a id="Source-1"></a> Source 1 
 The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
 
-**Source**:
+Source:
 https://learn.adafruit.com/adafruit-circuit-playground-express
 [i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
 
@@ -173,13 +174,12 @@ To **troubleshoot** the CPX device and program:
 5. Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Intrusion program. 
 
 #### <a id="Source-3"></a>Source 3
-**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  
+**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details) (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  
 
 Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
-<p align="center">
 <img style={{ margin: "0", clear: "right", width: "300px"}}
-            src="/images/circuitplaygroundexpress.png" /></p>
+            src="/images/circuitplaygroundexpress.png" />
 
 To **move the bootloader** to the CPX:
 
@@ -205,7 +205,7 @@ The CPX is now ready with the original bootloader.
 
 
 #### <a id="Program-1"></a>Program 1
-To create this program, open adafruit.MakeCode.com.  Create the bootloader file by creating the block code program below.  
+To **create this program**, open adafruit.MakeCode.com.  Create the bootloader file by creating the block code program below.  
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/blockcode.png" />
