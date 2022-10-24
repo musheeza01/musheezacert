@@ -186,7 +186,7 @@ To **troubleshoot** the CPX device and program:
 Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
 <p align="center">
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{ margin: "0", clear: "right", width: "300px"}}
             src="/images/circuitplaygroundexpress.png" /></p>
 <br></br>
 <br></br>
@@ -249,8 +249,9 @@ To create this program, open adafruit.MakeCode.com.  Create the bootloader file 
 <br></br><br></br>
 <br></br>
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
-            src="/images/blockcodefour.png" />
+<p style={{ margin: "10px 0px 0px 0px"}}> 
+<img style={{ clear: "left", float: "left", width: "300px"}}
+            src="/images/blockcodefour.png" /></p>
 <br></br>
 <br></br>
 <br></br>
