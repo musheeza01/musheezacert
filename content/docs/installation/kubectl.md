@@ -237,4 +237,4 @@ Save the program by clicking on the blue Save button.  Then download the file by
             src="/images/makecode_program08.jpg" /></p>
 
 
-Continue with the procedure in [Source 1](#Source-1) to program the CPX with the new bootloader.
+Continue with the procedure in [Source 1](#Source-1) to program the CPX with the new bootloader. 
