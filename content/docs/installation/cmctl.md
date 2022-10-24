@@ -307,7 +307,7 @@ Save the program by clicking on the blue Save button.  Then download the file by
 
 <p align="center">
 <img style={{ margin: "0", clear: "right", width: "300px"}}
-            src="/images/MakeCode_Program08.jpg" /></p>
+            src="/images/makecode_program08.jpg" /></p>
             
 Program the CPX as listed in [Source 1](#Source-1).
 
