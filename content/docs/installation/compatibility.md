@@ -201,9 +201,6 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
             <br></br><br></br><br></br>
 <br></br>
 <br></br>
-<br></br>
-<br></br><br></br>
-
 
 Save the program by clicking on the blue Save button.  Then download the file by clicking on the pink download button.  The file will be downloaded to your download location on your computer with the same name as in the Save Box.
 
