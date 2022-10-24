@@ -155,9 +155,7 @@ https://learn.adafruit.com/adafruit-circuit-playground-express
 There are three ways to program the CPX:
 
 1. makecode.adafruit.com
-
 2. CircuitPython
-
 3. Arduino
 
 This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
@@ -174,7 +172,7 @@ To **create this program**, open learn.adafruit.com/uart-communication-between-t
 <br></br>
 <br></br>
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", width: "500px"}}
             src="/images/projectcode.png"
             /> 
 <br></br>
