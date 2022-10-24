@@ -200,7 +200,7 @@ To **create this program**, open makecode.adafruit.com.  Select New Project.  Ad
 <p style={{margin: "205px 0px 0px 50px"}}>             
 img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
             src="/images/buttondown.png"
-            />     </p>        
+            /></p>        
 <br></br>
 <br></br>
             <br></br>
