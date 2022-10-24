@@ -51,7 +51,8 @@ Once the Circuit Playground Express (CPX) is connected and powered, the program 
 <br></br><br></br><br></br>
 <br></br>
 <br></br>
-<br></br><br></br>
+<br></br><br></br><br></br>
+<br></br>
 
 To connect the circuits, connect the following:
 
@@ -70,6 +71,7 @@ RX to TX and TX to RX and GND to GND
 <br></br>
 <br></br>
 <br></br>
+<br></br><br></br>
 <br></br>
 
 Once the ‘customer’ sends the data to the Datacenters A and B
