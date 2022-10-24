@@ -184,10 +184,7 @@ To **create this program**, open learn.adafruit.com/uart-communication-between-t
 <br></br>
 <br></br>
 <br></br>
-<br></br><br></br>
-<br></br><br></br>
 <br></br>
-
 
 To move the program to the CPX:
 
