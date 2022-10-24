@@ -251,7 +251,7 @@ To create this program, open adafruit.MakeCode.com.  Create the bootloader file 
 <br></br>
 <br></br>
 <br></br>
-<br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br>
 
 Program the CPX as listed in [Source 1](#Source-1).
 
