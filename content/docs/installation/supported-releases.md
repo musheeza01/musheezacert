@@ -45,7 +45,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 Once the Circuit Playground Express (CPX) is connected and powered, the program will display 1 or 2 green solid lit LEDs. 
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
-            src="/images/led.png"
+            src="/images/led.jpg"
             /> 
 <br></br><br></br>
 <br></br><br></br><br></br>
