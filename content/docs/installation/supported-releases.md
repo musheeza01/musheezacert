@@ -27,9 +27,7 @@ Read through  [Source 1](#Source-1) below. When you are ready, move the image ([
 This program contains three elements:
 
 1.	Programming the CPX Bootloader to work with CircuitPython
-
 2.	Using the light sensor to display the intensity of the light
-
 3.	Light intensity is replicated/redundant between two CPX boards
 
 See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
@@ -37,9 +35,8 @@ See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to
 ### After
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
-
 ### Source
-1.	The redundancy program utilizes Universal Asynchronous Receiver-Transmitter (UART), a serial communication protocol.  See [Program 1](#Program-1) below for programming details.
+1. The redundancy program utilizes Universal Asynchronous Receiver-Transmitter (UART), a serial communication protocol.  See [Program 1](#Program-1) below for programming details.
 
 ### Get Help
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
@@ -48,7 +45,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 Once the Circuit Playground Express (CPX) is connected and powered, the program will display 1 or 2 green solid lit LEDs. 
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
-            src="/images/LED.png"
+            src="/images/led.png"
             /> 
 <br></br><br></br>
 <br></br><br></br><br></br>
@@ -62,7 +59,7 @@ RX to TX and TX to RX and GND to GND
 
 (RX – Receive, TX – Transmit, GND – Ground)
 
-<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+<img style={{margin: "0", clear: "right", float: "left", width: "400px"}}
             src="/images/circuit.png"
             /> 
 <br></br>
@@ -156,11 +153,11 @@ https://learn.adafruit.com/adafruit-circuit-playground-express
 
 There are three ways to program the CPX:
 
-1.	makecode.adafruit.com
+1. makecode.adafruit.com
 
-2.	CircuitPython
+2. CircuitPython
 
-3.	Arduino
+3. Arduino
 
 This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
 
@@ -229,15 +226,11 @@ If there is 1-2 green solid lit LEDs on the CPX, the CPX is now ready with the i
 
 To **troubleshoot** the CPX device and program:
 
-1.	Check the batteries
-
-2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
-
-3.	Follow steps in Source 1 to download the program to the CPX device.
-
-4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
-
-5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Redundancy program.
+1. Check the batteries
+2. Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+3. Follow steps in Source 1 to download the program to the CPX device.
+4. Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+5. Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Redundancy program.
 
 #### <a id="Source-3"></a>Source 3
 **Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  
@@ -245,7 +238,6 @@ To **troubleshoot** the CPX device and program:
 Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
 <p align="center">
-
 <img style={{margin: "0", clear: "right", float: "center", width: "200px"}}
             src="/images/circuitplaygroundexpress.png"
             /> </p>
