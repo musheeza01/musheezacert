@@ -27,9 +27,7 @@ Read through  [Source 1](#Source-1) below. When you are ready, move the image ([
 This program contains three elements:
 
 1.	Plays the tune 'Bruno' from the movie Encanto (Switch moved to left)
-
 2.	IR Tag 'laser' transmitted (Button B)
-
 3.	Reset lights, tag count, and cycles signal lights red/yellow/blue (Button A)
 
 See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
@@ -60,7 +58,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 <img style={{ margin: "0px", clear: "right", float: "left", height:"200px", width: "200px" }}
             src="/images/skybluelights.png"
             /> 
-<p style={{ margin: " 0px 100px 0px 0px" }}> 
+<p style={{ margin: " 0px 150px 0px 0px" }}> 
 <img style={{ margin: "0px", clear: "right", float: "right", height: "200px", width: "200px" }}
             src="/images/magentalights.jpg"
             /></p>
@@ -135,9 +133,7 @@ https://learn.adafruit.com/adafruit-circuit-playground-express
 There are three ways to program the CPX:
 
 1.	makecode.adafruit.com
-
 2.	CircuitPython
-
 3.	Arduino
 
 This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
@@ -177,13 +173,9 @@ The small LEDs will turn blue.
 To **troubleshoot** the CPX device and program:
 
 1.	Check the batteries
-
 2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
-
 3.	Follow steps in Source 1 to download the program to the CPX device.
-
 4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
-
 5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings. Then repeat the procedure to install the TrioCombo program.
 
 #### <a id="Source-3"></a>Source 3
