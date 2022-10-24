@@ -211,21 +211,21 @@ Click on the link (make sure it is for the Circuit Playground Express).  The fil
 To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required below.  Save the file.  Program the CPX as listed in [Source 1](#Source-1).
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
-            src="/images/MakeCode_Program01.jpg" />
+            src="/images/makecode_program01.jpg" />
             
 <img style={{margin: "40px 0px 0px 0px",  clear: "right", align: "bottom", width: "300px"}}
-            src="/images/MakeCode_Program04.jpg" />
+            src="/images/makecode_program04.jpg" />
 <br></br><br></br>
            
 
 ### Program 1 Continued
 
 <img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
-            src="/images/MakeCode_Program06b.jpg" />
+            src="/images/makecode_program06b.jpg" />
    <br></br> <br></br>
             <br></br><br></br>  <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <img style={{margin: "-15px 0px 0px 0px", clear: "right", float: "left", width: "300px"}}
-            src="/images/MakeCode_Program07.jpg" />
+            src="/images/makecode_program07.jpg" />
 <br></br><br></br>
 <br></br><br></br><br></br>
     
@@ -234,7 +234,7 @@ Save the program by clicking on the blue Save button.  Then download the file by
 
 <p align="center">
 <img style={{ width: "300px"}}
-            src="/images/MakeCode_Program08.jpg" /></p>
+            src="/images/makecode_program08.jpg" /></p>
 
 
 Continue with the procedure in [Source 1](#Source-1) to program the CPX with the new bootloader.
