@@ -115,8 +115,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 <br></br>
 <br></br>
-<br></br>
-<br></br>
+
 
 
 #### <a id="Lesson"></a>Lesson
