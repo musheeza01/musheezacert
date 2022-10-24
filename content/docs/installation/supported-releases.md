@@ -38,7 +38,7 @@ See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
 
-**Source**
+### Source
 1.	The redundancy program utilizes Universal Asynchronous Receiver-Transmitter (UART), a serial communication protocol.  See [Program 1](#Program-1) below for programming details.
 
 ### Get Help
@@ -169,10 +169,10 @@ When the CPX is first connected to a computer with the USB cable, it will run th
 #### <a id="Source-2"></a>Source 2
 To **create this program**, open learn.adafruit.com/uart-communication-between-two-circuitpython-boards/code.  Scroll down on the page and select Download Project Bundle.
 
-
+<p align="center">
 <img style={{margin: "0", clear: "right", align: "center", width: "200px"}}
             src="/images/projectbundle.png"
-            /> 
+            /> </p>
 <br></br>
 <br></br>
 
@@ -227,7 +227,7 @@ Press the reset button on the CPX.
 
 If there is 1-2 green solid lit LEDs on the CPX, the CPX is now ready with the installed program.
 
-To troubleshoot the CPX device and program:
+To **troubleshoot** the CPX device and program:
 
 1.	Check the batteries
 
@@ -240,14 +240,15 @@ To troubleshoot the CPX device and program:
 5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Redundancy program.
 
 #### <a id="Source-3"></a>Source 3
-**Download** the original CPX **bootloader**, navigate to UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  
+**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details)[https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  
 
 Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
 
+<p align="center">
 
 <img style={{margin: "0", clear: "right", float: "center", width: "200px"}}
             src="/images/circuitplaygroundexpress.png"
-            /> 
+            /> </p>
 <br></br><br></br>
 
 To **move the bootloader** to the CPX:
