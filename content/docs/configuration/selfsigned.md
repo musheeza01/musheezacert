@@ -1,4 +1,4 @@
-# CPS Circuit On/Off
+# CPX Circuit On/Off
 #### Purpose
 Statement of Work Template intended for Datacenter Volunteer Lead Community Engagements.  
 
