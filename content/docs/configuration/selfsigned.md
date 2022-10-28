@@ -36,7 +36,7 @@ See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
 #### Source
-1.	The program utilizes a simple code in MakeCode.  See (Program 1)[#Program-1] below for programming details.
+1. The program utilizes a simple code in MakeCode.  See [Program 1] (#Program-1)below for programming details.
 
 #### Get Help
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
@@ -64,9 +64,9 @@ Print the Template and place the Circuit Playground Express (CPX) in the center 
 
 To run the Inventory In/Out program, press Button A.  The lights will race around the CPX in a rainbow of colors for 2 seconds.  Then, the selection will be made at random.  One of three choices will be selected, signified by the example images below:
 
-1.	The part is not in inventory. Check with the Inventory and Asset Technician for stock information.
-2.	The part is in inventory.  Scan the part out for your repair.
-3.	Scan the part back into inventory.
+1. The part is not in inventory. Check with the Inventory and Asset Technician for stock information.
+2. The part is in inventory.  Scan the part out for your repair.
+3. Scan the part back into inventory.
 
 <img style={{margin:"0px", clear: "left", float: "left", height:"400px", width:"300px"}}
             src="/images/circuitcolors.png" />
@@ -114,21 +114,17 @@ To run the Inventory In/Out program, press Button A.  The lights will race aroun
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
-#### What
+#### What:
 This lab demonstrates datacenter inventory protocols and demonstrates checking out or returning a part to stock..  
 
-#### Details
+#### Details:
 Inventory and Asset Technicians keep the Microsoft Cloud running by assuring the correct parts are in stock in inventory.  Sometimes parts are removed and not needed.  This could be because it wasn’t the correct part or did not resolve the problem.  Datacenter Technicians will return the part to inventory, so it is ready for the next repair.  When parts are out of stock, the Inventory and Asset Technicians will order new stock during their routine cycle counts.
 
-#### Share
+#### Share:
 Defining the Cloud, servers, and common server parts may be helpful prior to explaining the lesson.  The datacenter is a building full of servers.  Servers are different than computers in your lab or classroom as they do not have a monitor or keyboard but do have many disks.  The disks contain data.  Data can be account information for banking or online shopping, medical lab tests, schoolwork, video game accounts, photos, or email.  When a server has a problem, technicians work fast to replace the parts promptly to keep the cloud running.
 
 NOTE:
-
 This lab works by pressing Button A, then a random selection is made.  The illuminated section of the CPX board defines the inventory status from the template.  This cycle can be repeated to demonstrate how inventory may or may not be available for repair.
-
-#### Source:
-https://blogs.microsoft.com/blog/2022/03/10/an-update-on-microsofts-sustainability-commitments-building-a-foundation-for-2030/ 
 
 #### <a id="Source-1"></a> Source 1 
 The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
