@@ -237,5 +237,5 @@ To **create this program**, open [MakeCode.adafruit.com.](MakeCode.adafruit.com.
 ### <a id="template"></a> Template
 Use the following template for the CPX and this program.  Place the CPX board in the center of the dotted circle with the battery adapter port facing towards the bottom of the page along the center line as noted in the diagram.
 
-<img style={{margin: "0px 0px 0px 50px", clear: "left", float: "left", height:"500px", width: "500px"}}
+<img style={{margin: "0px 0px 0px 50px", clear: "left", float: "left", height:"600px", width: "500px"}}
             src="/images/template.png" />
