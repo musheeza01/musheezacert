@@ -36,7 +36,7 @@ See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
 #### Source
-1. The program utilizes a simple code in MakeCode.  See [Program 1](#Program-1) below for programming details.
+1. The program utilizes a simple code in MakeCode. See [Program 1](#Program-1) below for programming details.
 
 #### Get Help
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
