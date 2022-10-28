@@ -205,7 +205,7 @@ The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear fro
 The CPX is now ready with the original bootloader.
 
 #### <a id="Program-1"></a>Program 1
-To **create this program**, open [makecode.adafruit.com.](MakeCode.adafruit.com.) Create the bootloader file by creating the block code program below:
+To **create this program**, open [MakeCode.adafruit.com.](MakeCode.adafruit.com.) Create the bootloader file by creating the block code program below:
 
 <img style={{margin: "0", clear: "left", float: "left", width: "300px"}}
             src="/images/animation.png" />
@@ -237,5 +237,5 @@ To **create this program**, open [makecode.adafruit.com.](MakeCode.adafruit.com.
 ### <a id="template"></a> Template
 Use the following template for the CPX and this program.  Place the CPX board in the center of the dotted circle with the battery adapter port facing towards the bottom of the page along the center line as noted in the diagram.
 
-<img style={{margin: "0px 0px 0px 50px", clear: "left", float: "left", width: "300px"}}
+<img style={{margin: "0px 0px 0px 50px", clear: "left", float: "left", height:"500px", width: "500px"}}
             src="/images/template.png" />
