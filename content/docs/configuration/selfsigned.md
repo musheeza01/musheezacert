@@ -58,7 +58,7 @@ Print the Template and place the Circuit Playground Express (CPX) in the center 
 <br></br>
 <br></br>
 <br></br>
-<br>
+<br></br>
 
 To run the Inventory In/Out program, press Button A.  The lights will race around the CPX in a rainbow of colors for 2 seconds.  Then, the selection will be made at random.  One of three choices will be selected, signified by the example images below:
 
@@ -170,10 +170,10 @@ Once the Circuit Playground Express (CPX) is connected, without MiniGrabbers att
 
 To **troubleshoot** the CPX device and program:
 
-1.	Check the batteries
-2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
-3.	Follow steps in Source 1 to download the program to the CPX device.
-4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+1. Check the batteries
+2. Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+3. Follow steps in Source 1 to download the program to the CPX device.
+4. Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
 5. Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Intrusion program.
 
 #### <a id="Source-3"></a>Source 3
