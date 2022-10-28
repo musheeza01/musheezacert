@@ -25,10 +25,10 @@ Read through [Source 1](#Source-1) below.  When you are ready, move the image ([
 
 #### Go
 This program contains three elements:
-1.	Programming the CPX Bootloader to work with MakeCode Bootloader
-2.	Using Button A to randomly select inventory status on a part.
-3.	Lights will display in a circular racing pattern for 2 seconds, then randomly select 1/3 of the lights.
-4.	Using the (template)[#template] to define the selection of the randomly displayed lights will determine the inventory status outcome.
+1. Programming the CPX Bootloader to work with MakeCode Bootloader
+2. Using Button A to randomly select inventory status on a part.
+3. Lights will display in a circular racing pattern for 2 seconds, then randomly select 1/3 of the lights.
+4. Using the (template)[#template] to define the selection of the randomly displayed lights will determine the inventory status outcome.
 
 See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
@@ -47,6 +47,7 @@ Print the Template and place the Circuit Playground Express (CPX) in the center 
             src="/images/inventory.png" />
 
 <br></br>
+<br></br><br></br>
 <br></br>
 <br></br>
 <br></br>
@@ -72,7 +73,8 @@ To run the Inventory In/Out program, press Button A.  The lights will race aroun
 <img style={{margin: "0", clear: "right", float: "left", height:"400px", width:"300px"}}
             src="/images/circuitred.png" />
 
-
+<br></br>
+<br></br>
 <img style={{margin: "0", clear: "left", float: "left", height:"400px", width:"300px"}}
             src="/images/circuitblue.png" />
 
@@ -223,8 +225,6 @@ To **create this program**, open (makecode.adafruit.com.)[#makecode.adafruit.com
 <br></br>
 <br></br>
 <br></br><br></br>
-<br></br>
-<br></br>
 <br></br>
 <br></br>
 <br></br>
