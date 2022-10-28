@@ -28,7 +28,7 @@ This program contains three elements:
 1. Programming the CPX Bootloader to work with MakeCode Bootloader
 2. Using Button A to randomly select inventory status on a part.
 3. Lights will display in a circular racing pattern for 2 seconds, then randomly select 1/3 of the lights.
-4. Using the (template)[#template] to define the selection of the randomly displayed lights will determine the inventory status outcome.
+4. Using the [template](#template) to define the selection of the randomly displayed lights will determine the inventory status outcome.
 
 See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
@@ -214,16 +214,16 @@ The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear fro
 The CPX is now ready with the original bootloader.
 
 #### <a id="Program-1"></a>Program 1
-To **create this program**, open (makecode.adafruit.com.)[#makecode.adafruit.com.]  SCreate the bootloader file by creating the block code program below:
+To **create this program**, open (makecode.adafruit.com.)[#MakeCode.adafruit.com]  SCreate the bootloader file by creating the block code program below:
 
 <img style={{margin: "0", clear: "left", float: "left", width: "300px"}}
             src="/images/animation.png" />
             <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
 <p style={{margin: "0px 0px 0px 120px"}}>Program the CPX as listed in [Source 1](#Source-1).</p>
-<br></br><br></br>
-<br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
             
