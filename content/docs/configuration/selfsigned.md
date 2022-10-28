@@ -110,11 +110,6 @@ To run the Inventory In/Out program, press Button A.  The lights will race aroun
 <br></br>
 <br></br><br></br>
 <br></br>
-<br></br>
-<br></br>
-<br></br><br></br>
-<br></br>
-
 
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
@@ -223,7 +218,7 @@ To **create this program**, open (makecode.adafruit.com.)[#MakeCode.adafruit.com
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
-<p style={{margin: "0px 0px 0px 120px"}}>Program the CPX as listed in [Source 1](#Source-1).</p>
+<p style={{margin: "20px 0px 0px 340px"}}>Program the CPX as listed in [Source 1](#Source-1).</p>
 <br></br><br></br>
 <br></br><br></br>
             
@@ -236,7 +231,6 @@ To **create this program**, open (makecode.adafruit.com.)[#MakeCode.adafruit.com
 <br></br>
 <br></br>
 <br></br><br></br>
-<br></br>
 <br></br>
 <br></br>
 <br></br>
