@@ -68,7 +68,7 @@ To run the Inventory In/Out program, press Button A.  The lights will race aroun
 2.	The part is in inventory.  Scan the part out for your repair.
 3.	Scan the part back into inventory.
 
-<img style={{margin:"0px 0px 0px 50px", clear: "left", float: "left", height:"400px", width:"300px"}}
+<img style={{margin:"0px", clear: "left", float: "left", height:"400px", width:"300px"}}
             src="/images/circuitcolors.png" />
 
 <img style={{margin:"0px 0px 0px 50px", clear: "right", float: "left", height:"400px", width:"300px"}}
@@ -93,7 +93,7 @@ To run the Inventory In/Out program, press Button A.  The lights will race aroun
 <img style={{margin: "0", clear: "left", float: "left", height:"400px", width:"300px"}}
             src="/images/circuitblue.png" />
 
-<img style={{margin: "0", clear: "right", float: "left", height:"400px", width:"300px"}}
+<img style={{margin:"0px 0px 0px 50px", clear: "right", float: "left", height:"400px", width:"300px"}}
             src="/images/circuitgreen.png" />
 
 <br></br>
