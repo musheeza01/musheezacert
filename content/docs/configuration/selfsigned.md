@@ -43,7 +43,7 @@ For any questions contact the Microsoft Datacenter Community Development team at
 
 #### <a id="Appendix"></a>Appendix
 Print the Template and place the Circuit Playground Express (CPX) in the center dotted circle.  Connect the battery pack with the battery adapter port (black) down.  The cables connected between the CPX and the battery adapter should follow the center line on the bottom half of the circle. Once connected, the lights will be off except for a small green led associated with the On sensor.
-<img style={{clear: "right", float: "left", height:"400px", width:"300px"}}
+<img style={{ clear: "right", float: "left", height:"400px", width:"300px"}}
             src="/images/inventory.png" />
 
 <br></br>
@@ -68,10 +68,10 @@ To run the Inventory In/Out program, press Button A.  The lights will race aroun
 2.	The part is in inventory.  Scan the part out for your repair.
 3.	Scan the part back into inventory.
 
-<img style={{margin: "0", clear: "left", float: "left", height:"400px", width:"300px"}}
+<img style={{margin:"0px 0px 0px 50px", clear: "left", float: "left", height:"400px", width:"300px"}}
             src="/images/circuitcolors.png" />
 
-<img style={{margin: "0", clear: "right", float: "left", height:"400px", width:"300px"}}
+<img style={{margin:"0px 0px 0px 50px", clear: "right", float: "left", height:"400px", width:"300px"}}
             src="/images/circuitred.png" />
 
 <br></br>
