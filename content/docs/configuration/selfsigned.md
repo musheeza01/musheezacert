@@ -1,169 +1,197 @@
----
-title: SelfSigned
-description: 'cert-manager configuration: SelfSigned Issuers'
----
+# CPS Circuit On/Off
+#### Purpose
+Statement of Work Template intended for Datacenter Volunteer Lead Community Engagements.  
 
-⚠️ `SelfSigned` issuers are generally useful for bootstrapping a PKI locally, which
-is a complex topic for advanced users. To be used safely in production, running a PKI
-introduces complex planning requirements around rotation, trust store distribution and disaster recovery.
+#### Materials
+1 AAA Battery housing
 
-If you're not planning to run your own PKI, use a different issuer type.
+6 AAA Batteries (3 spare)
 
-The `SelfSigned` issuer doesn't represent a certificate authority as such, but
-instead denotes that certificates will "sign themselves" using a given private
-key. In other words, the private key of the certificate will be used to sign
-the certificate itself.
+1 Circuit Playground Express
 
-This `Issuer` type is useful for bootstrapping a root certificate for a
-custom PKI (Public Key Infrastructure), or for otherwise creating simple
-ad-hoc certificates for a quick test.
+Data/Sync USB Cable
 
-There are important [caveats](#caveats) - including security issues - to
-consider with `SelfSigned` issuers; in general you'd likely  want to use a
-[`CA`](./ca.md) issuer rather than a `SelfSigned` issuer. That said,
-`SelfSigned` issuers are really useful for initially [bootstrapping](#bootstrapping-ca-issuers)
-a `CA` issuer.
+#### Before
+Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
-> Note: a `CertificateRequest` that references a self-signed certificate _must_
-> also contain the `cert-manager.io/private-key-secret-name` annotation since
-> the private key corresponding to the `CertificateRequest` is required to
-> sign the certificate. This annotation is added automatically by the
-> `Certificate` controller.
+#### Start
+Read through [Source 1](#Source-1) below.  When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
-## Deployment
+#### Get Ready
+**Prep the CPX**: Connect the USB-A/MicroUSB cable to the computer USB port.  Connect the MicroUSB end to the CPX.  Press the reset button twice, like a double-click.  A CPLAYBOOT drive should appear.  Use the information in [Program 1](#Program-1) to add the bootloader to the CPX as in [Source 2](#Source-2).
 
-Since the `SelfSigned` issuer has no dependency on any other resource, it is
-the simplest to configure. Only the `SelfSigned` stanza is required to be
-present in the issuer spec, with no other configuration required:
 
-```yaml
-apiVersion: cert-manager.io/v1
-kind: Issuer
-metadata:
-  name: selfsigned-issuer
-  namespace: sandbox
-spec:
-  selfSigned: {}
-```
+**Power the CPX**: Insert the batteries into the battery pack.  Connect the battery pack to the CPX. Power on the battery pack.
 
-```yaml
-apiVersion: cert-manager.io/v1
-kind: ClusterIssuer
-metadata:
-  name: selfsigned-cluster-issuer
-spec:
-  selfSigned: {}
-```
+#### Go
+This program contains three elements:
+1.	Programming the CPX Bootloader to work with MakeCode Bootloader
+2.	Using Button A to randomly select inventory status on a part.
+3.	Lights will display in a circular racing pattern for 2 seconds, then randomly select 1/3 of the lights.
+4.	Using the (template)[#template] to define the selection of the randomly displayed lights will determine the inventory status outcome.
 
-Once deployed, you should be able to see immediately that the issuer is ready
-for signing:
+See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-```bash
-$ kubectl get issuers  -n sandbox -o wide selfsigned-issuer
-NAME                READY   STATUS                AGE
-selfsigned-issuer   True                          2m
+#### After
+Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
-$ kubectl get clusterissuers -o wide selfsigned-cluster-issuer
-NAME                        READY   STATUS   AGE
-selfsigned-cluster-issuer   True             3m
-```
+#### Source
+1.	The program utilizes a simple code in MakeCode.  See (Program 1)[#Program-1] below for programming details.
 
-### Bootstrapping `CA` Issuers
+#### Get Help
+For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
-One of the ideal use cases for `SelfSigned` issuers is to bootstrap a custom
-root certificate for a private PKI, including with the cert-manager [`CA`](./ca.md)
-issuer.
+#### <a id="Appendix"></a>Appendix
+Print the Template and place the Circuit Playground Express (CPX) in the center dotted circle.  Connect the battery pack with the battery adapter port (black) down.  The cables connected between the CPX and the battery adapter should follow the center line on the bottom half of the circle. Once connected, the lights will be off except for a small green led associated with the On sensor.
+<img style={{clear: "right", float: "left"}}
+            src="/images/inventory.png" />
 
-The YAML below will create a `SelfSigned` issuer, issue a root certificate and
-use that root as a `CA` issuer:
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
-```yaml
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: sandbox
----
-apiVersion: cert-manager.io/v1
-kind: ClusterIssuer
-metadata:
-  name: selfsigned-issuer
-spec:
-  selfSigned: {}
----
-apiVersion: cert-manager.io/v1
-kind: Certificate
-metadata:
-  name: my-selfsigned-ca
-  namespace: sandbox
-spec:
-  isCA: true
-  commonName: my-selfsigned-ca
-  secretName: root-secret
-  privateKey:
-    algorithm: ECDSA
-    size: 256
-  issuerRef:
-    name: selfsigned-issuer
-    kind: ClusterIssuer
-    group: cert-manager.io
----
-apiVersion: cert-manager.io/v1
-kind: Issuer
-metadata:
-  name: my-ca-issuer
-  namespace: sandbox
-spec:
-  ca:
-    secretName: root-secret
-```
+To run the Inventory In/Out program, press Button A.  The lights will race around the CPX in a rainbow of colors for 2 seconds.  Then, the selection will be made at random.  One of three choices will be selected, signified by the example images below:
 
-### CRL Distribution Points
+1.	The part is not in inventory. Check with the Inventory and Asset Technician for stock information.
+2.	The part is in inventory.  Scan the part out for your repair.
+3.	Scan the part back into inventory.
 
-You may also optionally specify [CRL](https://en.wikipedia.org/wiki/Certificate_revocation_list)
-Distribution Points as an array of strings, each of which identifies the location of a CRL in
-which the revocation status of issued certificates can be checked:
+<img style={{margin: "0", clear: "left", float: "left"}}
+            src="/images/circuitcolors.png" />
 
-```yaml
-...
-spec:
-  selfSigned:
-    crlDistributionPoints:
-    - "http://example.com"
-```
+<img style={{margin: "0", clear: "right", float: "left"}}
+            src="/images/circuitred.png" />
 
-## Caveats
 
-### Trust
+<img style={{margin: "0", clear: "left", float: "left"}}
+            src="/images/circuitblue.png" />
 
-Clients consuming `SelfSigned` certificates have _no way_ to trust them
-without already having the certificates beforehand. This becomes hard to
-manage when the client of the server using the certificate exists in a
-different namespace. This limitation can be tackled by using [trust](../projects/trust.md)
-to distribute the `ca.crt` to other namespaces. The alternative is to use
-"TOFU" (trust on first use), which has security implications in the event
-of a man-in-the-middle attack.
+<img style={{margin: "0", clear: "right", float: "left"}}
+            src="/images/circuitgreen.png" />
 
-### Certificate Validity
+#### <a id="Lesson"></a>Lesson
+The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
-One side-effect of a certificate being self-signed is that its Subject DN and
-its Issuer DN are identical. The X.509 [RFC 5280, section 4.1.2.4](https://tools.ietf.org/html/rfc5280#section-4.1.2.4)
-requires that:
+#### What
+This lab demonstrates datacenter inventory protocols and demonstrates checking out or returning a part to stock..  
 
-> The issuer field MUST contain a non-empty distinguished name (DN).
+#### Details
+Inventory and Asset Technicians keep the Microsoft Cloud running by assuring the correct parts are in stock in inventory.  Sometimes parts are removed and not needed.  This could be because it wasn’t the correct part or did not resolve the problem.  Datacenter Technicians will return the part to inventory, so it is ready for the next repair.  When parts are out of stock, the Inventory and Asset Technicians will order new stock during their routine cycle counts.
 
-However, self-signed certs don't have a subject DN set by default. Unless you
-manually set a certificate's Subject DN, the Issuer DN will be empty
-and the certificate will technically be invalid.
+#### Share
+Defining the Cloud, servers, and common server parts may be helpful prior to explaining the lesson.  The datacenter is a building full of servers.  Servers are different than computers in your lab or classroom as they do not have a monitor or keyboard but do have many disks.  The disks contain data.  Data can be account information for banking or online shopping, medical lab tests, schoolwork, video game accounts, photos, or email.  When a server has a problem, technicians work fast to replace the parts promptly to keep the cloud running.
 
-Validation of this specific area of the spec is patchy and varies between TLS
-libraries, but there's always the risk that a library will improve its
-validation - entirely within spec - in the future and break your app if you're
-using a certificate with an empty Issuer DN.
+NOTE:
 
-To avoid this, be sure to set a Subject for `SelfSigned` certs. This can be
-done by setting the `spec.subject` on a cert-manager `Certificate` object
-which will be issued by a `SelfSigned` issuer.
+This lab works by pressing Button A, then a random selection is made.  The illuminated section of the CPX board defines the inventory status from the template.  This cycle can be repeated to demonstrate how inventory may or may not be available for repair.
 
-Starting in version 1.3, cert-manager will emit a Kubernetes [warning event](https://github.com/cert-manager/cert-manager/blob/45befd86966c563663d18848943a1066d9681bf8/pkg/controller/certificaterequests/selfsigned/selfsigned.go#L140)
-of type `BadConfig` if it detects that a certificate is being created
-by a `SelfSigned` issuer which has an empty Issuer DN.
+#### Source:
+https://blogs.microsoft.com/blog/2022/03/10/an-update-on-microsofts-sustainability-commitments-building-a-foundation-for-2030/ 
+
+#### <a id="Source-1"></a> Source 1 
+The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
+
+Source:
+https://learn.adafruit.com/adafruit-circuit-playground-express
+[i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
+
+There are three ways to program the CPX:
+1.	makecode.adafruit.com
+2.	CircuitPython
+3.	Arduino
+
+This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
+
+When the CPX is first connected to a computer with the USB cable, it will run the program that is stored on the device.  This may not be the program that you desire to run.  Follow the procedure in Source 3 to reset the CPX to the factory settings.  The CPX will hold the program and not reset to factory settings upon power off.
+
+#### <a id="Source-2"></a>Source 2
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required in [Program 1](#Program-1). Save the file.
+
+To **move the program** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file from the Intrusion folder and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The program is now installed
+
+Press the reset button on the CPX.
+
+Once the Circuit Playground Express (CPX) is connected, without MiniGrabbers attached, all LEDs will display blue. 
+
+To **troubleshoot** the CPX device and program:
+
+1.	Check the batteries
+2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+3.	Follow steps in Source 1 to download the program to the CPX device.
+4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+5. Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Intrusion program.
+
+#### <a id="Source-3"></a>Source 3
+**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details) (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+
+To **move the bootloader** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file (from the above procedure) and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The CPX is now ready with the original bootloader.
+
+#### <a id="Program-1"></a>Program 1
+To **create this program**, open (makecode.adafruit.com.)[#makecode.adafruit.com.]  SCreate the bootloader file by creating the block code program below:
+
+<img style={{margin: "0", clear: "left", float: "left", width: "300px"}}
+            src="/images/animation.png" />
+            <br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+
+            
+<img style={{margin: "0",  clear: "right", height:"300px", width: "300px"}}
+            src="/images/elseif.png" />
+<br></br><br></br>
+<br></br><br></br>
+           
+
+### Template
+Use the following template for the CPX and this program.  Place the CPX board in the center of the dotted circle with the battery adapter port facing towards the bottom of the page along the center line as noted in the diagram.
+
+<img style={{margin: "0", clear: "right", float: "left", width: "300px"}}
+            src="/images/template.png" />
