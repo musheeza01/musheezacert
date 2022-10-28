@@ -221,8 +221,7 @@ To **create this program**, open (makecode.adafruit.com.)[#makecode.adafruit.com
             <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
-<p style={{margin: "0px 0px 0px 100px"}}>             
-Program the CPX as listed in [Source 1](#Source-1).</p>
+<p style={{margin: "0px 0px 0px 120px"}}>Program the CPX as listed in [Source 1](#Source-1).</p>
 <br></br><br></br>
 <br></br><br></br>
 <br></br><br></br>
