@@ -36,7 +36,7 @@ See  [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to
 Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
 #### Source
-1. The program utilizes a simple code in MakeCode.  See [Program 1] (#Program-1)below for programming details.
+1. The program utilizes a simple code in MakeCode.  See [Program 1](#Program-1) below for programming details.
 
 #### Get Help
 For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
@@ -115,7 +115,7 @@ To run the Inventory In/Out program, press Button A.  The lights will race aroun
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
 #### What:
-This lab demonstrates datacenter inventory protocols and demonstrates checking out or returning a part to stock..  
+This lab demonstrates datacenter inventory protocols and demonstrates checking out or returning a part to stock. 
 
 #### Details:
 Inventory and Asset Technicians keep the Microsoft Cloud running by assuring the correct parts are in stock in inventory.  Sometimes parts are removed and not needed.  This could be because it wasn’t the correct part or did not resolve the problem.  Datacenter Technicians will return the part to inventory, so it is ready for the next repair.  When parts are out of stock, the Inventory and Asset Technicians will order new stock during their routine cycle counts.
