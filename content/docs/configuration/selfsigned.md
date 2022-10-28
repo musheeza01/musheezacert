@@ -56,6 +56,9 @@ Print the Template and place the Circuit Playground Express (CPX) in the center 
 <br></br>
 <br></br>
 <br></br>
+<br></br>
+<br></br>
+<br>
 
 To run the Inventory In/Out program, press Button A.  The lights will race around the CPX in a rainbow of colors for 2 seconds.  Then, the selection will be made at random.  One of three choices will be selected, signified by the example images below:
 
@@ -76,6 +79,31 @@ To run the Inventory In/Out program, press Button A.  The lights will race aroun
 <img style={{margin: "0", clear: "right", float: "left", height:"400px", width:"300px"}}
             src="/images/circuitgreen.png" />
 
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 #### <a id="Lesson"></a>Lesson
 The purpose of this hands-on STEM lab is to educate the community about Datacenters.  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
@@ -186,11 +214,24 @@ To **create this program**, open (makecode.adafruit.com.)[#makecode.adafruit.com
 <br></br><br></br>
 <br></br><br></br>
             
-<img style={{margin: "0",  clear: "left", float:"left", height:"400px", width: "400px"}}
+<img style={{margin: "0",  clear: "left", float:"left", height:"300px", width: "300px"}}
             src="/images/elseif.png" />
 <br></br><br></br>
 <br></br><br></br>
-           
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br><br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 ### <a id="template"></a>Template
 Use the following template for the CPX and this program.  Place the CPX board in the center of the dotted circle with the battery adapter port facing towards the bottom of the page along the center line as noted in the diagram.
