@@ -18,7 +18,7 @@ Read through [Source 1](#Source-1) below.  When you are ready, move the image ([
 
 
 #### Get Ready
-**Prep the CPX**: Connect the USB-A/MicroUSB cable to the computer USB port.  Connect the MicroUSB end to the CPX.  Press the reset button twice, like a double-click.  A CPLAYBOOT drive should appear.  Use the information in Program 1 to add the bootloader to the CPX as in [Source 2](#Source-2).
+**Prep the CPX**: Connect the USB-A/MicroUSB cable to the computer USB port.  Connect the MicroUSB end to the CPX.  Press the reset button twice, like a double-click.  A CPLAYBOOT drive should appear.  Use the information in [Program 1](#Program-1) to add the bootloader to the CPX as in [Source 2](#Source-2).
 
 **Power the CPX**: Insert the batteries into the battery pack.  Connect the battery pack to the CPX. Power on the battery pack
 
@@ -71,7 +71,7 @@ Blue will display the Tens value
 
 Green will display the Ones Value	
 
-<img style={{ clear: "left", float: "left", height:"300px", width:"300px"}}
+<img style={{ clear: "left", float: "left", height:"300px", width:"350px"}}
             src="/images/greenten.png" />
 
 
@@ -89,13 +89,6 @@ Green will display the Ones Value
 <br></br>
 <br></br>
 <br></br>
-
-To run the Inventory In/Out program, press Button A.  The lights will race around the CPX in a rainbow of colors for 2 seconds.  Then, the selection will be made at random.  One of three choices will be selected, signified by the example images below:
-
-1. The part is not in inventory. Check with the Inventory and Asset Technician for stock information.
-2. The part is in inventory.  Scan the part out for your repair.
-3. Scan the part back into inventory.
-
 
 Red will display a Zero or Negative count
 
