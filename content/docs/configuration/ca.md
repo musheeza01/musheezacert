@@ -67,7 +67,6 @@ Blue will display the Tens value
 <br></br>
 <br></br>
 <br></br>
-<br></br>
 
 Green will display the Ones Value	
 
@@ -75,7 +74,6 @@ Green will display the Ones Value
             src="/images/greenten.png" />
 
 
-<br></br>
 <br></br>
 <br></br>
 <br></br>
@@ -109,16 +107,12 @@ The lights will blink and a siren will be heard.
 <br></br>
 <br></br>
 <br></br>
-<br></br>
-<br></br>
 
 Circle lights indicate double digits for the cycle counts.
 
 <img style={{margin:"0px 0px 0px 0px", clear: "left", float: "left", height:"300px", width:"300px"}}
             src="/images/purpleten.png" />
 
-<br></br>
-<br></br>
 <br></br>
 <br></br>
 <br></br>
