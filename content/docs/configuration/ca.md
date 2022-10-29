@@ -1,92 +1,255 @@
----
-title: CA
-description: 'cert-manager configuration: CA Issuers'
----
+#### Purpose
+The purpose of this hands-on STEM lab is to educate students, educators, and the community about Datacenters.  Datacenters have many hundreds if not thousands of servers.  Over time parts malfunction and need repair.  Having a good inventory system is a must to track and stock inventory.  Cycle counts are performed at regular intervals to make sure the parts are ready with the datacenter technicians need it.  This activity shows how inventory cycle counts occur on a Circuit Playground Express (CPX).  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
 
-⚠️ CA issuers are generally either for trying cert-manager out or else for advanced users with
-a good idea of how to run a PKI. To be used safely in production, CA issuers introduce complex
-planning requirements around rotation, trust store distribution and disaster recovery.
+#### Materials
+1 AAA Battery housing
 
-If you're not planning to run your own PKI, use a different issuer type.
+6 AAA Batteries (3 spare)
 
-The CA issuer represents a Certificate Authority whose certificate and
-private key are stored inside the cluster as a Kubernetes `Secret`.
+1 Circuit Playground Express
 
-Certificates issued by a CA issuer will not be publicly trusted and so are unlikely to be trusted
-by your applications without further configuration work. Consider the [cert-manager/trust](../projects/trust.md)
-project for distributing trust stores.
+Data/Sync USB Cable
 
-## Deployment
+#### Before
+Test the equipment Start Procedure below and note any failures or missing items as described in After Procedure below.  For help, use the Get Help information below.  Internet access will be required to download the CPX program.
 
-CA Issuers must be configured with a certificate and private key stored in a Kubernetes
-secret. You can create this externally if you wish, or you could bootstrap a root certificate
-using a [`SelfSigned` issuer](./selfsigned.md#bootstrapping-ca-issuers).
+#### Start
+Read through [Source 1](#Source-1) below.  When you are ready, move the image ([Source 2](#Source-2)) to the CPX.  Use instructions located here: [Source 2](#Source-2).  Test the program.
 
-Your certificate's secret should reside in the same namespace as the `Issuer`, or otherwise
-in the `Cluster Resource Namespace` in the case of a `ClusterIssuer`.
 
-The `Cluster Resource Namespace` is defaulted as being the `cert-manager` namespace, but
-can be configured using the `--cluster-resource-namespace` flag on the cert-manager controller.
+#### Get Ready
+**Prep the CPX**: Connect the USB-A/MicroUSB cable to the computer USB port.  Connect the MicroUSB end to the CPX.  Press the reset button twice, like a double-click.  A CPLAYBOOT drive should appear.  Use the information in Program 1 to add the bootloader to the CPX as in [Source 2](#Source-2).
 
-Below is an example of a secret resource that will be used for signing. Take
-note of the index keys used for each field as these are required in order for
-cert-manager to find the certificate and key. Also note that, like all secrets,
-data must be base64 encoded. The command `$ cat crt.pem | base64 -w0` should help you
-on GNU-based systems (Debian, Ubuntu, etc.) and `$ cat crt.pem | base64 -b0` on BSD-based
-systems (most notably macOS).
+**Power the CPX**: Insert the batteries into the battery pack.  Connect the battery pack to the CPX. Power on the battery pack
 
-```yaml
-apiVersion: v1
-kind: Secret
-metadata:
-  name: ca-key-pair
-  namespace: sandbox
-data:
-  tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMrVENDQWVHZ0F3SUJBZ0lKQUtQR3dLRGwvNUhuTUEwR0NTcUdTSWIzRFFFQkN3VUFNQk14RVRBUEJnTlYKQkFNTUNHcHZjMmgyWVc1c01CNFhEVEU1TURneU1qRTJNRFUxT0ZvWERUSTVNRGd4T1RFMk1EVTFPRm93RXpFUgpNQThHQTFVRUF3d0lhbTl6YUhaaGJtd3dnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCCkFRQ3doU0IvcVc2L2tMYjJ6cHUrRUp2RDl3SEZhcStRQS8wSkgvTGxseW83ekFGeCtISHErQ09BYmsrQzhCNHQKL0hVRXNuczVSTDA5Q1orWDRqNnBiSkZkS2R1UHhYdTVaVllua3hZcFVEVTd5ZzdPU0tTWnpUbklaNzIzc01zMApSNmpZbi9Ecmo0eFhNSkVmSFVEcVllU1dsWnIzcWkxRUZhMGM3ZlZEeEgrNHh0WnROTkZPakg3YzZEL3ZXa0lnCldRVXhpd3Vzc2U2S01PV2pEbnYvNFZyamVsMlFnVVlVYkhDeWVaSG1jdGkrSzBMV0Nmby9SZzZQdWx3cmJEa2gKam1PZ1l0MzBwZGhYME9aa0F1a2xmVURIZnA4YmpiQ29JMnRhWUFCQTZBS2pLc08zNUxBRVU3OUNMMW1MVkh1WgpBQ0k1VWppamEzVlBXVkhTd21KUEp5dXhBZ01CQUFHalVEQk9NQjBHQTFVZERnUVdCQlFtbDVkVEFaaXhGS2hqCjkzd3VjUldoYW8vdFFqQWZCZ05WSFNNRUdEQVdnQlFtbDVkVEFaaXhGS2hqOTN3dWNSV2hhby90UWpBTUJnTlYKSFJNRUJUQURBUUgvTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFCK2tsa1JOSlVLQkxYOHlZa3l1VTJSSGNCdgpHaG1tRGpKSXNPSkhac29ZWGRMbEcxcFpORmpqUGFPTDh2aDQ0Vmw5OFJoRVpCSHNMVDFLTWJwMXN1NkNxajByClVHMWtwUkJlZitJT01UNE1VN3ZSSUNpN1VPbFJMcDFXcDBGOGxhM2hQT2NSYjJ5T2ZGcVhYeVpXWGY0dDBCNDUKdEhpK1pDTkhCOUZ4alNSeWNiR1lWaytUS3B2aEphU1lOTUdKM2R4REthUDcrRHgzWGNLNnNBbklBa2h5SThhagpOVSttdzgvdG1Sa1A0SW4va1hBUitSaTBxVW1Iai92d3ZuazRLbTdaVXkxRllIOERNZVM1TmtzbisvdUhsUnhSClY3RG5uMDM5VFJtZ0tiQXFONzJnS05MbzVjWit5L1lxREFZSFlybjk4U1FUOUpEZ3RJL0svQVRwVzhkWAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
-  tls.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBc0lVZ2Y2bHV2NUMyOXM2YnZoQ2J3L2NCeFdxdmtBUDlDUi95NVpjcU84d0JjZmh4CjZ2Z2pnRzVQZ3ZBZUxmeDFCTEo3T1VTOVBRbWZsK0krcVd5UlhTbmJqOFY3dVdWV0o1TVdLVkExTzhvT3praWsKbWMwNXlHZTl0N0RMTkVlbzJKL3c2NCtNVnpDUkh4MUE2bUhrbHBXYTk2b3RSQld0SE8zMVE4Ui91TWJXYlRUUgpUb3grM09nLzcxcENJRmtGTVlzTHJMSHVpakRsb3c1Ny8rRmE0M3Bka0lGR0ZHeHdzbm1SNW5MWXZpdEMxZ242ClAwWU9qN3BjSzJ3NUlZNWpvR0xkOUtYWVY5RG1aQUxwSlgxQXgzNmZHNDJ3cUNOcldtQUFRT2dDb3lyRHQrU3cKQkZPL1FpOVppMVI3bVFBaU9WSTRvMnQxVDFsUjBzSmlUeWNyc1FJREFRQUJBb0lCQUNFTkhET3JGdGg1a1RpUApJT3dxa2UvVVhSbUl5MHlNNHFFRndXWXBzcmUxa0FPMkFDWjl4YS96ZDZITnNlanNYMEM4NW9PbmtrTk9mUHBrClcxVS94Y3dLM1ZpRElwSnBIZ09VNzg1V2ZWRXZtU3dZdi9Fb1V3eHFHRVMvcnB5Z1drWU5WSC9XeGZGQlg3clMKc0dmeVltbXJvM09DQXEyLzNVVVFiUjcrT09md3kzSHdUdTBRdW5FSnBFbWU2RXdzdWIwZzhTTGp2cEpjSHZTbQpPQlNKSXJyL1RjcFRITjVPc1h1Vm5FTlVqV3BBUmRQT1NrRFZHbWtCbnkyaVZURElST3NGbmV1RUZ1NitXOWpqCmhlb1hNN2czbkE0NmlLenUzR0YwRWhLOFkzWjRmeE42NERkbWNBWnphaU1vMFJVaktWTFVqbVlQSEUxWWZVK3AKMkNYb3dNRUNnWUVBMTgyaU52UEkwVVlWaUh5blhKclNzd1YrcTlTRStvVi90U2ZSUUNGU2xsV0d3KzYyblRiVwpvNXpoL1RDQW9VTVNSbUFPZ0xKWU1LZUZ1SWdvTEoxN1pvWjN0U1czTlVtMmRpT0lPSHorcTQxQzM5MDRrUzM5CjkrYkFtVmtaSFA5VktLOEMraS9tek5mSkdHZEJadGIweWtTM2t3OUIxTHdnT3o3MDhFeXFSQ2tDZ1lFQTBXWlAKbzF2MThnV2tMK2FnUDFvOE13eDRPZlpTN3dKY3E0Z0xnUWhjYS9pSkttY0x0RFN4cUJHckJ4UVo0WTIyazlzdQpzTFVrNEJobGlVM29iUUJNaUdtMGtITHVBSEFRNmJvdWZBMUJwZjN2VFdHSkhSRjRMeFJsNzc2akw4UXI4VnpxClpURVBtY0R0T0hpYjdwb2I1Z2IzSDhiVGhYeUhmdGZxRW55alhFa0NnWUVBdk9DdDZZclZhTlQrWThjMmRFYk4Kd3dJOExBaUZtdjdkRjZFUjlCODJPWDRCeGR0WTJhRDFtNTNqN2NaVnpzNzFYOE1TN25FcDN1dkFqaElkbDI3KwpZbTJ1dUUyYVhIbDN5VTZ3RzBETFpUcnVIU0Z5TVI4ZithbHRTTXBDd0s1NXluSGpHVFp6dXpYaVBBbWpwRzdmCk1XbVRncE1IK3puc3UrNE9VNFBHUW9FQ2dZQWNqdUdKbS84YzlOd0JsR2lDZTJIK2JGTHhSTURteStHcm16QkcKZHNkMENqOWF3eGI3aXJ3MytjRGpoRUJMWExKcjA5YTRUdHdxbStrdElxenlRTG92V0l0QnNBcjVrRThlTVVBcAp0djBmRUZUVXJ0cXVWaldYNWlaSTNpMFBWS2ZSa1NSK2pJUmVLY3V3aWZKcVJpWkw1dU5KT0NxYzUvRHF3Yk93CnRjTHAwUUtCZ0VwdEw1SU10Sk5EQnBXbllmN0F5QVBhc0RWRE9aTEhNUGRpL2dvNitjSmdpUmtMYWt3eUpjV3IKU25QSG1TbFE0aEluNGMrNW1lbHBDWFdJaklLRCtjcTlxT2xmQmRtaWtYb2RVQ2pqWUJjNnVGQ1QrNWRkMWM4RwpiUkJQOUNtWk9GL0hOcHN0MEgxenhNd1crUHk5Q2VnR3hhZ0ZCekxzVW84N0xWR2h0VFFZCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
-```
+#### Go
+This program contains three elements:
 
-> Note: If your issuer represents an intermediate, ensure that `tls.crt` contains
-> the issuer's full chain in the correct order: `issuer -> intermediate(s) -> root`.
-> The root (self-signed) CA certificate is optional, but adding it will ensure that
-> the correct CA certificate is stored in the secrets for issued `Certificate`s under
-> the `ca.crt` key. If you fail to provide a complete chain, it might not be possible
-> for consumers of issued `Certificate`s to verify whether they're trusted.
+1.	Programming the CPX Bootloader to work with MakeCode Bootloader
+2.	Using Button A and Button B to count inventory.
+3.	With the switch moved to the right, Lights will display in a circular racing pattern continuously until the switch is moved to the left.
+4.	While the switch is in the right position, counts are totaled by pressing Button A to add 1 and Button B to subtract 1.
+5.	When the switch is moved to the left, the totals are displayed.  See [Appendix](#Appendix) for details.
+6.	Moving the switch back to the right position will reset the counts and restart the program.
 
-Next is to deploy the CA issuer which references this `Secret`. This is done by
-referencing the secret name under the `ca` stanza in the `Issuer` spec.
+See [Appendix](#Appendix) for Details. Use the [Lesson](#Lesson) information to explain the lab to relatable concepts at the Datacenter.
 
-```yaml
-apiVersion: cert-manager.io/v1
-kind: Issuer
-metadata:
-  name: ca-issuer
-  namespace: sandbox
-spec:
-  ca:
-    secretName: ca-key-pair
-```
+#### After
+Note any items that are damaged, not working, or missing (including consumables) as noted in Get Help below.
 
-Optionally, you can specify [CRL](https://en.wikipedia.org/wiki/Certificate_revocation_list) Distribution Points; an array of strings each of which identifies the location of the CRL from which the revocation of this certificate can be checked.
+#### Source
+1.	The program utilizes a simple code in MakeCode. See [Program 1](#Program-1) below for programming details.
 
-```yaml
-...
-spec:
-  ca:
-    secretName: ca-key-pair
-    crlDistributionPoints:
-    - "http://example.com"
-```
+#### Get Help
+For any questions contact the Microsoft Datacenter Community Development team at dc-stem@microsoft.com
 
-Once deployed, you can then check that the issuer has been successfully
-configured by checking the ready status of the certificate. Replace `issuers`
-here with `clusterissuers` if that is what has been deployed.
+#### <a id="Appendix"></a>Appendix
+Cycle counts are a normal regularly scheduled process for each Inventory and Asset Technician.  Accurate counting allows for parts to be ordered and available when needed for repairs.  To begin this program, verify the switch is on the right.  Connect the battery adapter.  The lights should race around the Circuit Playground Express in a rainbow pattern.  If the CPX does not light, move the switch to the left and then to the right to restart the program.
 
-```bash
-$ kubectl get issuers ca-issuer -n sandbox -o wide
-NAME          READY   STATUS                AGE
-ca-issuer     True    Signing CA verified   2m
-```
+While the lights are racing and the switch is to the right, press Buttons A and B to add or subtract from the count.  When cycle counts are complete, move the switch to the left.  The Circuit Playground Express will display the counts as follows:
 
-Certificates are now ready to be requested by using the CA `Issuer` named
-`ca-issuer` within the `sandbox` namespace.
+Blue will display the Tens value
+
+<img style={{ clear: "right", float: "left", height:"300px", width:"300px"}}
+            src="/images/blueten.png" />
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+Green will display the Ones Value	
+
+<img style={{ clear: "left", float: "left", height:"300px", width:"300px"}}
+            src="/images/greenten.png" />
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+To run the Inventory In/Out program, press Button A.  The lights will race around the CPX in a rainbow of colors for 2 seconds.  Then, the selection will be made at random.  One of three choices will be selected, signified by the example images below:
+
+1. The part is not in inventory. Check with the Inventory and Asset Technician for stock information.
+2. The part is in inventory.  Scan the part out for your repair.
+3. Scan the part back into inventory.
+
+<img style={{margin:"0px", clear: "left", float: "left", height:"400px", width:"300px"}}
+            src="/images/circuitcolors.png" />
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+Red will display a Zero or Negative count
+The lights will blink and a siren will be heard.
+
+<img style={{margin: "0", clear: "left", float: "left", height:"400px", width:"300px"}}
+            src="/images/redten.png" />
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+Circle lights indicate double digits for the cycle counts.
+
+<img style={{margin:"0px 0px 0px 0px", clear: "left", float: "left", height:"400px", width:"300px"}}
+            src="/images/purpleten.png" />
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+#### <a id="Lesson"></a>Lesson
+Datacenters have many hundreds if not thousands of servers.  Over time parts malfunction and need repair.  Having a good inventory system is a must to track and stock inventory.  Cycle counts are performed at regular intervals to make sure the parts are ready with the datacenter technicians need it.  This activity shows how inventory cycle counts occur on a Circuit Playground Express (CPX).  The lights and actions may not exactly replicate, but loosely relate to operations at a datacenter.
+
+#### What:
+This lab demonstrates datacenter inventory protocols and demonstrates cycle counting parts in inventory.  
+
+#### Details:
+Inventory and Asset Technicians keep the Microsoft Cloud running by assuring the correct parts are in stock in inventory.  Cycle counts allow Datacenter Technicians to quickly find parts needed for repair.  Counting the parts at regular intervals provides data needed to order new parts.  When parts are out of stock, the Inventory and Asset Technicians will order new stock during their routine cycle counts.  During this count, the Inventory and Asset Technician may find parts incorrectly placed in inventory.  This is corrected as the part is moved to the correct location and the inventory count corrected.
+
+#### Share:
+Defining the Cloud, servers, and common server parts may be helpful prior to explaining the lesson.  The datacenter is a building full of servers.  Servers are different than computers in your lab or classroom as they do not have a monitor or keyboard but do have many disks.  The disks contain data.  Data can be account information for banking or online shopping, medical lab tests, schoolwork, video game accounts, photos, or email.  When a server has a problem, technicians work fast to replace the parts promptly to keep the cloud running.
+
+NOTE:
+This lab works by pressing Button A to add to the count and Button B to subtract from the count.  Moving the switch to the left will display the count.  See the [Appendix](#Appendix) for more information on the values.  Moving the switch to the right will reset the count and allow the next cycle count to occur.
+
+#### <a id="Source-1"></a> Source 1 
+The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
+
+Source:
+https://learn.adafruit.com/adafruit-circuit-playground-express
+[i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
+
+There are three ways to program the CPX:
+1.	makecode.adafruit.com
+2.	CircuitPython
+3.	Arduino
+
+This program was created with makecode.adafruit.com.  Makecode is a Microsoft product that allows for block style coding.  The program written for this STEM activity is located below in Program 1.
+
+When the CPX is first connected to a computer with the USB cable, it will run the program that is stored on the device.  This may not be the program that you desire to run.  Follow the procedure in Source 3 to reset the CPX to the factory settings.  The CPX will hold the program and not reset to factory settings upon power off.
+
+#### <a id="Source-2"></a>Source 2
+To **create this program**, open makecode.adafruit.com.  Select New Project.  Add the program block code components as required in [Program 1](#Program-1). Save the file.
+
+To **move the program** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file from the Intrusion folder and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The program is now installed
+
+Press the reset button on the CPX.
+Once the Circuit Playground Express (CPX) is connected, without MiniGrabbers attached, all LEDs will display blue. 
+
+To **troubleshoot** the CPX device and program:
+1.	Check the batteries
+2.	Press reset button 1 time.  This will reset the device, like a computer reboot/restart.
+3.	Follow steps in Source 1 to download the program to the CPX device.
+4.	Try another device and see if the problem repeats.  If it repeats check program in Source 1 and 2 to install the program again.
+5.	Follow the procedure in [Source 3](#Source-3) below to reset to factory settings.  Then repeat the procedure to install the Intrusion program.
+
+#### <a id="Source-3"></a>Source 3
+**Download** the original CPX **bootloader**, navigate to [UF2 Bootloader Details | Adafruit Feather M0 Express | Adafruit Learning System](https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details) (https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details). Scroll to the bottom of the page and click on the green rectangle, with Circuit Playground Express V#.#.# update-bootloader.uf2.  Click on the link (make sure it is for the Circuit Playground Express).  The file will download.
+
+To **move the bootloader** to the CPX:
+
+Plug in the CPX via the USB/Micro USB cable.
+
+Press the reset button twice on the CPX.
+
+All Pixel LED lights will turn on / solid green
+
+The on small LED will turn on / solid green
+
+D13 small LED will slowly blink red
+
+A folder will appear as CPLAYBOOT.
+
+This will be very similar to a USB thumb drive in function.
+
+Copy the saved UF2 file (from the above procedure) and paste it on the CPLAYBOOT root drive.
+
+The CPX lights will flash, then reset and the CPLAYBOOT drive will disappear from the drive list.
+
+The CPX is now ready with the original bootloader.
+
+#### <a id="Program-1"></a>Program 1
+To **create this program**, open [MakeCode.adafruit.com.](MakeCode.adafruit.com.) Create the bootloader file by creating the block code program below:
+
+Program the CPX as listed in [Source 1](#Source-1). with the code below.
+
+<img style={{margin: "0", clear: "left", float: "left"}}
+            src="/images/circuitplaygroundcount.png" />
+            
