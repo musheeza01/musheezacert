@@ -152,14 +152,15 @@ Inventory and Asset Technicians keep the Microsoft Cloud running by assuring the
 Defining the Cloud, servers, and common server parts may be helpful prior to explaining the lesson.  The datacenter is a building full of servers.  Servers are different than computers in your lab or classroom as they do not have a monitor or keyboard but do have many disks.  The disks contain data.  Data can be account information for banking or online shopping, medical lab tests, schoolwork, video game accounts, photos, or email.  When a server has a problem, technicians work fast to replace the parts promptly to keep the cloud running.
 
 NOTE:
+
 This lab works by pressing Button A to add to the count and Button B to subtract from the count.  Moving the switch to the left will display the count.  See the [Appendix](#Appendix) for more information on the values.  Moving the switch to the right will reset the count and allow the next cycle count to occur.
 
 #### <a id="Source-1"></a> Source 1 
 The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
 
 Source:
-
 https://learn.adafruit.com/adafruit-circuit-playground-express
+
 [i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
 
 There are three ways to program the CPX:
