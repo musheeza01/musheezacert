@@ -96,27 +96,12 @@ To run the Inventory In/Out program, press Button A.  The lights will race aroun
 2. The part is in inventory.  Scan the part out for your repair.
 3. Scan the part back into inventory.
 
-<img style={{margin:"0px", clear: "left", float: "left", height:"400px", width:"300px"}}
-            src="/images/circuitcolors.png" />
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
 
 Red will display a Zero or Negative count
+
 The lights will blink and a siren will be heard.
 
-<img style={{margin: "0", clear: "left", float: "left", height:"400px", width:"300px"}}
+<img style={{margin: "0", clear: "left", float: "left", height:"300px", width:"300px"}}
             src="/images/redten.png" />
 
 <br></br>
@@ -136,7 +121,7 @@ The lights will blink and a siren will be heard.
 
 Circle lights indicate double digits for the cycle counts.
 
-<img style={{margin:"0px 0px 0px 0px", clear: "left", float: "left", height:"400px", width:"300px"}}
+<img style={{margin:"0px 0px 0px 0px", clear: "left", float: "left", height:"300px", width:"300px"}}
             src="/images/purpleten.png" />
 
 <br></br>
@@ -173,6 +158,7 @@ This lab works by pressing Button A to add to the count and Button B to subtract
 The Adafruit Circuit Playground Express (CPX) is a microcontroller with more power, storage space, and RAM than a 386 Intel Computer.  It includes temperature, light, sound, and accelerometer sensors, 10 built in LEDS, speaker, two push buttons, one slide switch, IR receiver and transmitter, 8 analog inputs, power output, 7 capacitive touch inputs, green "ON" LED, reset button, ATSAMD21 ARM Cortex M0 Processor, 2 MB of SPI Flash storage, and a Micro USB port for programming and debugging.
 
 Source:
+
 https://learn.adafruit.com/adafruit-circuit-playground-express
 [i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
 
