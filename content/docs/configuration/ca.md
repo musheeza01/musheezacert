@@ -160,7 +160,6 @@ The Adafruit Circuit Playground Express (CPX) is a microcontroller with more pow
 
 Source:
 https://learn.adafruit.com/adafruit-circuit-playground-express
-
 [i386 - Wikipedia](https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79) https://en.wikipedia.org/wiki/I386?msclkid=d82996eac23711eca097ba0148e8ca79 
 
 There are three ways to program the CPX:
